@@ -1737,67 +1737,57 @@
   </div>
 
   <div class="artists-showcase reveal">
-    <!-- Artist 1 -->
+    <!-- Artist 1 - Daliwonga -->
     <div class="artist-card">
-      <img src="artists/artist1.jpg" alt="Featured Artist 1" loading="lazy"
-        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
-      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0d0d18,#1a3a6a); align-items:center; justify-content:center; font-size:3rem;">🎤</div>
+      <img id="artist1-img" src="" alt="Daliwonga" loading="lazy" />
       <div class="artist-card-overlay"></div>
       <div class="artist-card-glow"></div>
       <div class="artist-card-info">
-        <div class="artist-card-name" id="artist1-name">Featured Artist</div>
+        <div class="artist-card-name" id="artist1-name">Daliwonga</div>
         <div class="artist-card-tag">Live Performance</div>
       </div>
       <div class="artist-card-border"></div>
     </div>
-    <!-- Artist 2 -->
+    <!-- Artist 2 - DJ Tira -->
     <div class="artist-card">
-      <img src="artists/artist2.jpg" alt="Featured Artist 2" loading="lazy"
-        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
-      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0a1a2e,#0d3a8a); align-items:center; justify-content:center; font-size:3rem;">🎧</div>
+      <img id="artist2-img" src="" alt="DJ Tira" loading="lazy" />
       <div class="artist-card-overlay"></div>
       <div class="artist-card-glow"></div>
       <div class="artist-card-info">
-        <div class="artist-card-name" id="artist2-name">Resident DJ</div>
+        <div class="artist-card-name" id="artist2-name">DJ Tira</div>
         <div class="artist-card-tag">DJ Set</div>
       </div>
       <div class="artist-card-border"></div>
     </div>
-    <!-- Artist 3 -->
+    <!-- Artist 3 - Dlala Thukzin -->
     <div class="artist-card">
-      <img src="artists/artist3.jpg" alt="Featured Artist 3" loading="lazy"
-        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
-      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0d0d18,#0a3a5a); align-items:center; justify-content:center; font-size:3rem;">🎵</div>
+      <img id="artist3-img" src="" alt="Dlala Thukzin" loading="lazy" />
       <div class="artist-card-overlay"></div>
       <div class="artist-card-glow"></div>
       <div class="artist-card-info">
-        <div class="artist-card-name" id="artist3-name">Headliner</div>
+        <div class="artist-card-name" id="artist3-name">Dlala Thukzin</div>
         <div class="artist-card-tag">Special Appearance</div>
       </div>
       <div class="artist-card-border"></div>
     </div>
-    <!-- Artist 4 -->
+    <!-- Artist 4 - Gold Max / Distruction Boyz -->
     <div class="artist-card">
-      <img src="artists/artist4.jpg" alt="Featured Artist 4" loading="lazy"
-        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
-      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0d0d18,#1a1a6a); align-items:center; justify-content:center; font-size:3rem;">🎶</div>
+      <img id="artist4-img" src="" alt="Distruction Boyz" loading="lazy" />
       <div class="artist-card-overlay"></div>
       <div class="artist-card-glow"></div>
       <div class="artist-card-info">
-        <div class="artist-card-name" id="artist4-name">Special Guest</div>
+        <div class="artist-card-name" id="artist4-name">Distruction Boyz</div>
         <div class="artist-card-tag">Weekend Set</div>
       </div>
       <div class="artist-card-border"></div>
     </div>
-    <!-- Artist 5 -->
+    <!-- Artist 5 - Indaba Kabani -->
     <div class="artist-card">
-      <img src="artists/artist5.jpg" alt="Featured Artist 5" loading="lazy"
-        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
-      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0a1a2e,#0d2a5a); align-items:center; justify-content:center; font-size:3rem;">🎙️</div>
+      <img id="artist5-img" src="" alt="Indaba Kabani" loading="lazy" />
       <div class="artist-card-overlay"></div>
       <div class="artist-card-glow"></div>
       <div class="artist-card-info">
-        <div class="artist-card-name" id="artist5-name">Rising Star</div>
+        <div class="artist-card-name" id="artist5-name">Indaba Kabani</div>
         <div class="artist-card-tag">Live Show</div>
       </div>
       <div class="artist-card-border"></div>
@@ -2215,6 +2205,41 @@
 </div>
 
 <script>
+  // ===== AUTO-LOAD ARTIST IMAGES =====
+  const artistFiles = [
+    { id: 'artist1', prefix: 'artist1' },
+    { id: 'artist2', prefix: 'artist2' },
+    { id: 'artist3', prefix: 'artist3' },
+    { id: 'artist4', prefix: 'artist4' },
+    { id: 'artist5', prefix: 'artist5' },
+  ];
+
+  artistFiles.forEach(({ id, prefix }) => {
+    const img = document.getElementById(id + '-img');
+    if (!img) return;
+    const exts = ['jpg','jpeg','png','webp'];
+    let loaded = false;
+    let idx = 0;
+    function tryNext() {
+      if (loaded || idx >= exts.length) {
+        if (!loaded) {
+          img.style.display = 'none';
+          const ph = document.createElement('div');
+          ph.style.cssText = 'width:100%;height:100%;background:linear-gradient(135deg,#0d0d18,#1a3a6a);display:flex;align-items:center;justify-content:center;font-size:3rem;position:absolute;inset:0;';
+          ph.textContent = '🎤';
+          img.parentNode.insertBefore(ph, img.parentNode.firstChild);
+        }
+        return;
+      }
+      const path = prefix + '.' + exts[idx++];
+      const t = new Image();
+      t.onload = () => { if (!loaded) { loaded = true; img.src = path; img.style.cssText = 'width:100%;height:100%;object-fit:cover;'; } };
+      t.onerror = tryNext;
+      t.src = path;
+    }
+    tryNext();
+  });
+
   // ===== REVIEWS DATA =====
   let reviews = [
     { name: 'Khulekani M.', stars: 4, text: 'Nice music and friendly staff. Great vibe overall!', time: '2 years ago', initials: 'KM' },
