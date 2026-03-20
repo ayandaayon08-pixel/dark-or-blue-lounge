@@ -1,0 +1,2398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark or Blue Lounge | Premier Nightlife & Entertainment — Ntuzuma, Durban</title>
+  <meta name="description" content="Dark or Blue Lounge — Ntuzuma's most elite nightlife destination. Shisanyama, Car Wash, Hubbly, Beverages & live entertainment. Book your table now." />
+  <meta name="keywords" content="shisanyama Ntuzuma, lounge near me, nightlife Ntuzuma, car wash Ntuzuma, entertainment venue Durban, Dark or Blue Lounge, township lifestyle venue" />
+  <meta property="og:title" content="Dark or Blue Lounge | Premier Nightlife — Ntuzuma" />
+  <meta property="og:description" content="Where the night comes alive. Elite shisanyama, hubbly, beverages & live entertainment in Ntuzuma, Durban." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="hero-bg.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NightClub",
+    "name": "Dark or Blue Lounge",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "92 Uxamu Dr, Ntuzuma D - Lindelani",
+      "addressLocality": "Ntuzuma",
+      "postalCode": "4360",
+      "addressCountry": "ZA"
+    },
+    "telephone": "+27742270872",
+    "openingHours": "Mo-Su 00:00-00:00",
+    "priceRange": "R50-R500+"
+  }
+  </script>
+  <style>
+    :root {
+      --black: #050508;
+      --dark: #0a0a12;
+      --dark2: #0f0f1a;
+      --card-bg: #0d0d18;
+      --blue: #1a6ef5;
+      --blue-glow: #1a6ef5;
+      --blue-light: #4d90f7;
+      --blue-dim: #0d3a8a;
+      --white: #f0f4ff;
+      --white-dim: rgba(240,244,255,0.7);
+      --white-faint: rgba(240,244,255,0.12);
+      --border: rgba(26,110,245,0.25);
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-heading: 'Rajdhani', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--blue-dim); border-radius: 2px; }
+
+    /* ===== NOISE OVERLAY ===== */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ===== NAV ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s, backdrop-filter 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(5,5,8,0.92);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .nav-logo img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1.5px solid var(--blue-dim);
+    }
+    .nav-logo-text {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      line-height: 1;
+    }
+    .nav-logo-text span { color: var(--blue-light); }
+    .nav-links {
+      display: none;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--blue-light); }
+    .nav-cta {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.5rem 1.2rem;
+      background: var(--blue);
+      border-radius: 2px;
+      color: #fff;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .nav-cta:hover {
+      background: var(--blue-light);
+      box-shadow: 0 0 18px rgba(26,110,245,0.5);
+    }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 1px;
+      transition: all 0.3s;
+    }
+    @media (min-width: 768px) {
+      .nav-links { display: flex; }
+      .hamburger { display: none; }
+      nav { padding: 1rem 3rem; }
+    }
+
+    /* MOBILE MENU */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(5,5,8,0.98);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--blue-light); }
+    .mobile-close {
+      position: absolute;
+      top: 1.5rem; right: 1.5rem;
+      font-size: 2rem;
+      color: var(--white-dim);
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-weight: 300;
+    }
+
+    /* ===== HERO ===== */
+    #hero {
+      position: relative;
+      width: 100%;
+      min-height: 100svh;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 8vh;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('dining.jpg');
+      background-size: cover;
+      background-position: center top;
+      transform: scale(1.06);
+      animation: heroZoom 18s ease-in-out infinite alternate;
+    }
+    @keyframes heroZoom {
+      from { transform: scale(1.06); }
+      to { transform: scale(1.12); }
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(5,5,8,0.3) 0%,
+        rgba(5,5,8,0.2) 30%,
+        rgba(5,5,8,0.65) 65%,
+        rgba(5,5,8,1) 100%
+      );
+    }
+    .hero-overlay-side {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(5,5,8,0.85) 0%,
+        transparent 60%
+      );
+    }
+    .hero-blue-accent {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--blue), transparent);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 1.5rem;
+      max-width: 680px;
+    }
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 1rem;
+    }
+    .hero-eyebrow-line {
+      width: 36px;
+      height: 1.5px;
+      background: var(--blue);
+    }
+    .hero-eyebrow-text {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 14vw, 7rem);
+      line-height: 0.92;
+      letter-spacing: 0.02em;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .hero-title .blue { color: var(--blue-light); }
+    .hero-tagline {
+      font-family: var(--font-heading);
+      font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+      font-weight: 400;
+      color: var(--white-dim);
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+    .hero-tagline strong {
+      color: var(--white);
+      font-weight: 600;
+      font-style: normal;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .btn-primary {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      background: var(--blue);
+      color: #fff;
+      border-radius: 2px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-primary:hover {
+      background: var(--blue-light);
+      box-shadow: 0 0 30px rgba(26,110,245,0.55);
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid rgba(240,244,255,0.35);
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .btn-outline:hover {
+      border-color: var(--blue-light);
+      color: var(--blue-light);
+      box-shadow: 0 0 20px rgba(26,110,245,0.2);
+    }
+    .hero-scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .hero-scroll-hint span {
+      font-family: var(--font-heading);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      writing-mode: vertical-rl;
+    }
+    .scroll-line {
+      width: 1px;
+      height: 50px;
+      background: linear-gradient(180deg, var(--blue), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    .hero-stats {
+      position: absolute;
+      bottom: 8vh;
+      right: 1.5rem;
+      z-index: 2;
+      display: none;
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: right;
+    }
+    .hero-stat-num {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: var(--blue-light);
+      line-height: 1;
+    }
+    .hero-stat-label {
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+    }
+    @media (min-width: 768px) {
+      .hero-content { padding: 0 4rem; }
+      .hero-stats { display: flex; right: 4rem; }
+    }
+
+    /* ===== SECTION SHARED ===== */
+    section { padding: 5rem 1.5rem; }
+    @media (min-width: 768px) { section { padding: 6rem 3rem; } }
+    @media (min-width: 1024px) { section { padding: 7rem 5rem; } }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+    .section-label-line {
+      width: 30px;
+      height: 1.5px;
+      background: var(--blue);
+    }
+    .section-label-text {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 8vw, 4.5rem);
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+      color: var(--white);
+      margin-bottom: 1.2rem;
+    }
+    .section-subtitle {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      line-height: 1.75;
+      max-width: 560px;
+      margin-bottom: 3rem;
+    }
+    .blue-rule {
+      width: 60px;
+      height: 2px;
+      background: var(--blue);
+      margin-bottom: 2rem;
+    }
+
+    /* ===== EXPERIENCES ===== */
+    #experiences { background: var(--dark); }
+    .exp-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+    @media (min-width: 500px) { .exp-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .exp-grid { grid-template-columns: repeat(5, 1fr); } }
+
+    .exp-card {
+      background: var(--card-bg);
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8rem;
+      transition: background 0.3s;
+      position: relative;
+      overflow: hidden;
+      cursor: default;
+    }
+    .exp-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--blue);
+      transform: scaleX(0);
+      transition: transform 0.35s;
+      transform-origin: left;
+    }
+    .exp-card:hover { background: #111122; }
+    .exp-card:hover::before { transform: scaleX(1); }
+    .exp-card:hover .exp-icon { color: var(--blue-light); }
+    .exp-icon {
+      font-size: 2.2rem;
+      transition: color 0.3s;
+    }
+    .exp-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .exp-desc {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      line-height: 1.6;
+    }
+
+    /* ===== GALLERY ===== */
+    #gallery { background: var(--black); padding-bottom: 0; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3px;
+      margin-top: 3rem;
+    }
+    @media (min-width: 640px) {
+      .gallery-grid {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 320px 320px;
+      }
+      .gallery-item:first-child { grid-row: 1 / 3; }
+    }
+    @media (min-width: 900px) {
+      .gallery-grid { grid-template-rows: 420px 420px; }
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      min-height: 240px;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-item-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(5,5,8,0.75) 100%);
+      opacity: 0;
+      transition: opacity 0.4s;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+    }
+    .gallery-item:hover .gallery-item-overlay { opacity: 1; }
+    .gallery-item-label {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+    }
+    .gallery-cta-strip {
+      background: var(--blue);
+      padding: 1.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .gallery-cta-strip p {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      letter-spacing: 0.04em;
+      color: #fff;
+    }
+    .gallery-cta-strip a {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.5);
+      padding: 0.6rem 1.4rem;
+      border-radius: 2px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .gallery-cta-strip a:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+    }
+
+    /* ===== ARTISTS ===== */
+    #artists { background: var(--dark2); }
+    .artists-intro-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+    @media (min-width: 768px) {
+      .artists-intro-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+    }
+    .artists-big-text {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 10vw, 6rem);
+      line-height: 0.9;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+    .artists-big-text .outline {
+      -webkit-text-stroke: 1px rgba(240,244,255,0.25);
+      color: transparent;
+    }
+    .artists-big-text .blue { color: var(--blue-light); }
+    .artists-para {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      line-height: 1.8;
+    }
+    .artists-para strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    /* Artist cards */
+    .artists-showcase {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    @media (min-width: 640px) { .artists-showcase { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 900px) { .artists-showcase { grid-template-columns: repeat(5, 1fr); } }
+
+    .artist-card {
+      position: relative;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      background: var(--card-bg);
+      cursor: pointer;
+    }
+    .artist-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+      filter: grayscale(30%);
+    }
+    .artist-card:hover img {
+      transform: scale(1.08);
+      filter: grayscale(0%);
+    }
+    .artist-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 45%,
+        rgba(5,5,8,0.5) 70%,
+        rgba(5,5,8,0.92) 100%
+      );
+    }
+    .artist-card-glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center bottom, rgba(26,110,245,0.2), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .artist-card:hover .artist-card-glow { opacity: 1; }
+    .artist-card-info {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 1.2rem 1rem;
+    }
+    .artist-card-name {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 0.2rem;
+    }
+    .artist-card-tag {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+    }
+    .artist-card-border {
+      position: absolute;
+      inset: 0;
+      border: 1px solid transparent;
+      transition: border-color 0.3s;
+      pointer-events: none;
+    }
+    .artist-card:hover .artist-card-border { border-color: var(--blue-dim); }
+    .artists-bottom-bar {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: var(--white-faint);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .artists-bottom-bar p {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--white-dim);
+    }
+    .artists-bottom-bar p span { color: var(--white); }
+
+    /* ===== EVENTS ===== */
+    #events { background: var(--dark); }
+    .events-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (min-width: 900px) {
+      .events-layout { grid-template-columns: 1fr 1fr; gap: 4rem; }
+    }
+    .events-list { display: flex; flex-direction: column; gap: 1px; }
+    .event-item {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-left: 2px solid transparent;
+      transition: border-color 0.3s, background 0.3s;
+      cursor: default;
+    }
+    .event-item:hover {
+      border-left-color: var(--blue);
+      background: #111122;
+    }
+    .event-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .event-name {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .event-badge {
+      font-family: var(--font-heading);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.7rem;
+      background: rgba(26,110,245,0.15);
+      border: 1px solid rgba(26,110,245,0.35);
+      color: var(--blue-light);
+      border-radius: 1px;
+      white-space: nowrap;
+    }
+    .event-badge.hot {
+      background: rgba(220,50,50,0.12);
+      border-color: rgba(220,50,50,0.35);
+      color: #ff6b6b;
+    }
+    .event-detail {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--white-dim);
+    }
+    .event-cta-block {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 2rem;
+    }
+    .event-cta-heading {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      color: var(--white);
+      letter-spacing: 0.03em;
+      margin-bottom: 0.8rem;
+    }
+    .event-cta-heading span { color: var(--blue-light); }
+    .event-cta-text {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ===== MENU / SPECIALS ===== */
+    #specials { background: var(--black); }
+    .specials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 640px) { .specials-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .specials-grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    .special-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.2s;
+    }
+    .special-card:hover {
+      border-color: var(--blue);
+      transform: translateY(-2px);
+    }
+    .special-card::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 60px; height: 60px;
+      background: radial-gradient(ellipse at top right, rgba(26,110,245,0.12), transparent);
+    }
+    .special-price {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: var(--blue-light);
+      margin-bottom: 0.3rem;
+    }
+    .special-name {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .special-includes {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      line-height: 1.6;
+    }
+    .special-tag {
+      display: inline-block;
+      margin-top: 0.8rem;
+      font-family: var(--font-heading);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      background: rgba(26,110,245,0.12);
+      border: 1px solid rgba(26,110,245,0.25);
+      color: var(--blue-light);
+    }
+
+    /* ===== BOOKING ===== */
+    #booking {
+      background: var(--dark2);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #booking::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(ellipse, rgba(26,110,245,0.08), transparent 70%);
+      pointer-events: none;
+    }
+    .booking-content { position: relative; z-index: 1; }
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1.1rem 2.5rem;
+      background: #25d366;
+      color: #fff;
+      border-radius: 2px;
+      margin-top: 2rem;
+      transition: all 0.25s;
+      border: none;
+      cursor: pointer;
+    }
+    .wa-btn:hover {
+      background: #1db954;
+      box-shadow: 0 0 30px rgba(37,211,102,0.4);
+      transform: translateY(-2px);
+    }
+    .wa-icon {
+      width: 22px;
+      height: 22px;
+      fill: #fff;
+    }
+    .or-divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 2rem auto;
+      max-width: 300px;
+    }
+    .or-divider-line { flex: 1; height: 1px; background: var(--border); }
+    .or-divider-text {
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      color: var(--white-dim);
+    }
+
+    /* ===== REVIEWS ===== */
+    #reviews { background: var(--dark); }
+    .reviews-ticker-wrap {
+      overflow: hidden;
+      position: relative;
+      margin-top: 2rem;
+    }
+    .reviews-ticker-wrap::before,
+    .reviews-ticker-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 80px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .reviews-ticker-wrap::before {
+      left: 0;
+      background: linear-gradient(90deg, var(--dark), transparent);
+    }
+    .reviews-ticker-wrap::after {
+      right: 0;
+      background: linear-gradient(270deg, var(--dark), transparent);
+    }
+    .reviews-ticker {
+      display: flex;
+      gap: 1rem;
+      animation: ticker 30s linear infinite;
+      width: max-content;
+    }
+    .reviews-ticker:hover { animation-play-state: paused; }
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .review-notification {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1.2rem 1.4rem;
+      min-width: 260px;
+      max-width: 280px;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .review-notification::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--blue);
+    }
+    .review-notif-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.7rem;
+    }
+    .review-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--blue-dim);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--blue-light);
+      flex-shrink: 0;
+    }
+    .review-name {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .review-stars {
+      font-size: 0.75rem;
+      color: #f5c518;
+      letter-spacing: 1px;
+    }
+    .review-text {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      line-height: 1.6;
+    }
+    .review-time {
+      font-family: var(--font-heading);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: rgba(240,244,255,0.3);
+      margin-top: 0.5rem;
+    }
+
+    /* ADD REVIEW */
+    .add-review-section { margin-top: 3rem; }
+    .add-review-toggle {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.8rem 1.8rem;
+      background: transparent;
+      border: 1.5px solid var(--border);
+      color: var(--white-dim);
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .add-review-toggle:hover {
+      border-color: var(--blue-light);
+      color: var(--blue-light);
+    }
+    .review-form-wrap {
+      display: none;
+      margin-top: 1.5rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      max-width: 500px;
+    }
+    .review-form-wrap.open { display: block; }
+    .form-group { margin-bottom: 1rem; }
+    .form-label {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      margin-bottom: 0.4rem;
+    }
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      background: rgba(240,244,255,0.04);
+      border: 1px solid var(--border);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      padding: 0.7rem 1rem;
+      border-radius: 2px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-input:focus, .form-textarea:focus { border-color: var(--blue); }
+    .form-textarea { min-height: 100px; resize: vertical; }
+    .star-select {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.3rem;
+    }
+    .star-btn {
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: rgba(240,244,255,0.2);
+      transition: color 0.15s;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    .star-btn.active { color: #f5c518; }
+    .form-submit {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.75rem 2rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .form-submit:hover { background: var(--blue-light); }
+
+    /* ===== LOCATION ===== */
+    #location { background: var(--black); }
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: stretch;
+      margin-top: 2rem;
+    }
+    @media (min-width: 768px) { .location-grid { grid-template-columns: 1fr 1fr; } }
+    .map-placeholder {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      min-height: 300px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .map-placeholder iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+      border: none;
+      filter: grayscale(80%) invert(90%) hue-rotate(180deg);
+      opacity: 0.6;
+    }
+    .map-overlay-text {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      background: rgba(5,5,8,0.85);
+      border: 1px solid var(--border);
+      padding: 1rem 1.2rem;
+      backdrop-filter: blur(10px);
+    }
+    .map-overlay-name {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .map-overlay-addr {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      margin-top: 0.2rem;
+    }
+    .location-info {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .location-detail {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .location-detail-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .location-detail-label {
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+      margin-bottom: 0.2rem;
+    }
+    .location-detail-value {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--white);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #030305;
+      border-top: 1px solid var(--border);
+      padding: 3rem 1.5rem 2rem;
+    }
+    @media (min-width: 768px) { footer { padding: 4rem 3rem 2rem; } }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    @media (min-width: 640px) { .footer-top { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .footer-top { grid-template-columns: 2fr 1fr 1fr; } }
+    .footer-brand p {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: rgba(240,244,255,0.45);
+      line-height: 1.7;
+      margin-top: 0.8rem;
+      max-width: 300px;
+    }
+    .footer-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .footer-logo-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid var(--blue-dim);
+    }
+    .footer-logo-name {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      letter-spacing: 0.04em;
+      color: var(--white);
+    }
+    .footer-logo-name span { color: var(--blue-light); }
+    .footer-col-title {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .footer-links a {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: rgba(240,244,255,0.45);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--blue-light); }
+    .footer-social {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 0.3rem;
+    }
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--white-dim);
+      transition: all 0.25s;
+      cursor: pointer;
+    }
+    .social-icon:hover {
+      border-color: var(--blue);
+      color: var(--blue-light);
+      box-shadow: 0 0 12px rgba(26,110,245,0.3);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(26,110,245,0.12);
+      padding-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .footer-copy {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: rgba(240,244,255,0.3);
+    }
+    .footer-est {
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      color: rgba(26,110,245,0.5);
+    }
+
+    /* ===== FLOATING WHATSAPP ===== */
+    .wa-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 500;
+      width: 56px;
+      height: 56px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    }
+    .wa-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37,211,102,0.6);
+    }
+    .wa-float svg { width: 26px; height: 26px; fill: #fff; }
+
+    /* ===== SETTINGS PANEL ===== */
+    .settings-btn {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      z-index: 500;
+      width: 42px;
+      height: 42px;
+      background: rgba(5,5,8,0.85);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      backdrop-filter: blur(10px);
+    }
+    .settings-btn:hover { border-color: var(--blue); }
+    .settings-btn svg { width: 18px; height: 18px; stroke: var(--white-dim); fill: none; }
+    .settings-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 800;
+      backdrop-filter: blur(4px);
+    }
+    .settings-overlay.open { display: block; }
+    .settings-panel {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0;
+      width: 100%;
+      max-width: 420px;
+      background: #0a0a14;
+      border: 1px solid var(--border);
+      border-bottom: none;
+      z-index: 900;
+      padding: 2rem;
+      transform: translateY(100%);
+      transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+      border-radius: 12px 12px 0 0;
+    }
+    @media (min-width: 480px) {
+      .settings-panel {
+        bottom: 5rem;
+        left: 1.5rem;
+        border-radius: 8px;
+        border-bottom: 1px solid var(--border);
+        max-height: 80vh;
+        overflow-y: auto;
+        transform: translateY(20px);
+        opacity: 0;
+      }
+    }
+    .settings-panel.open {
+      display: block;
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .settings-lock {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .settings-lock-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--white);
+      letter-spacing: 0.04em;
+    }
+    .settings-lock-label {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+    }
+    .settings-lock-input {
+      width: 100%;
+      background: rgba(240,244,255,0.04);
+      border: 1px solid var(--border);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      padding: 0.7rem 1rem;
+      border-radius: 2px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .settings-lock-input:focus { border-color: var(--blue); }
+    .settings-lock-btn {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .settings-lock-btn:hover { background: var(--blue-light); }
+    .settings-lock-error {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      color: #ff6b6b;
+      display: none;
+    }
+    .settings-content { display: none; }
+    .settings-content.unlocked { display: block; }
+    .settings-section-title {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+      margin: 1.2rem 0 0.7rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    .settings-field { margin-bottom: 0.8rem; }
+    .settings-field label {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      margin-bottom: 0.3rem;
+    }
+    .settings-field input,
+    .settings-field textarea,
+    .settings-field select {
+      width: 100%;
+      background: rgba(240,244,255,0.04);
+      border: 1px solid var(--border);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      padding: 0.5rem 0.8rem;
+      border-radius: 2px;
+      outline: none;
+    }
+    .settings-field textarea { min-height: 70px; resize: vertical; }
+    .settings-save-btn {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      margin-top: 1rem;
+      width: 100%;
+      transition: background 0.2s;
+    }
+    .settings-save-btn:hover { background: var(--blue-light); }
+    .settings-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+    .settings-header-title {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--white);
+      letter-spacing: 0.04em;
+    }
+    .settings-close-x {
+      font-size: 1.2rem;
+      color: var(--white-dim);
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: var(--white-dim);
+      font-family: var(--font-body);
+      transition: color 0.2s;
+    }
+    .settings-close-x:hover { color: var(--white); }
+
+    /* ===== ANIMATE ON SCROLL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ===== TOAST ===== */
+    .toast {
+      position: fixed;
+      bottom: 6rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--blue);
+      color: #fff;
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding: 0.8rem 1.8rem;
+      border-radius: 2px;
+      opacity: 0;
+      transition: all 0.3s;
+      pointer-events: none;
+      z-index: 2000;
+      white-space: nowrap;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <img src="logo.jpg" alt="Dark or Blue Lounge Logo" />
+    <div class="nav-logo-text">DARK <span>OR</span> BLUE</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#experiences">Experiences</a></li>
+    <li><a href="#artists">Artists</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#specials">Specials</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#location">Find Us</a></li>
+  </ul>
+  <a href="https://wa.me/27742270872" class="nav-cta" target="_blank" rel="noopener">Book Now</a>
+  <div class="hamburger" id="hamburger" role="button" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="mobileClose">&times;</span>
+  <a href="#experiences" onclick="closeMobile()">Experiences</a>
+  <a href="#artists" onclick="closeMobile()">Artists</a>
+  <a href="#events" onclick="closeMobile()">Events</a>
+  <a href="#specials" onclick="closeMobile()">Specials</a>
+  <a href="#reviews" onclick="closeMobile()">Reviews</a>
+  <a href="#location" onclick="closeMobile()">Find Us</a>
+  <a href="https://wa.me/27742270872" target="_blank" rel="noopener" onclick="closeMobile()">📲 Book Now</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay-side"></div>
+  <div class="hero-blue-accent"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span class="hero-eyebrow-text">Est. 2020 · Ntuzuma, Durban</span>
+    </div>
+    <h1 class="hero-title">
+      DARK<br/><span class="blue">OR</span><br/>BLUE
+    </h1>
+    <p class="hero-tagline">
+      <strong>Where the night comes alive.</strong><br/>
+      Ntuzuma's most exclusive lifestyle destination — shisanyama, live DJs, elite entertainment & beyond.
+    </p>
+    <div class="hero-buttons">
+      <a href="https://wa.me/27742270872" class="btn-primary" target="_blank" rel="noopener">
+        📲 Book a Table
+      </a>
+      <a href="#events" class="btn-outline">View Events</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div>
+      <div class="hero-stat-num">4.6★</div>
+      <div class="hero-stat-label">Google Rating</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">200+</div>
+      <div class="hero-stat-label">Nights Hosted</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">5</div>
+      <div class="hero-stat-label">Experiences</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCES ===== -->
+<section id="experiences">
+  <div class="section-label reveal">
+    <div class="section-label-line"></div>
+    <span class="section-label-text">What We Offer</span>
+  </div>
+  <h2 class="section-title reveal">THE FULL<br/>EXPERIENCE</h2>
+  <p class="section-subtitle reveal">Five premium offerings under one roof. Dark or Blue Lounge is not just a night out — it's a complete lifestyle destination.</p>
+
+  <div class="exp-grid reveal">
+    <div class="exp-card">
+      <div class="exp-icon">🍖</div>
+      <div class="exp-name">Shisanyama</div>
+      <p class="exp-desc">Premium grilled meats served hot off the fire. Platters for 2 to 8 featuring beef, wors, chicken wings & more.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">🚗</div>
+      <div class="exp-name">Car Wash</div>
+      <p class="exp-desc">Get your ride gleaming while you relax, sip, and enjoy the vibe. Premium car wash on-site.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">💨</div>
+      <div class="exp-name">Hubbly</div>
+      <p class="exp-desc">Chill with premium hubbly sessions while the music sets the tone. The ultimate lounge experience.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">🍹</div>
+      <div class="exp-name">Beverages</div>
+      <p class="exp-desc">Craft cocktails, top-shelf spirits, beer, wine & more. Great cocktails and a great beer selection on tap.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">🎶</div>
+      <div class="exp-name">Entertainment</div>
+      <p class="exp-desc">Live DJs, popular artists, weekend events. High-energy nights that keep you coming back every week.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" style="padding-bottom: 0;">
+  <div class="section-label reveal">
+    <div class="section-label-line"></div>
+    <span class="section-label-text">The Vibe</span>
+  </div>
+  <h2 class="section-title reveal">LIVE THE<br/>EXPERIENCE</h2>
+
+  <div class="gallery-grid reveal">
+    <div class="gallery-item">
+      <img src="lifestyle.jpg" alt="Dark or Blue Lounge nightlife" loading="lazy" />
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-label">The Vibe</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="dining.jpg" alt="Dark or Blue Lounge dining area" loading="lazy" />
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-label">Lounge Area</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="hero-bg.jpg" alt="Dark or Blue Lounge specials" loading="lazy" />
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-label">Gin & Vodka Sundays</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-cta-strip">
+    <p>Follow our journey on social media</p>
+    <a onclick="window.open('https://www.instagram.com/darkorblueloungersa','_blank')" style="cursor:pointer;">Follow @darkorblueloungersa</a>
+  </div>
+</section>
+
+<!-- ===== ARTISTS ===== -->
+<section id="artists">
+  <div class="section-label reveal">
+    <div class="section-label-line"></div>
+    <span class="section-label-text">Entertainment</span>
+  </div>
+
+  <div class="artists-intro-grid">
+    <div>
+      <div class="artists-big-text reveal">
+        WHERE<br/><span class="blue">TOP</span><br/><span class="outline">ARTISTS</span><br/>PERFORM
+      </div>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <p class="artists-para">
+        Dark or Blue Lounge has hosted <strong>the best in the game</strong>. From headline DJs to celebrated live performers, our stage has seen it all. We don't just host events — we create <strong>unforgettable nights</strong> that become stories people tell for years.<br/><br/>
+        Every weekend is an opportunity to witness <strong>elite entertainment</strong> in an intimate, premium setting that no arena could replicate.
+      </p>
+    </div>
+  </div>
+
+  <div class="artists-showcase reveal">
+    <!-- Artist 1 -->
+    <div class="artist-card">
+      <img src="artists/artist1.jpg" alt="Featured Artist 1" loading="lazy"
+        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
+      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0d0d18,#1a3a6a); align-items:center; justify-content:center; font-size:3rem;">🎤</div>
+      <div class="artist-card-overlay"></div>
+      <div class="artist-card-glow"></div>
+      <div class="artist-card-info">
+        <div class="artist-card-name" id="artist1-name">Featured Artist</div>
+        <div class="artist-card-tag">Live Performance</div>
+      </div>
+      <div class="artist-card-border"></div>
+    </div>
+    <!-- Artist 2 -->
+    <div class="artist-card">
+      <img src="artists/artist2.jpg" alt="Featured Artist 2" loading="lazy"
+        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
+      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0a1a2e,#0d3a8a); align-items:center; justify-content:center; font-size:3rem;">🎧</div>
+      <div class="artist-card-overlay"></div>
+      <div class="artist-card-glow"></div>
+      <div class="artist-card-info">
+        <div class="artist-card-name" id="artist2-name">Resident DJ</div>
+        <div class="artist-card-tag">DJ Set</div>
+      </div>
+      <div class="artist-card-border"></div>
+    </div>
+    <!-- Artist 3 -->
+    <div class="artist-card">
+      <img src="artists/artist3.jpg" alt="Featured Artist 3" loading="lazy"
+        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
+      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0d0d18,#0a3a5a); align-items:center; justify-content:center; font-size:3rem;">🎵</div>
+      <div class="artist-card-overlay"></div>
+      <div class="artist-card-glow"></div>
+      <div class="artist-card-info">
+        <div class="artist-card-name" id="artist3-name">Headliner</div>
+        <div class="artist-card-tag">Special Appearance</div>
+      </div>
+      <div class="artist-card-border"></div>
+    </div>
+    <!-- Artist 4 -->
+    <div class="artist-card">
+      <img src="artists/artist4.jpg" alt="Featured Artist 4" loading="lazy"
+        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
+      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0d0d18,#1a1a6a); align-items:center; justify-content:center; font-size:3rem;">🎶</div>
+      <div class="artist-card-overlay"></div>
+      <div class="artist-card-glow"></div>
+      <div class="artist-card-info">
+        <div class="artist-card-name" id="artist4-name">Special Guest</div>
+        <div class="artist-card-tag">Weekend Set</div>
+      </div>
+      <div class="artist-card-border"></div>
+    </div>
+    <!-- Artist 5 -->
+    <div class="artist-card">
+      <img src="artists/artist5.jpg" alt="Featured Artist 5" loading="lazy"
+        onerror="this.style.display='none'; this.parentNode.querySelector('.artist-placeholder').style.display='flex';" />
+      <div class="artist-placeholder" style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#0a1a2e,#0d2a5a); align-items:center; justify-content:center; font-size:3rem;">🎙️</div>
+      <div class="artist-card-overlay"></div>
+      <div class="artist-card-glow"></div>
+      <div class="artist-card-info">
+        <div class="artist-card-name" id="artist5-name">Rising Star</div>
+        <div class="artist-card-tag">Live Show</div>
+      </div>
+      <div class="artist-card-border"></div>
+    </div>
+  </div>
+
+  <div class="artists-bottom-bar reveal">
+    <p><span>Hosted by the best in the game.</span> Your favourite artists have graced our stage — who's next?</p>
+    <a href="https://wa.me/27742270872" class="btn-primary" target="_blank" rel="noopener" style="font-size:0.85rem; padding: 0.65rem 1.4rem;">Book for Events</a>
+  </div>
+</section>
+
+<!-- ===== EVENTS ===== -->
+<section id="events">
+  <div class="section-label reveal">
+    <div class="section-label-line"></div>
+    <span class="section-label-text">What's On</span>
+  </div>
+  <h2 class="section-title reveal">UPCOMING<br/>EVENTS</h2>
+
+  <div class="events-layout">
+    <div class="events-list reveal" id="eventsList">
+      <div class="event-item">
+        <div class="event-item-top">
+          <div class="event-name">Gin & Vodka Sundays</div>
+          <span class="event-badge hot">🔥 HOT</span>
+        </div>
+        <div class="event-detail">Every Sunday · 12pm till late · R770 & R850 bundles</div>
+      </div>
+      <div class="event-item">
+        <div class="event-item-top">
+          <div class="event-name">Friday Night Takeover</div>
+          <span class="event-badge">WEEKLY</span>
+        </div>
+        <div class="event-detail">Every Friday · Live DJ · High-energy night from 7pm</div>
+      </div>
+      <div class="event-item">
+        <div class="event-item-top">
+          <div class="event-name">Shisanyama Saturday</div>
+          <span class="event-badge">WEEKEND</span>
+        </div>
+        <div class="event-detail">Every Saturday · Premium grills + cocktails + music</div>
+      </div>
+      <div class="event-item">
+        <div class="event-item-top">
+          <div class="event-name">VIP Artist Night</div>
+          <span class="event-badge">SPECIAL</span>
+        </div>
+        <div class="event-detail">Monthly headliner event · Table reservations required</div>
+      </div>
+      <div class="event-item">
+        <div class="event-item-top">
+          <div class="event-name">Hubbly & Chill Sessions</div>
+          <span class="event-badge">WEEKDAYS</span>
+        </div>
+        <div class="event-detail">Mon–Thu · Exclusive hubbly + beverages experience</div>
+      </div>
+    </div>
+
+    <div class="event-cta-block reveal reveal-delay-2">
+      <div class="event-cta-heading">Don't miss<br/><span>a single night.</span></div>
+      <p class="event-cta-text">
+        Every event at Dark or Blue Lounge is crafted to deliver an experience beyond the ordinary. Limited spots. Guaranteed vibes. Reserve your place before it fills up.
+      </p>
+      <a href="https://wa.me/27742270872" class="btn-primary" target="_blank" rel="noopener">Reserve Your Spot</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPECIALS ===== -->
+<section id="specials">
+  <div class="section-label reveal">
+    <div class="section-label-line"></div>
+    <span class="section-label-text">Menu & Deals</span>
+  </div>
+  <h2 class="section-title reveal">EXCLUSIVE<br/>DEALS</h2>
+  <p class="section-subtitle reveal">Premium packages curated for an elite experience. Value that doesn't compromise on quality.</p>
+
+  <div class="specials-grid reveal">
+    <div class="special-card">
+      <div class="special-price">R150</div>
+      <div class="special-name">Platter for Two</div>
+      <p class="special-includes">Beef meat, wors & jeqe or pap. The perfect duo meal.</p>
+      <span class="special-tag">Most Popular</span>
+    </div>
+    <div class="special-card">
+      <div class="special-price">R250</div>
+      <div class="special-name">Platter for Four</div>
+      <p class="special-includes">French fries, beef meat, wors, salads & more. Share the love.</p>
+    </div>
+    <div class="special-card">
+      <div class="special-price">R400</div>
+      <div class="special-name">Platter for Six</div>
+      <p class="special-includes">Salads, beef meat, pap, wors, fries, chicken wings & beef livers.</p>
+    </div>
+    <div class="special-card">
+      <div class="special-price">R600</div>
+      <div class="special-name">Platter for Eight</div>
+      <p class="special-includes">The full feast: beef meat, kidneys, liver, wors, fries, wings & salads.</p>
+      <span class="special-tag">Best Value</span>
+    </div>
+  </div>
+
+  <div style="margin-top:2rem;" class="reveal">
+    <p class="section-subtitle" style="margin-bottom:1rem;">Gin & Vodka Sunday Bundles</p>
+    <div class="specials-grid" style="max-width: 600px;">
+      <div class="special-card">
+        <div class="special-price">R770</div>
+        <div class="special-name">Smirnoff Bundle</div>
+        <p class="special-includes">1× Smirnoff · 1× Mixer · 1× Platter · 1× Hubbly Session</p>
+        <span class="special-tag">Sundays Only</span>
+      </div>
+      <div class="special-card">
+        <div class="special-price">R850</div>
+        <div class="special-name">Belgravia Bundle</div>
+        <p class="special-includes">1× Belgravia Gin · 1× Mixer · 1× Platter · 2× Hubbly Sessions</p>
+        <span class="special-tag">Premium Pick</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOKING ===== -->
+<section id="booking">
+  <div class="booking-content">
+    <div class="section-label reveal" style="justify-content:center;">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Reservations</span>
+    </div>
+    <h2 class="section-title reveal" style="text-align:center;">SECURE YOUR<br/><span style="color:var(--blue-light);">SPOT TONIGHT</span></h2>
+    <p class="section-subtitle reveal" style="text-align:center; margin: 0 auto 0; max-width:500px;">
+      Don't leave your night to chance. Tables fill up fast — especially on weekends. Reach out directly and we'll take care of the rest.
+    </p>
+
+    <div class="reveal" style="text-align:center;">
+      <a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I%20would%20like%20to%20book%20a%20table." class="wa-btn" target="_blank" rel="noopener">
+        <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Book Now on WhatsApp · +27 74 227 0872
+      </a>
+
+      <div class="or-divider">
+        <div class="or-divider-line"></div>
+        <span class="or-divider-text">Or call us</span>
+        <div class="or-divider-line"></div>
+      </div>
+
+      <a href="tel:+27742270872" style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;letter-spacing:0.08em;color:var(--blue-light);">
+        +27 74 227 0872
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews">
+  <div class="section-label reveal">
+    <div class="section-label-line"></div>
+    <span class="section-label-text">What People Say</span>
+  </div>
+  <h2 class="section-title reveal">REAL REVIEWS.<br/>REAL VIBES.</h2>
+
+  <div class="reviews-ticker-wrap">
+    <div class="reviews-ticker" id="reviewsTicker">
+      <!-- Reviews will be injected by JS -->
+    </div>
+  </div>
+
+  <div class="add-review-section reveal">
+    <button class="add-review-toggle" onclick="toggleReviewForm()">+ Leave Your Review</button>
+    <div class="review-form-wrap" id="reviewForm">
+      <p style="font-family:var(--font-heading);font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--white);margin-bottom:1.2rem;">Share Your Experience</p>
+      <div class="form-group">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-input" id="reviewName" placeholder="e.g. Sifiso Gumede" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Rating</label>
+        <div class="star-select" id="starSelect">
+          <button class="star-btn" data-val="1" onclick="setStars(1)">★</button>
+          <button class="star-btn" data-val="2" onclick="setStars(2)">★</button>
+          <button class="star-btn" data-val="3" onclick="setStars(3)">★</button>
+          <button class="star-btn" data-val="4" onclick="setStars(4)">★</button>
+          <button class="star-btn" data-val="5" onclick="setStars(5)">★</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Your Review</label>
+        <textarea class="form-textarea" id="reviewText" placeholder="Tell us about your experience..."></textarea>
+      </div>
+      <button class="form-submit" onclick="submitReview()">Submit Review</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATION ===== -->
+<section id="location">
+  <div class="section-label reveal">
+    <div class="section-label-line"></div>
+    <span class="section-label-text">Find Us</span>
+  </div>
+  <h2 class="section-title reveal">WHERE TO<br/>FIND US</h2>
+
+  <div class="location-grid">
+    <div class="map-placeholder reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.0!2d30.9347!3d-29.7961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6fe3a0a3d1f1f%3A0x0!2s92+Uxamu+Dr%2C+Ntuzuma+D+-+Lindelani%2C+Ntuzuma%2C+4360!5e0!3m2!1sen!2sza!4v1690000000000"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Dark or Blue Lounge Location">
+      </iframe>
+      <div class="map-overlay-text">
+        <div class="map-overlay-name">Dark or Blue Lounge</div>
+        <div class="map-overlay-addr">92 Uxamu Dr, Ntuzuma D, Durban 4360</div>
+      </div>
+    </div>
+
+    <div class="location-info reveal reveal-delay-2">
+      <div class="location-detail">
+        <span class="location-detail-icon">📍</span>
+        <div>
+          <div class="location-detail-label">Address</div>
+          <div class="location-detail-value">92 Uxamu Dr, Ntuzuma D – Lindelani, Ntuzuma, 4360, Durban, KwaZulu-Natal</div>
+        </div>
+      </div>
+      <div class="location-detail">
+        <span class="location-detail-icon">📞</span>
+        <div>
+          <div class="location-detail-label">Phone</div>
+          <a href="tel:+27742270872" class="location-detail-value" style="color:var(--blue-light);">+27 74 227 0872</a>
+        </div>
+      </div>
+      <div class="location-detail">
+        <span class="location-detail-icon">🕐</span>
+        <div>
+          <div class="location-detail-label">Hours</div>
+          <div class="location-detail-value">Open Daily · Closes 12am<br/>Weekends: Extended hours</div>
+        </div>
+      </div>
+      <div class="location-detail">
+        <span class="location-detail-icon">🅿️</span>
+        <div>
+          <div class="location-detail-label">Parking</div>
+          <div class="location-detail-value">Free street parking available</div>
+        </div>
+      </div>
+      <div class="location-detail">
+        <span class="location-detail-icon">💳</span>
+        <div>
+          <div class="location-detail-label">Payments</div>
+          <div class="location-detail-value">Credit & Debit Cards · NFC / Tap to Pay · Cash</div>
+        </div>
+      </div>
+      <a href="https://wa.me/27742270872" class="btn-primary" target="_blank" rel="noopener" style="margin-top:0.5rem;">
+        📲 Get Directions via WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.jpg" alt="Dark or Blue Lounge" class="footer-logo-img" />
+        <div class="footer-logo-name">DARK <span>OR</span> BLUE<br/><span style="font-size:0.75rem;color:rgba(240,244,255,0.35);font-family:var(--font-heading);letter-spacing:0.2em;">LOUNGE</span></div>
+      </div>
+      <p>Ntuzuma's premier lifestyle destination. Shisanyama, car wash, hubbly, beverages & elite entertainment since 2020.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#artists">Artists</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#specials">Menu & Deals</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Connect With Us</div>
+      <ul class="footer-links">
+        <li><a href="tel:+27742270872">+27 74 227 0872</a></li>
+        <li><a href="https://wa.me/27742270872" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        <li><span style="color:rgba(240,244,255,0.35);">92 Uxamu Dr, Ntuzuma</span></li>
+        <li><span style="color:rgba(240,244,255,0.35);">Durban, KZN 4360</span></li>
+      </ul>
+      <div class="footer-social" style="margin-top:1rem;">
+        <div class="social-icon" title="Instagram" onclick="window.open('https://www.instagram.com/darkorblueloungersa','_blank')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        <div class="social-icon" title="Facebook" onclick="window.open('https://www.facebook.com/darkorbluelounge','_blank')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <div class="social-icon" title="TikTok" onclick="window.open('https://vm.tiktok.com/ZS9RyNfoo2hwy-GEmf9/','_blank')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.85a8.27 8.27 0 004.84 1.55V6.96a4.84 4.84 0 01-1.07-.27z"/></svg>
+        </div>
+        <div class="social-icon" title="WhatsApp" onclick="window.open('https://wa.me/27742270872','_blank')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Dark or Blue Lounge. All rights reserved. Ntuzuma, Durban, KZN.</div>
+    <div class="footer-est">Est. 2020</div>
+  </div>
+</footer>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I'd%20like%20to%20book%20a%20table." class="wa-float" target="_blank" rel="noopener" title="Book on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- SETTINGS BUTTON -->
+<button class="settings-btn" id="settingsBtn" title="Admin Settings" onclick="openSettings()">
+  <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+  </svg>
+</button>
+
+<!-- SETTINGS OVERLAY -->
+<div class="settings-overlay" id="settingsOverlay" onclick="closeSettings()"></div>
+
+<!-- SETTINGS PANEL -->
+<div class="settings-panel" id="settingsPanel">
+  <div class="settings-header">
+    <div class="settings-header-title">⚙️ Admin Panel</div>
+    <button class="settings-close-x" onclick="closeSettings()">✕</button>
+  </div>
+
+  <!-- LOCK SCREEN -->
+  <div class="settings-lock" id="settingsLock">
+    <div class="settings-lock-title">Admin Access</div>
+    <label class="settings-lock-label">Enter Password</label>
+    <input type="password" class="settings-lock-input" id="settingsPassword" placeholder="Enter password" onkeydown="if(event.key==='Enter')unlockSettings()" />
+    <div class="settings-lock-error" id="settingsError">Incorrect password. Try again.</div>
+    <button class="settings-lock-btn" onclick="unlockSettings()">Unlock</button>
+  </div>
+
+  <!-- SETTINGS CONTENT (hidden until unlocked) -->
+  <div class="settings-content" id="settingsContent">
+    <p style="font-family:var(--font-heading);font-size:0.8rem;font-weight:600;color:var(--blue-light);letter-spacing:0.1em;">ADMIN MODE ACTIVE</p>
+
+    <div class="settings-section-title">Hero Section</div>
+    <div class="settings-field">
+      <label>Hero Tagline</label>
+      <input type="text" id="set-tagline" placeholder="Where the night comes alive." />
+    </div>
+
+    <div class="settings-section-title">Contact Info</div>
+    <div class="settings-field">
+      <label>WhatsApp Number</label>
+      <input type="text" id="set-phone" placeholder="+27742270872" />
+    </div>
+
+    <div class="settings-section-title">Events</div>
+    <div class="settings-field">
+      <label>Event 1 Name</label>
+      <input type="text" id="set-event1" placeholder="Gin & Vodka Sundays" />
+    </div>
+    <div class="settings-field">
+      <label>Event 2 Name</label>
+      <input type="text" id="set-event2" placeholder="Friday Night Takeover" />
+    </div>
+    <div class="settings-field">
+      <label>Event 3 Name</label>
+      <input type="text" id="set-event3" placeholder="Shisanyama Saturday" />
+    </div>
+
+    <div class="settings-section-title">Artists</div>
+    <div class="settings-field">
+      <label>Artist 1 Name</label>
+      <input type="text" id="set-artist1" placeholder="Featured Artist" />
+    </div>
+    <div class="settings-field">
+      <label>Artist 2 Name</label>
+      <input type="text" id="set-artist2" placeholder="Resident DJ" />
+    </div>
+    <div class="settings-field">
+      <label>Artist 3 Name</label>
+      <input type="text" id="set-artist3" placeholder="Headliner" />
+    </div>
+    <div class="settings-field">
+      <label>Artist 4 Name</label>
+      <input type="text" id="set-artist4" placeholder="Special Guest" />
+    </div>
+    <div class="settings-field">
+      <label>Artist 5 Name</label>
+      <input type="text" id="set-artist5" placeholder="Rising Star" />
+    </div>
+
+    <div class="settings-section-title">Announcements</div>
+    <div class="settings-field">
+      <label>Banner Message (leave empty to hide)</label>
+      <input type="text" id="set-banner" placeholder="e.g. This Friday: Special Guest Artist" />
+    </div>
+
+    <button class="settings-save-btn" onclick="applySettings()">💾 Apply Changes</button>
+    <button onclick="lockSettings()" style="width:100%;margin-top:0.5rem;font-family:var(--font-heading);font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.6rem;background:transparent;border:1px solid var(--border);color:var(--white-dim);border-radius:2px;cursor:pointer;">🔒 Lock & Close</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- ANNOUNCEMENT BANNER -->
+<div id="announcementBanner" style="display:none;position:fixed;top:0;left:0;right:0;z-index:1100;background:var(--blue);color:#fff;text-align:center;padding:0.5rem 3rem;font-family:var(--font-heading);font-size:0.85rem;font-weight:600;letter-spacing:0.08em;">
+  <span id="bannerText"></span>
+  <button onclick="document.getElementById('announcementBanner').style.display='none'" style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);background:none;border:none;color:#fff;font-size:1.2rem;cursor:pointer;line-height:1;">×</button>
+</div>
+
+<script>
+  // ===== REVIEWS DATA =====
+  let reviews = [
+    { name: 'Khulekani M.', stars: 4, text: 'Nice music and friendly staff. Great vibe overall!', time: '2 years ago', initials: 'KM' },
+    { name: 'Collen B.', stars: 5, text: 'Good food and excellent service. Will definitely be back!', time: '4 months ago', initials: 'CB' },
+    { name: 'Sphesihle M.', stars: 5, text: 'Nice place to chill with friends. Highly recommend!', time: '3 years ago', initials: 'SM' },
+    { name: 'Gcina G.', stars: 5, text: 'Good food and great service. One of the best spots in Ntuzuma.', time: '1 year ago', initials: 'GG' },
+    { name: 'Remeques G.', stars: 5, text: 'A Blast! Amazing atmosphere and great prices for R50–100.', time: '2 years ago', initials: 'RG' },
+    { name: 'Honey S.', stars: 5, text: 'Nice place. Great ambiance and friendly people everywhere.', time: '3 years ago', initials: 'HS' },
+    { name: 'Smiso', stars: 4, text: 'Decent experience. Worth the price range.', time: '5 months ago', initials: 'SM' },
+    { name: 'Simphiwe K.', stars: 4, text: 'Food was good, service was great. Will be back soon!', time: '11 months ago', initials: 'SK' },
+    { name: 'Ayanda J.', stars: 5, text: 'Food 4/5, Service 5/5. Absolutely loved the energy here!', time: '1 year ago', initials: 'AJ' },
+    { name: 'Nkosiyazi M.', stars: 5, text: 'Great spot! The entertainment was top-notch. Loved every moment.', time: '2 years ago', initials: 'NM' },
+  ];
+
+  let selectedStars = 0;
+
+  function renderStars(n) {
+    return '★'.repeat(n) + '☆'.repeat(5 - n);
+  }
+
+  function buildReviewCard(r) {
+    return `
+      <div class="review-notification">
+        <div class="review-notif-header">
+          <div class="review-avatar">${r.initials}</div>
+          <div>
+            <div class="review-name">${r.name}</div>
+            <div class="review-stars">${renderStars(r.stars)}</div>
+          </div>
+        </div>
+        <div class="review-text">"${r.text}"</div>
+        <div class="review-time">${r.time}</div>
+      </div>`;
+  }
+
+  function renderTicker() {
+    const ticker = document.getElementById('reviewsTicker');
+    // Double the reviews for seamless loop
+    const allCards = [...reviews, ...reviews].map(buildReviewCard).join('');
+    ticker.innerHTML = allCards;
+  }
+
+  renderTicker();
+
+  // ===== REVIEW FORM =====
+  function toggleReviewForm() {
+    const form = document.getElementById('reviewForm');
+    form.classList.toggle('open');
+  }
+
+  function setStars(n) {
+    selectedStars = n;
+    document.querySelectorAll('.star-btn').forEach((btn, i) => {
+      btn.classList.toggle('active', i < n);
+    });
+  }
+
+  function submitReview() {
+    const name = document.getElementById('reviewName').value.trim();
+    const text = document.getElementById('reviewText').value.trim();
+    if (!name || !text || !selectedStars) {
+      showToast('Please fill in all fields and select a rating.');
+      return;
+    }
+    const initials = name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
+    reviews.unshift({ name, stars: selectedStars, text, time: 'Just now', initials });
+    renderTicker();
+    document.getElementById('reviewName').value = '';
+    document.getElementById('reviewText').value = '';
+    setStars(0);
+    document.getElementById('reviewForm').classList.remove('open');
+    showToast('Thank you for your review! 🙏');
+  }
+
+  // ===== NAV SCROLL =====
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // ===== HAMBURGER =====
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.add('open');
+  });
+  document.getElementById('mobileClose').addEventListener('click', closeMobile);
+  function closeMobile() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+
+  // ===== REVEAL ON SCROLL =====
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // ===== SETTINGS =====
+  let settingsUnlocked = false;
+  const SETTINGS_PASSWORD = 'd4rk';
+
+  function openSettings() {
+    document.getElementById('settingsPanel').classList.add('open');
+    document.getElementById('settingsOverlay').classList.add('open');
+    if (!settingsUnlocked) {
+      document.getElementById('settingsPassword').focus();
+    }
+  }
+
+  function closeSettings() {
+    document.getElementById('settingsPanel').classList.remove('open');
+    document.getElementById('settingsOverlay').classList.remove('open');
+  }
+
+  function unlockSettings() {
+    const pw = document.getElementById('settingsPassword').value;
+    if (pw === SETTINGS_PASSWORD) {
+      settingsUnlocked = true;
+      document.getElementById('settingsLock').style.display = 'none';
+      document.getElementById('settingsContent').classList.add('unlocked');
+      document.getElementById('settingsError').style.display = 'none';
+    } else {
+      document.getElementById('settingsError').style.display = 'block';
+      document.getElementById('settingsPassword').value = '';
+      document.getElementById('settingsPassword').focus();
+    }
+  }
+
+  function lockSettings() {
+    settingsUnlocked = false;
+    document.getElementById('settingsLock').style.display = 'flex';
+    document.getElementById('settingsContent').classList.remove('unlocked');
+    document.getElementById('settingsPassword').value = '';
+    closeSettings();
+  }
+
+  function applySettings() {
+    // Tagline
+    const tagline = document.getElementById('set-tagline').value.trim();
+    if (tagline) {
+      const el = document.querySelector('.hero-tagline');
+      if (el) el.innerHTML = `<strong>${tagline}</strong>`;
+    }
+    // Artist names
+    ['1','2','3','4','5'].forEach(n => {
+      const val = document.getElementById('set-artist' + n).value.trim();
+      if (val) {
+        const el = document.getElementById('artist' + n + '-name');
+        if (el) el.textContent = val;
+      }
+    });
+    // Events
+    const eventItems = document.querySelectorAll('.event-name');
+    ['1','2','3'].forEach((n, i) => {
+      const val = document.getElementById('set-event' + n).value.trim();
+      if (val && eventItems[i]) eventItems[i].textContent = val;
+    });
+    // Banner
+    const banner = document.getElementById('set-banner').value.trim();
+    const bannerEl = document.getElementById('announcementBanner');
+    if (banner) {
+      document.getElementById('bannerText').textContent = banner;
+      bannerEl.style.display = 'block';
+      document.body.style.paddingTop = '36px';
+    } else {
+      bannerEl.style.display = 'none';
+      document.body.style.paddingTop = '';
+    }
+    showToast('Changes applied successfully! ✅');
+    closeSettings();
+  }
+
+  // ===== TOAST =====
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3200);
+  }
+</script>
+</body>
+</html>
