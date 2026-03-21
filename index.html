@@ -1,2423 +1,1842 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dark or Blue Lounge | Premier Nightlife & Entertainment — Ntuzuma, Durban</title>
-  <meta name="description" content="Dark or Blue Lounge — Ntuzuma's most elite nightlife destination. Shisanyama, Car Wash, Hubbly, Beverages & live entertainment. Book your table now." />
-  <meta name="keywords" content="shisanyama Ntuzuma, lounge near me, nightlife Ntuzuma, car wash Ntuzuma, entertainment venue Durban, Dark or Blue Lounge, township lifestyle venue" />
-  <meta property="og:title" content="Dark or Blue Lounge | Premier Nightlife — Ntuzuma" />
-  <meta property="og:description" content="Where the night comes alive. Elite shisanyama, hubbly, beverages & live entertainment in Ntuzuma, Durban." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="hero-bg.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "NightClub",
-    "name": "Dark or Blue Lounge",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "92 Uxamu Dr, Ntuzuma D - Lindelani",
-      "addressLocality": "Ntuzuma",
-      "postalCode": "4360",
-      "addressCountry": "ZA"
-    },
-    "telephone": "+27742270872",
-    "openingHours": "Mo-Su 00:00-00:00",
-    "priceRange": "R50-R500+"
-  }
-  </script>
-  <style>
-    :root {
-      --black: #050508;
-      --dark: #0a0a12;
-      --dark2: #0f0f1a;
-      --card-bg: #0d0d18;
-      --blue: #1a6ef5;
-      --blue-glow: #1a6ef5;
-      --blue-light: #4d90f7;
-      --blue-dim: #0d3a8a;
-      --white: #f0f4ff;
-      --white-dim: rgba(240,244,255,0.7);
-      --white-faint: rgba(240,244,255,0.12);
-      --border: rgba(26,110,245,0.25);
-      --font-display: 'Bebas Neue', sans-serif;
-      --font-heading: 'Rajdhani', sans-serif;
-      --font-body: 'Inter', sans-serif;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      background: var(--black);
-      color: var(--white);
-      font-family: var(--font-body);
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }
-    img { max-width: 100%; display: block; }
-    a { text-decoration: none; color: inherit; }
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>Dark or Blue Lounge | Premium Nightlife · Live Artists · Shisanyama · Ntuzuma, Durban</title>
+<meta name="description" content="Dark or Blue Lounge — Ntuzuma's most prestigious lifestyle destination. Elite shisanyama, hubbly, top DJs, live artists & unforgettable nightlife. 92 Uxamu Drive."/>
+<meta name="keywords" content="Dark or Blue Lounge, shisanyama Ntuzuma, lounge Ntuzuma, nightlife Durban, entertainment venue Durban, live artists Ntuzuma, DJ events Durban, hubbly lounge Ntuzuma"/>
+<meta property="og:title" content="Dark or Blue Lounge | Where Top Artists Perform"/>
+<meta property="og:description" content="Ntuzuma's elite lifestyle destination. Top artists, premium shisanyama, hubbly & live entertainment."/>
+<meta property="og:image" content="hero-bg.jpg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="en_ZA"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+/* ═══════════════════════════════════════════════
+   DESIGN TOKENS — WHITE LUXURY / BLUE ACCENT
+═══════════════════════════════════════════════ */
+:root{
+  /* Palette */
+  --white:    #ffffff;
+  --off:      #f8f8f6;
+  --surface:  #f2f2ef;
+  --border:   #e8e8e4;
+  --border2:  #d4d4ce;
+  --ink-5:    #f5f5f3;
+  --ink-10:   #ebebea;
+  --ink-20:   #d6d6d4;
+  --ink-40:   #aaaaaa;
+  --ink-60:   #777776;
+  --ink-80:   #444443;
+  --ink-90:   #222221;
+  --ink:      #0e0e0d;
 
-    /* ===== SCROLLBAR ===== */
-    ::-webkit-scrollbar { width: 4px; }
-    ::-webkit-scrollbar-track { background: var(--black); }
-    ::-webkit-scrollbar-thumb { background: var(--blue-dim); border-radius: 2px; }
+  --blue:     #0055ff;
+  --blue-mid: #0044cc;
+  --blue-lt:  #3377ff;
+  --blue-pale:#e8f0ff;
+  --blue-mist:#f0f5ff;
 
-    /* ===== NOISE OVERLAY ===== */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-      opacity: 0.03;
-      pointer-events: none;
-      z-index: 9999;
-    }
+  --gold:     #b8964a;
+  --gold-lt:  #f0e6cc;
 
-    /* ===== NAV ===== */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 1000;
-      padding: 1rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      transition: background 0.4s, backdrop-filter 0.4s;
-    }
-    nav.scrolled {
-      background: rgba(5,5,8,0.92);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-    .nav-logo img {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      border: 1.5px solid var(--blue-dim);
-    }
-    .nav-logo-text {
-      font-family: var(--font-display);
-      font-size: 1.2rem;
-      letter-spacing: 0.05em;
-      color: var(--white);
-      line-height: 1;
-    }
-    .nav-logo-text span { color: var(--blue-light); }
-    .nav-links {
-      display: none;
-      gap: 2rem;
-      list-style: none;
-    }
-    .nav-links a {
-      font-family: var(--font-heading);
-      font-size: 0.95rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--white-dim);
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--blue-light); }
-    .nav-cta {
-      font-family: var(--font-heading);
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.5rem 1.2rem;
-      background: var(--blue);
-      border-radius: 2px;
-      color: #fff;
-      transition: background 0.2s, box-shadow 0.2s;
-    }
-    .nav-cta:hover {
-      background: var(--blue-light);
-      box-shadow: 0 0 18px rgba(26,110,245,0.5);
-    }
-    .hamburger {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 4px;
-    }
-    .hamburger span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: var(--white);
-      border-radius: 1px;
-      transition: all 0.3s;
-    }
-    @media (min-width: 768px) {
-      .nav-links { display: flex; }
-      .hamburger { display: none; }
-      nav { padding: 1rem 3rem; }
-    }
+  /* Typography */
+  --serif:    'Cormorant Garamond', Georgia, serif;
+  --sans:     'Outfit', system-ui, sans-serif;
+  --mono:     'DM Mono', monospace;
 
-    /* MOBILE MENU */
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(5,5,8,0.98);
-      z-index: 999;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .mobile-menu.open { display: flex; }
-    .mobile-menu a {
-      font-family: var(--font-display);
-      font-size: 2.5rem;
-      letter-spacing: 0.05em;
-      color: var(--white);
-      transition: color 0.2s;
-    }
-    .mobile-menu a:hover { color: var(--blue-light); }
-    .mobile-close {
-      position: absolute;
-      top: 1.5rem; right: 1.5rem;
-      font-size: 2rem;
-      color: var(--white-dim);
-      cursor: pointer;
-      font-family: var(--font-body);
-      font-weight: 300;
-    }
+  /* Spacing system (8px base) */
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px;
+  --s6:24px; --s7:32px; --s8:40px; --s9:48px; --s10:64px;
+  --s11:80px; --s12:96px; --s13:120px; --s14:160px;
 
-    /* ===== HERO ===== */
-    #hero {
-      position: relative;
-      width: 100%;
-      min-height: 100svh;
-      display: flex;
-      align-items: flex-end;
-      padding-bottom: 8vh;
-      overflow: hidden;
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background-image: url('dining.jpg');
-      background-size: cover;
-      background-position: center top;
-      transform: scale(1.06);
-      animation: heroZoom 18s ease-in-out infinite alternate;
-    }
-    @keyframes heroZoom {
-      from { transform: scale(1.06); }
-      to { transform: scale(1.12); }
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        rgba(5,5,8,0.3) 0%,
-        rgba(5,5,8,0.2) 30%,
-        rgba(5,5,8,0.65) 65%,
-        rgba(5,5,8,1) 100%
-      );
-    }
-    .hero-overlay-side {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        90deg,
-        rgba(5,5,8,0.85) 0%,
-        transparent 60%
-      );
-    }
-    .hero-blue-accent {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--blue), transparent);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      padding: 0 1.5rem;
-      max-width: 680px;
-    }
-    .hero-eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-      margin-bottom: 1rem;
-    }
-    .hero-eyebrow-line {
-      width: 36px;
-      height: 1.5px;
-      background: var(--blue);
-    }
-    .hero-eyebrow-text {
-      font-family: var(--font-heading);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--blue-light);
-    }
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: clamp(3.5rem, 14vw, 7rem);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
-      color: var(--white);
-      margin-bottom: 0.5rem;
-    }
-    .hero-title .blue { color: var(--blue-light); }
-    .hero-tagline {
-      font-family: var(--font-heading);
-      font-size: clamp(1.1rem, 3.5vw, 1.5rem);
-      font-weight: 400;
-      color: var(--white-dim);
-      letter-spacing: 0.05em;
-      margin-bottom: 2rem;
-      font-style: italic;
-    }
-    .hero-tagline strong {
-      color: var(--white);
-      font-weight: 600;
-      font-style: normal;
-    }
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-    }
-    .btn-primary {
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.85rem 2rem;
-      background: var(--blue);
-      color: #fff;
-      border-radius: 2px;
-      border: none;
-      cursor: pointer;
-      transition: all 0.25s;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .btn-primary:hover {
-      background: var(--blue-light);
-      box-shadow: 0 0 30px rgba(26,110,245,0.55);
-      transform: translateY(-1px);
-    }
-    .btn-outline {
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.85rem 2rem;
-      background: transparent;
-      color: var(--white);
-      border: 1.5px solid rgba(240,244,255,0.35);
-      border-radius: 2px;
-      cursor: pointer;
-      transition: all 0.25s;
-    }
-    .btn-outline:hover {
-      border-color: var(--blue-light);
-      color: var(--blue-light);
-      box-shadow: 0 0 20px rgba(26,110,245,0.2);
-    }
-    .hero-scroll-hint {
-      position: absolute;
-      bottom: 2rem;
-      right: 2rem;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .hero-scroll-hint span {
-      font-family: var(--font-heading);
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--white-dim);
-      writing-mode: vertical-rl;
-    }
-    .scroll-line {
-      width: 1px;
-      height: 50px;
-      background: linear-gradient(180deg, var(--blue), transparent);
-      animation: scrollPulse 2s ease-in-out infinite;
-    }
-    @keyframes scrollPulse {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 1; }
-    }
-    .hero-stats {
-      position: absolute;
-      bottom: 8vh;
-      right: 1.5rem;
-      z-index: 2;
-      display: none;
-      flex-direction: column;
-      gap: 1.5rem;
-      text-align: right;
-    }
-    .hero-stat-num {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      color: var(--blue-light);
-      line-height: 1;
-    }
-    .hero-stat-label {
-      font-family: var(--font-heading);
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--white-dim);
-    }
-    @media (min-width: 768px) {
-      .hero-content { padding: 0 4rem; }
-      .hero-stats { display: flex; right: 4rem; }
-    }
+  /* Radius */
+  --r-sm:6px; --r-md:12px; --r-lg:20px; --r-xl:32px; --r-full:999px;
 
-    /* ===== SECTION SHARED ===== */
-    section { padding: 5rem 1.5rem; }
-    @media (min-width: 768px) { section { padding: 6rem 3rem; } }
-    @media (min-width: 1024px) { section { padding: 7rem 5rem; } }
+  /* Shadows */
+  --shadow-xs: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+  --shadow-sm: 0 4px 12px rgba(0,0,0,.06), 0 2px 4px rgba(0,0,0,.04);
+  --shadow-md: 0 8px 24px rgba(0,0,0,.08), 0 4px 8px rgba(0,0,0,.04);
+  --shadow-lg: 0 20px 48px rgba(0,0,0,.10), 0 8px 16px rgba(0,0,0,.06);
+  --shadow-xl: 0 32px 80px rgba(0,0,0,.14), 0 12px 24px rgba(0,0,0,.08);
+  --shadow-blue: 0 8px 32px rgba(0,85,255,.18), 0 2px 8px rgba(0,85,255,.10);
+}
 
-    .section-label {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      margin-bottom: 0.8rem;
-    }
-    .section-label-line {
-      width: 30px;
-      height: 1.5px;
-      background: var(--blue);
-    }
-    .section-label-text {
-      font-family: var(--font-heading);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--blue-light);
-    }
-    .section-title {
-      font-family: var(--font-display);
-      font-size: clamp(2.2rem, 8vw, 4.5rem);
-      line-height: 0.95;
-      letter-spacing: 0.02em;
-      color: var(--white);
-      margin-bottom: 1.2rem;
-    }
-    .section-subtitle {
-      font-family: var(--font-body);
-      font-size: 1rem;
-      font-weight: 300;
-      color: var(--white-dim);
-      line-height: 1.75;
-      max-width: 560px;
-      margin-bottom: 3rem;
-    }
-    .blue-rule {
-      width: 60px;
-      height: 2px;
-      background: var(--blue);
-      margin-bottom: 2rem;
-    }
+/* ═══════════════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════════════ */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{
+  background:var(--white);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--off)}
+::-webkit-scrollbar-thumb{background:var(--blue);border-radius:2px}
 
-    /* ===== EXPERIENCES ===== */
-    #experiences { background: var(--dark); }
-    .exp-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-    }
-    @media (min-width: 500px) { .exp-grid { grid-template-columns: 1fr 1fr; } }
-    @media (min-width: 900px) { .exp-grid { grid-template-columns: repeat(5, 1fr); } }
+/* ═══════════════════════════════════════════════
+   UTILITY
+═══════════════════════════════════════════════ */
+.max{max-width:1200px;margin:0 auto}
+.tag{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--blue);
+  padding:var(--s2) var(--s4);border-radius:var(--r-full);
+  background:var(--blue-mist);border:1px solid rgba(0,85,255,.12)}
+.tag-dark{color:rgba(255,255,255,.7);background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.15)}
+.tag-dot{width:5px;height:5px;border-radius:50%;background:currentColor}
+.section-eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);margin-bottom:var(--s4)}
+.section-title{font-family:var(--serif);font-size:clamp(2.8rem,6vw,5.2rem);font-weight:600;line-height:.95;letter-spacing:-.01em;color:var(--ink);margin-bottom:var(--s6)}
+.section-title-light{color:var(--white)}
+.section-body{font-size:1.05rem;color:var(--ink-60);line-height:1.75;max-width:560px}
+.rule{width:40px;height:1.5px;background:var(--blue);margin:var(--s5) 0;display:block}
+.rule-center{margin:var(--s5) auto}
 
-    .exp-card {
-      background: var(--card-bg);
-      padding: 2rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.8rem;
-      transition: background 0.3s;
-      position: relative;
-      overflow: hidden;
-      cursor: default;
-    }
-    .exp-card::before {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 2px;
-      background: var(--blue);
-      transform: scaleX(0);
-      transition: transform 0.35s;
-      transform-origin: left;
-    }
-    .exp-card:hover { background: #111122; }
-    .exp-card:hover::before { transform: scaleX(1); }
-    .exp-card:hover .exp-icon { color: var(--blue-light); }
-    .exp-icon {
-      font-size: 2.2rem;
-      transition: color 0.3s;
-    }
-    .exp-name {
-      font-family: var(--font-heading);
-      font-size: 1.15rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--white);
-    }
-    .exp-desc {
-      font-family: var(--font-body);
-      font-size: 0.82rem;
-      font-weight: 300;
-      color: var(--white-dim);
-      line-height: 1.6;
-    }
+/* ═══════════════════════════════════════════════
+   REVEAL ANIMATIONS
+═══════════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal-up{opacity:0;transform:translateY(48px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.reveal-up.in{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
+.reveal-left.in{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(32px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
+.reveal-right.in{opacity:1;transform:translateX(0)}
+.reveal-scale{opacity:0;transform:scale(.96);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.reveal-scale.in{opacity:1;transform:scale(1)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+.d4{transition-delay:.32s}.d5{transition-delay:.40s}.d6{transition-delay:.48s}
 
-    /* ===== GALLERY ===== */
-    #gallery { background: var(--black); padding-bottom: 0; }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 3px;
-      margin-top: 3rem;
-    }
-    @media (min-width: 640px) {
-      .gallery-grid {
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 320px 320px;
-      }
-      .gallery-item:first-child { grid-row: 1 / 3; }
-    }
-    @media (min-width: 900px) {
-      .gallery-grid { grid-template-rows: 420px 420px; }
-    }
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      min-height: 240px;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94);
-    }
-    .gallery-item:hover img { transform: scale(1.06); }
-    .gallery-item-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 50%, rgba(5,5,8,0.75) 100%);
-      opacity: 0;
-      transition: opacity 0.4s;
-      display: flex;
-      align-items: flex-end;
-      padding: 1.5rem;
-    }
-    .gallery-item:hover .gallery-item-overlay { opacity: 1; }
-    .gallery-item-label {
-      font-family: var(--font-heading);
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--blue-light);
-    }
-    .gallery-cta-strip {
-      background: var(--blue);
-      padding: 1.5rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .gallery-cta-strip p {
-      font-family: var(--font-display);
-      font-size: clamp(1.2rem, 4vw, 1.8rem);
-      letter-spacing: 0.04em;
-      color: #fff;
-    }
-    .gallery-cta-strip a {
-      font-family: var(--font-heading);
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #fff;
-      border: 1.5px solid rgba(255,255,255,0.5);
-      padding: 0.6rem 1.4rem;
-      border-radius: 2px;
-      transition: all 0.2s;
-      white-space: nowrap;
-    }
-    .gallery-cta-strip a:hover {
-      background: rgba(255,255,255,0.15);
-      border-color: #fff;
-    }
+/* ═══════════════════════════════════════════════
+   STICKY BOOK BAR
+═══════════════════════════════════════════════ */
+.sticky-bar{
+  position:fixed;bottom:0;left:0;right:0;z-index:900;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(20px);
+  border-top:1px solid var(--border);
+  padding:var(--s3) var(--s6);
+  display:flex;align-items:center;justify-content:space-between;gap:var(--s4);
+  transform:translateY(100%);transition:transform .5s cubic-bezier(.22,1,.36,1);
+}
+.sticky-bar.show{transform:translateY(0)}
+.sticky-bar-left{display:flex;align-items:center;gap:var(--s3)}
+.sticky-bar-logo{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--ink)}
+.sticky-bar-sub{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40)}
+@media(max-width:500px){.sticky-bar-left{display:none}}
 
-    /* ===== ARTISTS ===== */
-    #artists { background: var(--dark2); }
-    .artists-intro-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 3rem;
-      margin-bottom: 4rem;
-    }
-    @media (min-width: 768px) {
-      .artists-intro-grid {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-      }
-    }
-    .artists-big-text {
-      font-family: var(--font-display);
-      font-size: clamp(3rem, 10vw, 6rem);
-      line-height: 0.9;
-      color: var(--white);
-      letter-spacing: 0.02em;
-    }
-    .artists-big-text .outline {
-      -webkit-text-stroke: 1px rgba(240,244,255,0.25);
-      color: transparent;
-    }
-    .artists-big-text .blue { color: var(--blue-light); }
-    .artists-para {
-      font-family: var(--font-body);
-      font-size: 1rem;
-      font-weight: 300;
-      color: var(--white-dim);
-      line-height: 1.8;
-    }
-    .artists-para strong {
-      color: var(--white);
-      font-weight: 500;
-    }
+/* ═══════════════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════════════ */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:950;
+  transition:all .4s cubic-bezier(.22,1,.36,1);
+  padding:0 var(--s7)}
+#nav.scrolled{
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);
+  box-shadow:var(--shadow-sm)}
+.nav-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  height:72px}
+.nav-logo{display:flex;align-items:center;gap:var(--s3);text-decoration:none}
+.nav-logo-mark{
+  width:36px;height:36px;border-radius:var(--r-md);
+  background:var(--ink);display:flex;align-items:center;justify-content:center;
+  overflow:hidden;flex-shrink:0}
+.nav-logo-mark img{width:100%;height:100%;object-fit:contain}
+.nav-logo-mark-fallback{
+  font-family:var(--serif);font-size:1rem;font-weight:600;
+  color:var(--white);letter-spacing:.02em}
+.nav-logo-text{line-height:1.1}
+.nav-logo-name{
+  display:block;font-family:var(--serif);font-size:1.05rem;
+  font-weight:600;color:var(--ink);letter-spacing:.01em}
+.nav-logo-sub{
+  display:block;font-family:var(--mono);font-size:.58rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-40)}
+.nav-links{display:flex;align-items:center;gap:var(--s7);list-style:none}
+.nav-links a{
+  font-size:.82rem;font-weight:500;letter-spacing:.04em;
+  color:var(--ink-60);transition:color .25s;position:relative}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;
+  background:var(--blue);transition:width .3s cubic-bezier(.22,1,.36,1)}
+.nav-links a:hover{color:var(--ink)}.nav-links a:hover::after{width:100%}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  font-size:.82rem;font-weight:600;letter-spacing:.04em;
+  padding:10px 20px;border-radius:var(--r-full);
+  background:var(--ink);color:var(--white);
+  transition:all .3s cubic-bezier(.22,1,.36,1);
+  box-shadow:var(--shadow-sm)}
+.nav-cta:hover{background:var(--blue);box-shadow:var(--shadow-blue);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:var(--s2);cursor:pointer}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--ink);transition:all .3s;border-radius:2px}
+.mobile-menu{
+  display:none;position:absolute;top:100%;left:0;right:0;
+  background:var(--white);border-bottom:1px solid var(--border);
+  padding:var(--s6) var(--s7);flex-direction:column;gap:var(--s5);
+  box-shadow:var(--shadow-md)}
+.mobile-menu a,.mobile-menu button.mob-link{
+  font-size:.9rem;font-weight:500;color:var(--ink-80);
+  text-decoration:none;background:none;border:none;
+  text-align:left;cursor:pointer;font-family:var(--sans)}
+.mobile-menu.open{display:flex}
+@media(max-width:900px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}}
 
-    /* Artist cards */
-    .artists-showcase {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-    }
-    @media (min-width: 640px) { .artists-showcase { grid-template-columns: repeat(3, 1fr); } }
-    @media (min-width: 900px) { .artists-showcase { grid-template-columns: repeat(5, 1fr); } }
+/* ═══════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════ */
+#home{
+  position:relative;min-height:100svh;
+  display:flex;align-items:flex-end;
+  overflow:hidden;padding-bottom:var(--s13)}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-media-fallback{
+  width:100%;height:100%;
+  background:linear-gradient(160deg,#0a0a12 0%,#0d1a2e 40%,#0a1020 100%)}
+.hero-gradient{
+  position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(to top, rgba(0,0,0,.92) 0%, rgba(0,0,0,.6) 40%, rgba(0,0,0,.15) 100%),
+    linear-gradient(to right, rgba(0,0,0,.3) 0%, transparent 60%)}
+.hero-content{
+  position:relative;z-index:2;
+  padding:0 var(--s7) var(--s7);
+  max-width:1200px;margin:0 auto;width:100%}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:var(--s3);
+  margin-bottom:var(--s7);
+  opacity:0;animation:fadeSlideUp .9s .3s cubic-bezier(.22,1,.36,1) forwards}
+.hero-eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--blue-lt);flex-shrink:0}
+.hero-eyebrow span{font-family:var(--mono);font-size:.68rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.65)}
+.hero-headline{
+  font-family:var(--serif);
+  font-size:clamp(4rem,11vw,10rem);
+  font-weight:300;
+  line-height:.88;
+  letter-spacing:-.02em;
+  color:var(--white);
+  margin-bottom:var(--s6);
+  opacity:0;animation:fadeSlideUp .9s .5s cubic-bezier(.22,1,.36,1) forwards}
+.hero-headline em{font-style:normal;font-weight:600}
+.hero-headline .accent{
+  display:block;
+  background:linear-gradient(135deg,#fff 0%,rgba(100,160,255,.9) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{
+  font-size:clamp(1rem,2vw,1.2rem);
+  color:rgba(255,255,255,.6);
+  max-width:520px;line-height:1.7;
+  margin-bottom:var(--s8);
+  font-weight:300;
+  opacity:0;animation:fadeSlideUp .9s .7s cubic-bezier(.22,1,.36,1) forwards}
+.hero-sub strong{color:rgba(255,255,255,.9);font-weight:500}
+.hero-actions{
+  display:flex;flex-wrap:wrap;gap:var(--s4);
+  opacity:0;animation:fadeSlideUp .9s .85s cubic-bezier(.22,1,.36,1) forwards}
+.hero-pills{
+  display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s8);
+  opacity:0;animation:fadeSlideUp .9s 1s cubic-bezier(.22,1,.36,1) forwards}
+.hero-pill{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;
+  padding:var(--s2) var(--s4);border-radius:var(--r-full);
+  border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.6);
+  background:rgba(255,255,255,.06);backdrop-filter:blur(8px);
+  transition:all .3s}
+.hero-pill:hover{border-color:rgba(255,255,255,.4);color:rgba(255,255,255,.9);background:rgba(255,255,255,.12)}
+.hero-trust{
+  display:flex;flex-wrap:wrap;gap:var(--s6);margin-top:var(--s7);
+  opacity:0;animation:fadeSlideUp .9s 1.1s cubic-bezier(.22,1,.36,1) forwards}
+.trust-item{display:flex;align-items:center;gap:var(--s2)}
+.trust-item .t-val{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--white);line-height:1}
+.trust-item .t-lbl{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.hero-scroll{
+  position:absolute;bottom:var(--s8);right:var(--s8);z-index:2;
+  display:flex;flex-direction:column;align-items:center;gap:var(--s3);
+  opacity:0;animation:fadeSlideUp .9s 1.2s cubic-bezier(.22,1,.36,1) forwards}
+.scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,rgba(255,255,255,.4),transparent);animation:scrollPulse 2s ease-in-out infinite}
+.hero-scroll span{font-family:var(--mono);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35);writing-mode:vertical-lr}
+@media(max-width:768px){.hero-scroll{display:none}.hero-headline{font-size:clamp(3.2rem,12vw,5rem)}}
 
-    .artist-card {
-      position: relative;
-      aspect-ratio: 3/4;
-      overflow: hidden;
-      background: var(--card-bg);
-      cursor: pointer;
-    }
-    .artist-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
-      filter: grayscale(30%);
-    }
-    .artist-card:hover img {
-      transform: scale(1.08);
-      filter: grayscale(0%);
-    }
-    .artist-card-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        transparent 45%,
-        rgba(5,5,8,0.5) 70%,
-        rgba(5,5,8,0.92) 100%
-      );
-    }
-    .artist-card-glow {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at center bottom, rgba(26,110,245,0.2), transparent 70%);
-      opacity: 0;
-      transition: opacity 0.4s;
-    }
-    .artist-card:hover .artist-card-glow { opacity: 1; }
-    .artist-card-info {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      padding: 1.2rem 1rem;
-    }
-    .artist-card-name {
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 0.2rem;
-    }
-    .artist-card-tag {
-      font-family: var(--font-heading);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--blue-light);
-    }
-    .artist-card-border {
-      position: absolute;
-      inset: 0;
-      border: 1px solid transparent;
-      transition: border-color 0.3s;
-      pointer-events: none;
-    }
-    .artist-card:hover .artist-card-border { border-color: var(--blue-dim); }
-    .artists-bottom-bar {
-      margin-top: 3rem;
-      padding: 2rem;
-      background: var(--white-faint);
-      border: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .artists-bottom-bar p {
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      color: var(--white-dim);
-    }
-    .artists-bottom-bar p span { color: var(--white); }
+/* ═══════════════════════════════════════════════
+   TICKER
+═══════════════════════════════════════════════ */
+.ticker{
+  overflow:hidden;border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  background:var(--white);padding:var(--s4) 0}
+.ticker-track{display:flex;width:max-content;animation:ticker 30s linear infinite}
+.ticker-item{
+  display:flex;align-items:center;gap:var(--s4);
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-60);padding-right:var(--s9);
+  white-space:nowrap}
+.ticker-sep{color:var(--blue);font-size:.8rem}
+.ticker:hover .ticker-track{animation-play-state:paused}
 
-    /* ===== EVENTS ===== */
-    #events { background: var(--dark); }
-    .events-layout {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      align-items: start;
-    }
-    @media (min-width: 900px) {
-      .events-layout { grid-template-columns: 1fr 1fr; gap: 4rem; }
-    }
-    .events-list { display: flex; flex-direction: column; gap: 1px; }
-    .event-item {
-      background: var(--card-bg);
-      padding: 1.5rem;
-      border-left: 2px solid transparent;
-      transition: border-color 0.3s, background 0.3s;
-      cursor: default;
-    }
-    .event-item:hover {
-      border-left-color: var(--blue);
-      background: #111122;
-    }
-    .event-item-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .event-name {
-      font-family: var(--font-heading);
-      font-size: 1.05rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--white);
-    }
-    .event-badge {
-      font-family: var(--font-heading);
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.25rem 0.7rem;
-      background: rgba(26,110,245,0.15);
-      border: 1px solid rgba(26,110,245,0.35);
-      color: var(--blue-light);
-      border-radius: 1px;
-      white-space: nowrap;
-    }
-    .event-badge.hot {
-      background: rgba(220,50,50,0.12);
-      border-color: rgba(220,50,50,0.35);
-      color: #ff6b6b;
-    }
-    .event-detail {
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      font-weight: 300;
-      color: var(--white-dim);
-    }
-    .event-cta-block {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 2rem;
-    }
-    .event-cta-heading {
-      font-family: var(--font-display);
-      font-size: clamp(1.8rem, 5vw, 2.8rem);
-      color: var(--white);
-      letter-spacing: 0.03em;
-      margin-bottom: 0.8rem;
-    }
-    .event-cta-heading span { color: var(--blue-light); }
-    .event-cta-text {
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      font-weight: 300;
-      color: var(--white-dim);
-      line-height: 1.7;
-      margin-bottom: 1.5rem;
-    }
+/* ═══════════════════════════════════════════════
+   BUTTONS
+═══════════════════════════════════════════════ */
+.btn{
+  display:inline-flex;align-items:center;gap:var(--s3);
+  font-family:var(--sans);font-size:.85rem;font-weight:600;
+  letter-spacing:.03em;border-radius:var(--r-full);
+  transition:all .3s cubic-bezier(.22,1,.36,1);
+  white-space:nowrap;border:none;cursor:pointer}
+.btn-primary{
+  background:var(--blue);color:var(--white);
+  padding:14px 28px;box-shadow:var(--shadow-blue)}
+.btn-primary:hover{background:var(--blue-mid);box-shadow:0 12px 40px rgba(0,85,255,.28);transform:translateY(-2px) scale(1.01)}
+.btn-white{
+  background:var(--white);color:var(--ink);
+  padding:14px 28px;box-shadow:var(--shadow-md)}
+.btn-white:hover{background:var(--off);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.btn-outline-white{
+  background:transparent;color:var(--white);
+  padding:13px 28px;border:1px solid rgba(255,255,255,.35)}
+.btn-outline-white:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.7);transform:translateY(-1px)}
+.btn-outline{
+  background:transparent;color:var(--ink);
+  padding:13px 28px;border:1px solid var(--border2)}
+.btn-outline:hover{background:var(--ink);color:var(--white);border-color:var(--ink);transform:translateY(-1px)}
+.btn-wa{
+  background:linear-gradient(135deg,#1a9a6a,#25d366);color:var(--white);
+  padding:16px 32px;box-shadow:0 8px 28px rgba(37,211,102,.3);font-size:.9rem}
+.btn-wa:hover{box-shadow:0 14px 40px rgba(37,211,102,.45);transform:translateY(-3px) scale(1.01)}
+.btn-icon{width:18px;height:18px;flex-shrink:0}
+.btn-arrow{font-size:1.1rem;transition:transform .3s}
+.btn:hover .btn-arrow{transform:translateX(3px)}
 
-    /* ===== MENU / SPECIALS ===== */
-    #specials { background: var(--black); }
-    .specials-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    @media (min-width: 640px) { .specials-grid { grid-template-columns: 1fr 1fr; } }
-    @media (min-width: 900px) { .specials-grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
-    .special-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 1.5rem;
-      position: relative;
-      overflow: hidden;
-      transition: border-color 0.3s, transform 0.2s;
-    }
-    .special-card:hover {
-      border-color: var(--blue);
-      transform: translateY(-2px);
-    }
-    .special-card::after {
-      content: '';
-      position: absolute;
-      top: 0; right: 0;
-      width: 60px; height: 60px;
-      background: radial-gradient(ellipse at top right, rgba(26,110,245,0.12), transparent);
-    }
-    .special-price {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      color: var(--blue-light);
-      margin-bottom: 0.3rem;
-    }
-    .special-name {
-      font-family: var(--font-heading);
-      font-size: 0.95rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 0.5rem;
-    }
-    .special-includes {
-      font-family: var(--font-body);
-      font-size: 0.8rem;
-      font-weight: 300;
-      color: var(--white-dim);
-      line-height: 1.6;
-    }
-    .special-tag {
-      display: inline-block;
-      margin-top: 0.8rem;
-      font-family: var(--font-heading);
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.2rem 0.6rem;
-      background: rgba(26,110,245,0.12);
-      border: 1px solid rgba(26,110,245,0.25);
-      color: var(--blue-light);
-    }
+/* ═══════════════════════════════════════════════
+   EXPERIENCES SECTION
+═══════════════════════════════════════════════ */
+#experiences{padding:var(--s14) var(--s7);background:var(--white)}
+.exp-header{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:var(--s8);align-items:end;margin-bottom:var(--s12)}
+@media(max-width:768px){.exp-header{grid-template-columns:1fr}.exp-header-right{display:none}}
+.exp-header-right{text-align:right}
+.exp-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:1px;background:var(--border)}
+@media(max-width:1000px){.exp-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.exp-grid{grid-template-columns:repeat(2,1fr)}}
+.exp-card{
+  background:var(--white);
+  padding:var(--s9) var(--s7);
+  display:flex;flex-direction:column;gap:var(--s5);
+  transition:all .4s cubic-bezier(.22,1,.36,1);
+  position:relative;overflow:hidden;cursor:default}
+.exp-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,var(--blue-mist),transparent);
+  opacity:0;transition:opacity .4s}
+.exp-card:hover{background:var(--ink);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.exp-card:hover::before{opacity:0}
+.exp-card:hover .exp-icon{color:var(--white)}
+.exp-card:hover .exp-tag-lbl{color:rgba(255,255,255,.45)}
+.exp-card:hover .exp-name{color:var(--white)}
+.exp-card:hover .exp-desc{color:rgba(255,255,255,.55)}
+.exp-icon{font-size:2rem;transition:all .4s;position:relative;z-index:1}
+.exp-tag-lbl{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--blue);
+  transition:color .4s;position:relative;z-index:1}
+.exp-name{
+  font-family:var(--serif);font-size:1.5rem;font-weight:600;
+  color:var(--ink);transition:color .4s;
+  line-height:1.1;position:relative;z-index:1}
+.exp-desc{
+  font-size:.85rem;color:var(--ink-60);line-height:1.65;
+  transition:color .4s;position:relative;z-index:1}
 
-    /* ===== BOOKING ===== */
-    #booking {
-      background: var(--dark2);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    #booking::before {
-      content: '';
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      width: 600px; height: 600px;
-      background: radial-gradient(ellipse, rgba(26,110,245,0.08), transparent 70%);
-      pointer-events: none;
-    }
-    .booking-content { position: relative; z-index: 1; }
-    .wa-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.7rem;
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 1.1rem 2.5rem;
-      background: #25d366;
-      color: #fff;
-      border-radius: 2px;
-      margin-top: 2rem;
-      transition: all 0.25s;
-      border: none;
-      cursor: pointer;
-    }
-    .wa-btn:hover {
-      background: #1db954;
-      box-shadow: 0 0 30px rgba(37,211,102,0.4);
-      transform: translateY(-2px);
-    }
-    .wa-icon {
-      width: 22px;
-      height: 22px;
-      fill: #fff;
-    }
-    .or-divider {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin: 2rem auto;
-      max-width: 300px;
-    }
-    .or-divider-line { flex: 1; height: 1px; background: var(--border); }
-    .or-divider-text {
-      font-family: var(--font-heading);
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      color: var(--white-dim);
-    }
+/* ═══════════════════════════════════════════════
+   GALLERY / LIFESTYLE SECTION
+═══════════════════════════════════════════════ */
+#gallery{padding:var(--s14) var(--s7);background:var(--off)}
+.gallery-header{text-align:center;margin-bottom:var(--s11)}
+.gallery-mosaic{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr;
+  grid-template-rows:320px 200px;
+  gap:var(--s3)}
+@media(max-width:900px){.gallery-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:240px 200px 200px}}
+@media(max-width:580px){.gallery-mosaic{grid-template-columns:1fr;grid-template-rows:auto}}
+.gallery-cell{
+  position:relative;border-radius:var(--r-lg);
+  overflow:hidden;cursor:default;background:var(--surface)}
+.gallery-cell:first-child{grid-row:1/3}
+@media(max-width:900px){.gallery-cell:first-child{grid-row:auto}}
+.gallery-cell img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .7s cubic-bezier(.22,1,.36,1)}
+.gallery-cell:hover img{transform:scale(1.06)}
+.gallery-cell-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,.7) 0%,rgba(0,0,0,.15) 50%,transparent 100%);
+  transition:opacity .4s}
+.gallery-cell:hover .gallery-cell-overlay{opacity:.8}
+.gallery-caption{position:absolute;bottom:0;left:0;right:0;padding:var(--s7) var(--s6)}
+.gallery-caption .eyebrow{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:var(--s2)}
+.gallery-caption h3{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--white);line-height:1.1}
+.gallery-cell-fallback{
+  width:100%;height:100%;min-height:220px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--s3)}
+.gcf-1{background:linear-gradient(135deg,#0d1a2e,#1a2840)}
+.gcf-2{background:linear-gradient(135deg,#111827,#1f2937)}
+.gcf-3{background:linear-gradient(135deg,#0a1628,#162034)}
+.gcf-4{background:linear-gradient(135deg,#141e2e,#0d1520)}
+.gcf-5{background:linear-gradient(135deg,#0e1a28,#1a2538)}
+.gcf-icon{font-size:2.5rem;opacity:.3}
+.gcf-text{font-family:var(--serif);font-size:1.1rem;color:rgba(255,255,255,.3);letter-spacing:.05em}
+.stats-band{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:var(--s3);margin-top:var(--s7)}
+@media(max-width:700px){.stats-band{grid-template-columns:repeat(2,1fr)}}
+.stat-card{
+  background:var(--white);border-radius:var(--r-lg);
+  padding:var(--s7) var(--s6);text-align:center;
+  box-shadow:var(--shadow-xs);border:1px solid var(--border);
+  transition:all .3s cubic-bezier(.22,1,.36,1)}
+.stat-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);border-color:var(--blue)}
+.stat-card .s-num{
+  font-family:var(--serif);font-size:2.8rem;font-weight:600;
+  color:var(--blue);line-height:1;display:block;margin-bottom:var(--s2)}
+.stat-card .s-lbl{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-40)}
 
-    /* ===== REVIEWS ===== */
-    #reviews { background: var(--dark); }
-    .reviews-ticker-wrap {
-      overflow: hidden;
-      position: relative;
-      margin-top: 2rem;
-    }
-    .reviews-ticker-wrap::before,
-    .reviews-ticker-wrap::after {
-      content: '';
-      position: absolute;
-      top: 0; bottom: 0;
-      width: 80px;
-      z-index: 2;
-      pointer-events: none;
-    }
-    .reviews-ticker-wrap::before {
-      left: 0;
-      background: linear-gradient(90deg, var(--dark), transparent);
-    }
-    .reviews-ticker-wrap::after {
-      right: 0;
-      background: linear-gradient(270deg, var(--dark), transparent);
-    }
-    .reviews-ticker {
-      display: flex;
-      gap: 1rem;
-      animation: ticker 30s linear infinite;
-      width: max-content;
-    }
-    .reviews-ticker:hover { animation-play-state: paused; }
-    @keyframes ticker {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
-    .review-notification {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 1.2rem 1.4rem;
-      min-width: 260px;
-      max-width: 280px;
-      flex-shrink: 0;
-      position: relative;
-    }
-    .review-notification::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 3px;
-      height: 100%;
-      background: var(--blue);
-    }
-    .review-notif-header {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 0.7rem;
-    }
-    .review-avatar {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: var(--blue-dim);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-heading);
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--blue-light);
-      flex-shrink: 0;
-    }
-    .review-name {
-      font-family: var(--font-heading);
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--white);
-    }
-    .review-stars {
-      font-size: 0.75rem;
-      color: #f5c518;
-      letter-spacing: 1px;
-    }
-    .review-text {
-      font-family: var(--font-body);
-      font-size: 0.82rem;
-      font-weight: 300;
-      color: var(--white-dim);
-      line-height: 1.6;
-    }
-    .review-time {
-      font-family: var(--font-heading);
-      font-size: 0.68rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      color: rgba(240,244,255,0.3);
-      margin-top: 0.5rem;
-    }
+/* ═══════════════════════════════════════════════
+   ARTISTS — PREMIUM SHOWCASE
+═══════════════════════════════════════════════ */
+#artists{
+  padding:var(--s14) var(--s7);
+  background:var(--ink);
+  position:relative;overflow:hidden}
+.artists-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 20% 40%,rgba(0,85,255,.15) 0%,transparent 55%),
+    radial-gradient(ellipse at 80% 60%,rgba(0,85,255,.08) 0%,transparent 50%),
+    var(--ink)}
+.artists-header{
+  display:flex;flex-wrap:wrap;align-items:flex-end;
+  justify-content:space-between;gap:var(--s8);
+  margin-bottom:var(--s12);position:relative;z-index:2}
+.artists-header-left .section-eyebrow{color:rgba(0,120,255,.85)}
+.artists-header-right{max-width:360px}
+.artists-header-right p{font-size:.95rem;color:rgba(255,255,255,.5);line-height:1.75}
+.artists-header-right strong{color:rgba(255,255,255,.8);font-weight:500}
 
-    /* ADD REVIEW */
-    .add-review-section { margin-top: 3rem; }
-    .add-review-toggle {
-      font-family: var(--font-heading);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.8rem 1.8rem;
-      background: transparent;
-      border: 1.5px solid var(--border);
-      color: var(--white-dim);
-      border-radius: 2px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .add-review-toggle:hover {
-      border-color: var(--blue-light);
-      color: var(--blue-light);
-    }
-    .review-form-wrap {
-      display: none;
-      margin-top: 1.5rem;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 2rem;
-      max-width: 500px;
-    }
-    .review-form-wrap.open { display: block; }
-    .form-group { margin-bottom: 1rem; }
-    .form-label {
-      display: block;
-      font-family: var(--font-heading);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--white-dim);
-      margin-bottom: 0.4rem;
-    }
-    .form-input,
-    .form-textarea {
-      width: 100%;
-      background: rgba(240,244,255,0.04);
-      border: 1px solid var(--border);
-      color: var(--white);
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      padding: 0.7rem 1rem;
-      border-radius: 2px;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .form-input:focus, .form-textarea:focus { border-color: var(--blue); }
-    .form-textarea { min-height: 100px; resize: vertical; }
-    .star-select {
-      display: flex;
-      gap: 0.4rem;
-      margin-top: 0.3rem;
-    }
-    .star-btn {
-      font-size: 1.4rem;
-      cursor: pointer;
-      color: rgba(240,244,255,0.2);
-      transition: color 0.15s;
-      background: none;
-      border: none;
-      padding: 0;
-    }
-    .star-btn.active { color: #f5c518; }
-    .form-submit {
-      font-family: var(--font-heading);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.75rem 2rem;
-      background: var(--blue);
-      color: #fff;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .form-submit:hover { background: var(--blue-light); }
+/* MASONRY-STYLE GRID */
+.artists-masonry{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  grid-template-rows:440px 280px;
+  gap:var(--s3);
+  position:relative;z-index:2}
+@media(max-width:1000px){.artists-masonry{grid-template-columns:1fr 1fr;grid-template-rows:360px 280px 280px}}
+@media(max-width:580px){.artists-masonry{grid-template-columns:1fr;grid-template-rows:auto}}
 
-    /* ===== LOCATION ===== */
-    #location { background: var(--black); }
-    .location-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      align-items: stretch;
-      margin-top: 2rem;
-    }
-    @media (min-width: 768px) { .location-grid { grid-template-columns: 1fr 1fr; } }
-    .map-placeholder {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      min-height: 300px;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .map-placeholder iframe {
-      width: 100%;
-      height: 100%;
-      min-height: 300px;
-      border: none;
-      filter: grayscale(80%) invert(90%) hue-rotate(180deg);
-      opacity: 0.6;
-    }
-    .map-overlay-text {
-      position: absolute;
-      bottom: 1.5rem;
-      left: 1.5rem;
-      background: rgba(5,5,8,0.85);
-      border: 1px solid var(--border);
-      padding: 1rem 1.2rem;
-      backdrop-filter: blur(10px);
-    }
-    .map-overlay-name {
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--white);
-    }
-    .map-overlay-addr {
-      font-family: var(--font-body);
-      font-size: 0.8rem;
-      font-weight: 300;
-      color: var(--white-dim);
-      margin-top: 0.2rem;
-    }
-    .location-info {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    .location-detail {
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-    }
-    .location-detail-icon {
-      font-size: 1.4rem;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    .location-detail-label {
-      font-family: var(--font-heading);
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--blue-light);
-      margin-bottom: 0.2rem;
-    }
-    .location-detail-value {
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      color: var(--white);
-    }
+.artist-card{
+  position:relative;border-radius:var(--r-lg);
+  overflow:hidden;cursor:default}
+.artist-card:nth-child(1){grid-row:1/3}
+@media(max-width:1000px){.artist-card:nth-child(1){grid-row:auto;height:360px}}
+@media(max-width:580px){.artist-card:nth-child(1){height:300px}}
+.artist-card:nth-child(n+2){height:auto}
 
-    /* ===== FOOTER ===== */
-    footer {
-      background: #030305;
-      border-top: 1px solid var(--border);
-      padding: 3rem 1.5rem 2rem;
-    }
-    @media (min-width: 768px) { footer { padding: 4rem 3rem 2rem; } }
-    .footer-top {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2.5rem;
-      margin-bottom: 3rem;
-    }
-    @media (min-width: 640px) { .footer-top { grid-template-columns: 1fr 1fr; } }
-    @media (min-width: 900px) { .footer-top { grid-template-columns: 2fr 1fr 1fr; } }
-    .footer-brand p {
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      font-weight: 300;
-      color: rgba(240,244,255,0.45);
-      line-height: 1.7;
-      margin-top: 0.8rem;
-      max-width: 300px;
-    }
-    .footer-logo-wrap {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-    .footer-logo-img {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 1px solid var(--blue-dim);
-    }
-    .footer-logo-name {
-      font-family: var(--font-display);
-      font-size: 1.3rem;
-      letter-spacing: 0.04em;
-      color: var(--white);
-    }
-    .footer-logo-name span { color: var(--blue-light); }
-    .footer-col-title {
-      font-family: var(--font-heading);
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 1rem;
-    }
-    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
-    .footer-links a {
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      font-weight: 300;
-      color: rgba(240,244,255,0.45);
-      transition: color 0.2s;
-    }
-    .footer-links a:hover { color: var(--blue-light); }
-    .footer-social {
-      display: flex;
-      gap: 0.8rem;
-      margin-top: 0.3rem;
-    }
-    .social-icon {
-      width: 36px;
-      height: 36px;
-      border: 1px solid var(--border);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      color: var(--white-dim);
-      transition: all 0.25s;
-      cursor: pointer;
-    }
-    .social-icon:hover {
-      border-color: var(--blue);
-      color: var(--blue-light);
-      box-shadow: 0 0 12px rgba(26,110,245,0.3);
-    }
-    .footer-bottom {
-      border-top: 1px solid rgba(26,110,245,0.12);
-      padding-top: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    .footer-copy {
-      font-family: var(--font-body);
-      font-size: 0.78rem;
-      font-weight: 300;
-      color: rgba(240,244,255,0.3);
-    }
-    .footer-est {
-      font-family: var(--font-heading);
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      color: rgba(26,110,245,0.5);
-    }
+/* IMAGE HANDLING */
+.artist-card img{
+  width:100%;height:100%;object-fit:cover;
+  object-position:center top;
+  transition:transform .7s cubic-bezier(.22,1,.36,1);
+  display:none}
+.artist-card img.loaded{display:block}
+.artist-placeholder{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:var(--s4)}
+.ap-bg-1{background:linear-gradient(150deg,#0d1a35 0%,#1a2d50 100%)}
+.ap-bg-2{background:linear-gradient(150deg,#0a1520 0%,#142030 100%)}
+.ap-bg-3{background:linear-gradient(150deg,#111828 0%,#1c2a3e 100%)}
+.ap-bg-4{background:linear-gradient(150deg,#0e1c30 0%,#162640 100%)}
+.ap-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(0,85,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,85,255,.06) 1px,transparent 1px);background-size:36px 36px}
+.ap-glow{position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(0,85,255,.25) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation:glowPulse 3s ease-in-out infinite}
+.ap-content{position:relative;z-index:1;text-align:center;padding:var(--s6)}
+.ap-icon{font-size:clamp(2rem,4vw,2.8rem);opacity:.35;display:block;margin-bottom:var(--s4)}
+.ap-name{font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,2rem);font-weight:300;color:rgba(255,255,255,.35);letter-spacing:.04em;line-height:1.1}
+.ap-genre{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,100,255,.5);margin-top:var(--s3)}
 
-    /* ===== FLOATING WHATSAPP ===== */
-    .wa-float {
-      position: fixed;
-      bottom: 1.5rem;
-      right: 1.5rem;
-      z-index: 500;
-      width: 56px;
-      height: 56px;
-      background: #25d366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.25s;
-      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
-    }
-    .wa-float:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 30px rgba(37,211,102,0.6);
-    }
-    .wa-float svg { width: 26px; height: 26px; fill: #fff; }
+/* OVERLAY + CAPTION */
+.artist-overlay{
+  position:absolute;inset:0;z-index:2;
+  background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.35) 45%,transparent 100%);
+  transition:background .4s}
+.artist-card:hover .artist-overlay{background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(0,0,30,.5) 55%,rgba(0,0,60,.1) 100%)}
+.artist-glow-border{
+  position:absolute;inset:0;z-index:3;border-radius:inherit;
+  box-shadow:inset 0 0 0 1px rgba(0,85,255,0);
+  transition:box-shadow .4s}
+.artist-card:hover .artist-glow-border{box-shadow:inset 0 0 0 1.5px rgba(0,85,255,.6),0 0 30px rgba(0,85,255,.2)}
+.artist-cap{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:var(--s6) var(--s6) var(--s6);
+  z-index:4}
+.artist-cap .badge{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  font-family:var(--mono);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(80,160,255,.9);margin-bottom:var(--s3)}
+.badge-dot{width:4px;height:4px;border-radius:50%;background:currentColor;flex-shrink:0}
+.artist-cap .a-name{
+  font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,2rem);
+  font-weight:600;color:var(--white);line-height:1.05;
+  text-shadow:0 2px 16px rgba(0,0,0,.4)}
+.artist-card:nth-child(1) .a-name{font-size:clamp(1.8rem,3.5vw,2.8rem)}
+.artist-cap .a-role{font-size:.82rem;color:rgba(255,255,255,.5);margin-top:var(--s2)}
+.artist-cap .a-badge{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  margin-top:var(--s4);font-family:var(--mono);font-size:.6rem;
+  letter-spacing:.15em;text-transform:uppercase;
+  padding:5px 12px;border-radius:var(--r-full);
+  border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.65);
+  background:rgba(255,255,255,.07)}
+.a-badge.gold-b{border-color:rgba(184,150,74,.5);color:var(--gold);background:rgba(184,150,74,.1)}
 
-    /* ===== SETTINGS PANEL ===== */
-    .settings-btn {
-      position: fixed;
-      bottom: 1.5rem;
-      left: 1.5rem;
-      z-index: 500;
-      width: 42px;
-      height: 42px;
-      background: rgba(5,5,8,0.85);
-      border: 1px solid var(--border);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.2s;
-      backdrop-filter: blur(10px);
-    }
-    .settings-btn:hover { border-color: var(--blue); }
-    .settings-btn svg { width: 18px; height: 18px; stroke: var(--white-dim); fill: none; }
-    .settings-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.7);
-      z-index: 800;
-      backdrop-filter: blur(4px);
-    }
-    .settings-overlay.open { display: block; }
-    .settings-panel {
-      display: none;
-      position: fixed;
-      bottom: 0; left: 0;
-      width: 100%;
-      max-width: 420px;
-      background: #0a0a14;
-      border: 1px solid var(--border);
-      border-bottom: none;
-      z-index: 900;
-      padding: 2rem;
-      transform: translateY(100%);
-      transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
-      border-radius: 12px 12px 0 0;
-    }
-    @media (min-width: 480px) {
-      .settings-panel {
-        bottom: 5rem;
-        left: 1.5rem;
-        border-radius: 8px;
-        border-bottom: 1px solid var(--border);
-        max-height: 80vh;
-        overflow-y: auto;
-        transform: translateY(20px);
-        opacity: 0;
-      }
-    }
-    .settings-panel.open {
-      display: block;
-      transform: translateY(0);
-      opacity: 1;
-    }
-    .settings-lock {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .settings-lock-title {
-      font-family: var(--font-display);
-      font-size: 1.5rem;
-      color: var(--white);
-      letter-spacing: 0.04em;
-    }
-    .settings-lock-label {
-      font-family: var(--font-heading);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--white-dim);
-    }
-    .settings-lock-input {
-      width: 100%;
-      background: rgba(240,244,255,0.04);
-      border: 1px solid var(--border);
-      color: var(--white);
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      padding: 0.7rem 1rem;
-      border-radius: 2px;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .settings-lock-input:focus { border-color: var(--blue); }
-    .settings-lock-btn {
-      font-family: var(--font-heading);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.7rem 1.5rem;
-      background: var(--blue);
-      color: #fff;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .settings-lock-btn:hover { background: var(--blue-light); }
-    .settings-lock-error {
-      font-family: var(--font-body);
-      font-size: 0.82rem;
-      color: #ff6b6b;
-      display: none;
-    }
-    .settings-content { display: none; }
-    .settings-content.unlocked { display: block; }
-    .settings-section-title {
-      font-family: var(--font-heading);
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--blue-light);
-      margin: 1.2rem 0 0.7rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.4rem;
-    }
-    .settings-field { margin-bottom: 0.8rem; }
-    .settings-field label {
-      display: block;
-      font-family: var(--font-heading);
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--white-dim);
-      margin-bottom: 0.3rem;
-    }
-    .settings-field input,
-    .settings-field textarea,
-    .settings-field select {
-      width: 100%;
-      background: rgba(240,244,255,0.04);
-      border: 1px solid var(--border);
-      color: var(--white);
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      padding: 0.5rem 0.8rem;
-      border-radius: 2px;
-      outline: none;
-    }
-    .settings-field textarea { min-height: 70px; resize: vertical; }
-    .settings-save-btn {
-      font-family: var(--font-heading);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.7rem 1.5rem;
-      background: var(--blue);
-      color: #fff;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-      margin-top: 1rem;
-      width: 100%;
-      transition: background 0.2s;
-    }
-    .settings-save-btn:hover { background: var(--blue-light); }
-    .settings-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.5rem;
-    }
-    .settings-header-title {
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      color: var(--white);
-      letter-spacing: 0.04em;
-    }
-    .settings-close-x {
-      font-size: 1.2rem;
-      color: var(--white-dim);
-      cursor: pointer;
-      background: none;
-      border: none;
-      color: var(--white-dim);
-      font-family: var(--font-body);
-      transition: color 0.2s;
-    }
-    .settings-close-x:hover { color: var(--white); }
+/* MINI STRIP */
+.artists-mini{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:var(--s3);margin-top:var(--s3);position:relative;z-index:2}
+@media(max-width:800px){.artists-mini{grid-template-columns:repeat(2,1fr)}}
+.artist-mini-card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--r-md);
+  padding:var(--s5) var(--s5);
+  display:flex;align-items:center;gap:var(--s4);
+  transition:all .3s cubic-bezier(.22,1,.36,1)}
+.artist-mini-card:hover{background:rgba(255,255,255,.07);border-color:rgba(0,85,255,.3);box-shadow:0 0 20px rgba(0,85,255,.1);transform:translateY(-3px)}
+.mini-avatar{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--blue),var(--blue-lt));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--white);
+  box-shadow:0 0 12px rgba(0,85,255,.3)}
+.mini-name{font-family:var(--sans);font-size:.85rem;font-weight:500;color:var(--white)}
+.mini-genre{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:2px}
 
-    /* ===== ANIMATE ON SCROLL ===== */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-    .reveal-delay-4 { transition-delay: 0.4s; }
+/* STATS BAND DARK */
+.artists-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--r-xl);overflow:hidden;
+  margin-top:var(--s10);position:relative;z-index:2}
+@media(max-width:700px){.artists-stats{grid-template-columns:repeat(2,1fr)}}
+.pstat{padding:var(--s8) var(--s6);text-align:center;background:rgba(255,255,255,.03)}
+.pstat:not(:last-child){border-right:1px solid rgba(255,255,255,.06)}
+@media(max-width:700px){
+  .pstat:nth-child(2){border-right:none}
+  .pstat:nth-child(1),.pstat:nth-child(2){border-bottom:1px solid rgba(255,255,255,.06)}}
+.pstat-num{font-family:var(--serif);font-size:clamp(2.5rem,4vw,3.5rem);font-weight:600;color:rgba(100,160,255,.9);line-height:1;display:block}
+.pstat-lbl{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:var(--s3);display:block}
+.pstat-sub{font-size:.8rem;color:rgba(255,255,255,.4);margin-top:var(--s2);display:block}
 
-    /* ===== TOAST ===== */
-    .toast {
-      position: fixed;
-      bottom: 6rem;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: var(--blue);
-      color: #fff;
-      font-family: var(--font-heading);
-      font-size: 0.9rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      padding: 0.8rem 1.8rem;
-      border-radius: 2px;
-      opacity: 0;
-      transition: all 0.3s;
-      pointer-events: none;
-      z-index: 2000;
-      white-space: nowrap;
-    }
-    .toast.show {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-  </style>
+/* QUOTE */
+.artists-quote{
+  margin-top:var(--s9);text-align:center;padding:var(--s10) var(--s8);
+  background:rgba(0,85,255,.06);border:1px solid rgba(0,85,255,.15);
+  border-radius:var(--r-xl);position:relative;z-index:2}
+.quote-mark{font-family:var(--serif);font-size:5rem;line-height:.5;color:rgba(0,85,255,.25);display:block;margin-bottom:var(--s5)}
+.quote-body{font-family:var(--serif);font-size:clamp(1.1rem,2.5vw,1.5rem);font-style:italic;font-weight:300;color:rgba(255,255,255,.75);line-height:1.6;letter-spacing:.01em}
+.quote-src{font-family:var(--mono);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(100,150,255,.55);margin-top:var(--s6);display:block}
+
+/* ═══════════════════════════════════════════════
+   EVENTS
+═══════════════════════════════════════════════ */
+#events{padding:var(--s14) var(--s7);background:var(--white)}
+.events-header{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:var(--s8);align-items:end;margin-bottom:var(--s11)}
+@media(max-width:768px){.events-header{grid-template-columns:1fr}}
+.events-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border)}
+.event-row{
+  display:flex;align-items:center;gap:var(--s7);
+  padding:var(--s7) 0;
+  border-bottom:1px solid var(--border);
+  text-decoration:none;color:inherit;
+  transition:all .3s cubic-bezier(.22,1,.36,1);
+  cursor:pointer;flex-wrap:wrap}
+.event-row:hover{padding-left:var(--s5);background:var(--off)}
+.event-date{
+  min-width:70px;flex-shrink:0}
+.event-date .e-day{
+  font-family:var(--serif);font-size:2.8rem;font-weight:600;
+  line-height:1;color:var(--blue);display:block}
+.event-date .e-month{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-40);display:block;margin-top:2px}
+.event-sep{width:1px;height:48px;background:var(--border);flex-shrink:0}
+@media(max-width:500px){.event-sep{display:none}}
+.event-info{flex:1;min-width:180px}
+.event-title{
+  font-family:var(--serif);font-size:1.4rem;font-weight:600;
+  color:var(--ink);display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap}
+.event-hot{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 10px;border-radius:var(--r-full);
+  background:rgba(255,100,50,.1);color:#e05020;
+  border:1px solid rgba(255,100,50,.2)}
+.event-artist{font-size:.9rem;color:var(--ink-60);margin-top:4px}
+.event-genre{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--blue);margin-top:4px}
+.event-cta{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.15em;
+  text-transform:uppercase;padding:10px 20px;border-radius:var(--r-full);
+  border:1px solid var(--border2);color:var(--ink-60);
+  transition:all .3s;flex-shrink:0;background:transparent;white-space:nowrap}
+.event-row:hover .event-cta{background:var(--blue);color:var(--white);border-color:var(--blue);box-shadow:var(--shadow-blue)}
+
+/* ═══════════════════════════════════════════════
+   MENU
+═══════════════════════════════════════════════ */
+#menu{padding:var(--s14) var(--s7);background:var(--off)}
+.menu-header{text-align:center;margin-bottom:var(--s11)}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--s5)}
+.menu-card{
+  background:var(--white);border-radius:var(--r-xl);
+  padding:var(--s8) var(--s7);
+  box-shadow:var(--shadow-sm);border:1px solid var(--border);
+  transition:all .35s cubic-bezier(.22,1,.36,1)}
+.menu-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-5px);border-color:var(--blue)}
+.menu-price{
+  font-family:var(--serif);font-size:2.2rem;font-weight:600;
+  color:var(--blue);line-height:1;margin-bottom:var(--s4)}
+.menu-name{
+  font-family:var(--serif);font-size:1.1rem;font-weight:600;
+  color:var(--ink);margin-bottom:var(--s3)}
+.menu-desc{font-size:.85rem;color:var(--ink-60);line-height:1.65}
+
+/* ═══════════════════════════════════════════════
+   REVIEWS
+═══════════════════════════════════════════════ */
+#reviews{padding:var(--s14) var(--s7);background:var(--white)}
+.reviews-header{text-align:center;margin-bottom:var(--s11)}
+.rating-display{
+  display:flex;align-items:center;justify-content:center;
+  gap:var(--s6);margin-top:var(--s6)}
+.rating-big{font-family:var(--serif);font-size:5rem;font-weight:600;color:var(--blue);line-height:1}
+.rating-right .stars{color:#f0a020;font-size:1.3rem;letter-spacing:2px}
+.rating-right .r-count{font-family:var(--mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-top:4px}
+
+/* REVIEW NOTIFICATIONS */
+.reviews-stream{
+  display:flex;flex-direction:column;gap:var(--s4);
+  margin-bottom:var(--s9);
+  max-height:500px;overflow-y:auto;padding-right:var(--s3)}
+.reviews-stream::-webkit-scrollbar{width:3px}
+.reviews-stream::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+.review-notif{
+  display:flex;align-items:flex-start;gap:var(--s5);
+  background:var(--white);border:1px solid var(--border);
+  border-radius:var(--r-xl);padding:var(--s6) var(--s7);
+  box-shadow:var(--shadow-xs);
+  animation:slideInLeft .5s cubic-bezier(.22,1,.36,1) forwards;
+  border-left:3px solid var(--blue);
+  transition:box-shadow .3s,transform .3s}
+.review-notif:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.r-avatar{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--blue),var(--blue-lt));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:.9rem;font-weight:600;color:var(--white)}
+.r-body{flex:1;min-width:0}
+.r-meta{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);flex-wrap:wrap;margin-bottom:var(--s2)}
+.r-name{font-family:var(--sans);font-size:.88rem;font-weight:600;color:var(--ink)}
+.r-stars{font-size:.9rem;color:#f0a020;letter-spacing:1px}
+.r-time{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-40)}
+.r-text{font-size:.88rem;color:var(--ink-60);line-height:1.65}
+.r-price{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);margin-top:var(--s2);opacity:.7}
+.r-new{
+  font-family:var(--mono);font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;
+  padding:2px 8px;border-radius:var(--r-full);
+  background:var(--blue-mist);color:var(--blue);border:1px solid rgba(0,85,255,.2)}
+
+/* ADD REVIEW */
+.add-review{
+  background:var(--off);border:1px solid var(--border);
+  border-radius:var(--r-xl);padding:var(--s9) var(--s8)}
+.add-review h3{font-family:var(--serif);font-size:1.8rem;font-weight:600;color:var(--ink);margin-bottom:var(--s3)}
+.add-review .sub{font-size:.9rem;color:var(--ink-60);margin-bottom:var(--s7)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);margin-bottom:var(--s5)}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}}
+.form-field{display:flex;flex-direction:column;gap:var(--s2)}
+.form-field label{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60)}
+.form-field input,.form-field select,.form-field textarea{
+  background:var(--white);border:1px solid var(--border2);
+  border-radius:var(--r-md);padding:12px 14px;
+  color:var(--ink);font-family:var(--sans);font-size:.9rem;
+  outline:none;transition:border-color .25s,box-shadow .25s}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{
+  border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,85,255,.08)}
+.form-field select option{background:var(--white);color:var(--ink)}
+.form-field textarea{resize:vertical;min-height:100px}
+.star-picker{display:flex;gap:var(--s3);margin-bottom:var(--s5)}
+.star-picker button{background:none;border:none;font-size:1.6rem;cursor:pointer;color:var(--border2);transition:color .2s,transform .2s;padding:0;line-height:1}
+.star-picker button:hover{transform:scale(1.15)}
+.star-picker button.active{color:#f0a020}
+.form-actions{display:flex;gap:var(--s4);flex-wrap:wrap;align-items:center;margin-top:var(--s5)}
+.form-msg{font-family:var(--mono);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;padding:10px 18px;border-radius:var(--r-full);display:none}
+.form-msg.ok{background:rgba(30,180,100,.1);color:#1a9a5a;border:1px solid rgba(30,180,100,.25)}
+.form-msg.err{background:rgba(220,50,50,.08);color:#c03030;border:1px solid rgba(220,50,50,.2)}
+
+/* ═══════════════════════════════════════════════
+   BOOKING
+═══════════════════════════════════════════════ */
+#bookings{
+  padding:var(--s14) var(--s7);
+  background:linear-gradient(160deg,#050c1a 0%,#0a1528 60%,#050c1a 100%);
+  text-align:center;position:relative;overflow:hidden}
+.bookings-bg{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 0%,rgba(0,85,255,.18) 0%,transparent 60%)}
+.bookings-inner{position:relative;z-index:2;max-width:700px;margin:0 auto}
+.bookings-inner .section-eyebrow{color:rgba(80,140,255,.8)}
+.book-opts{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:var(--s4);margin:var(--s10) 0;text-align:left}
+@media(max-width:600px){.book-opts{grid-template-columns:1fr}}
+.book-opt{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--r-xl);padding:var(--s6);
+  transition:all .3s cubic-bezier(.22,1,.36,1)}
+.book-opt:hover{background:rgba(255,255,255,.08);border-color:rgba(0,85,255,.4);transform:translateY(-3px)}
+.book-opt .bo-icon{font-size:1.8rem;margin-bottom:var(--s4)}
+.book-opt .bo-name{font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--white);margin-bottom:4px}
+.book-opt .bo-sub{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+.wa-number{font-family:var(--mono);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:var(--s5)}
+
+/* ═══════════════════════════════════════════════
+   LOCATION
+═══════════════════════════════════════════════ */
+#location{padding:var(--s14) var(--s7);background:var(--off)}
+.location-header{text-align:center;margin-bottom:var(--s11)}
+.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s10);align-items:center}
+@media(max-width:800px){.location-grid{grid-template-columns:1fr}}
+.map-visual{
+  border-radius:var(--r-xl);overflow:hidden;
+  border:1px solid var(--border);
+  height:380px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#e8f0ff 0%,#f0f5ff 100%);
+  cursor:pointer;position:relative;
+  transition:box-shadow .3s}
+.map-visual:hover{box-shadow:var(--shadow-lg)}
+.map-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,85,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(0,85,255,.07) 1px,transparent 1px);background-size:32px 32px}
+.map-pin-wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:var(--s5)}
+.map-pin-dot{width:24px;height:24px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 8px rgba(0,85,255,.15),0 0 0 16px rgba(0,85,255,.07);animation:mapPulse 2.5s ease-in-out infinite}
+.map-pin-label{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--s4) var(--s6);text-align:center;box-shadow:var(--shadow-md)}
+.map-pin-label strong{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--blue);display:block}
+.map-pin-label span{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40)}
+.map-cta-btn{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;
+  padding:10px 20px;border-radius:var(--r-full);
+  border:1px solid var(--blue);color:var(--blue);
+  background:transparent;transition:all .3s;text-decoration:none;display:inline-block}
+.map-cta-btn:hover{background:var(--blue);color:var(--white)}
+.loc-details{display:flex;flex-direction:column;gap:0}
+.loc-row{
+  display:flex;align-items:flex-start;gap:var(--s5);
+  padding:var(--s6) 0;border-bottom:1px solid var(--border)}
+.loc-row:last-child{border-bottom:none}
+.loc-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px;width:28px}
+.loc-label{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:4px}
+.loc-value{font-size:.9rem;color:var(--ink-80);line-height:1.6}
+
+/* ═══════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════ */
+footer{
+  background:var(--ink);color:rgba(255,255,255,.65);
+  padding:var(--s13) var(--s7) var(--s8)}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;
+  gap:var(--s10);margin-bottom:var(--s11);
+  padding-bottom:var(--s11);
+  border-bottom:1px solid rgba(255,255,255,.08)}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.footer-top{grid-template-columns:1fr}}
+.ft-brand-name{font-family:var(--serif);font-size:1.8rem;font-weight:600;color:var(--white);margin-bottom:var(--s4)}
+.ft-brand-desc{font-size:.85rem;line-height:1.75;color:rgba(255,255,255,.45);margin-bottom:var(--s6)}
+.footer-socials{display:flex;gap:var(--s3)}
+.soc-btn{
+  width:40px;height:40px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(255,255,255,.06);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:.62rem;
+  color:rgba(255,255,255,.55);
+  transition:all .3s;cursor:pointer;font-weight:500}
+.soc-btn:hover{background:var(--blue);border-color:var(--blue);color:var(--white);transform:scale(1.08)}
+.ft-col h4{font-family:var(--mono);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:var(--s6)}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:var(--s4)}
+.ft-col a{font-size:.85rem;color:rgba(255,255,255,.5);transition:color .25s}
+.ft-col a:hover{color:var(--white)}
+.ft-contact-item{margin-bottom:var(--s5)}
+.ft-contact-lbl{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px}
+.ft-contact-val{font-size:.85rem;color:rgba(255,255,255,.55)}
+.footer-bottom{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:var(--s4)}
+.footer-bottom p{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.2)}
+
+/* ═══════════════════════════════════════════════
+   FLOATING ELEMENTS
+═══════════════════════════════════════════════ */
+.float-wa{
+  position:fixed;bottom:90px;right:var(--s6);z-index:800;
+  width:56px;height:56px;border-radius:50%;
+  background:linear-gradient(135deg,#1a9a6a,#25d366);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,.4);
+  transition:all .3s cubic-bezier(.22,1,.36,1);text-decoration:none}
+.float-wa:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.55)}
+.float-wa::before{content:'';position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:waPulse 2.5s ease-in-out infinite}
+.float-wa svg{position:relative;z-index:1}
+
+.settings-btn{
+  position:fixed;bottom:var(--s6);left:var(--s6);z-index:800;
+  width:44px;height:44px;border-radius:50%;
+  background:rgba(255,255,255,.9);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;box-shadow:var(--shadow-sm);
+  transition:all .3s;backdrop-filter:blur(10px)}
+.settings-btn:hover{box-shadow:var(--shadow-md);transform:scale(1.05);border-color:var(--blue)}
+.settings-btn svg{width:18px;height:18px;stroke:var(--ink-60);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s}
+.settings-btn:hover svg{stroke:var(--blue)}
+
+/* ═══════════════════════════════════════════════
+   SETTINGS MODAL
+═══════════════════════════════════════════════ */
+.modal-wrap{
+  position:fixed;inset:0;z-index:9000;
+  display:none;align-items:center;justify-content:center;
+  background:rgba(14,14,13,.75);backdrop-filter:blur(12px)}
+.modal-wrap.open{display:flex}
+.modal{
+  background:var(--white);border-radius:var(--r-xl);
+  width:90%;max-width:680px;max-height:90vh;
+  overflow-y:auto;padding:var(--s9);position:relative;
+  box-shadow:var(--shadow-xl);border:1px solid var(--border)}
+.modal::-webkit-scrollbar{width:3px}.modal::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+.modal-close{
+  position:absolute;top:var(--s6);right:var(--s6);
+  width:36px;height:36px;border-radius:50%;
+  background:var(--surface);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:1rem;color:var(--ink-60);
+  transition:all .3s;font-family:var(--sans)}
+.modal-close:hover{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.modal h2{font-family:var(--serif);font-size:2rem;font-weight:600;color:var(--ink);margin-bottom:var(--s2)}
+.modal-sub{font-family:var(--mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:var(--s8)}
+.pass-wrap{display:flex;flex-direction:column;align-items:center;gap:var(--s5);padding:var(--s7) 0}
+.pass-input{
+  background:var(--off);border:1px solid var(--border2);
+  border-radius:var(--r-md);padding:14px 18px;
+  color:var(--ink);font-family:var(--mono);font-size:1rem;
+  letter-spacing:.3em;width:100%;max-width:300px;
+  text-align:center;outline:none;transition:border-color .25s}
+.pass-input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,85,255,.1)}
+.pass-err{font-family:var(--mono);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:#c03030;display:none}
+.s-section{margin-bottom:var(--s8)}
+.s-section h3{
+  font-family:var(--sans);font-size:.88rem;font-weight:600;
+  color:var(--ink);margin-bottom:var(--s5);
+  padding-bottom:var(--s4);border-bottom:1px solid var(--border)}
+.s-field{display:flex;flex-direction:column;gap:var(--s2);margin-bottom:var(--s4)}
+.s-field label{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40)}
+.s-field input,.s-field textarea,.s-field select{
+  background:var(--off);border:1px solid var(--border2);
+  border-radius:var(--r-md);padding:11px 14px;
+  color:var(--ink);font-family:var(--sans);font-size:.9rem;
+  outline:none;transition:border-color .25s;width:100%}
+.s-field input:focus,.s-field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,85,255,.08)}
+.s-field textarea{resize:vertical;min-height:70px}
+.s-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5)}
+@media(max-width:500px){.s-row{grid-template-columns:1fr}}
+.s-item{
+  background:var(--off);border:1px solid var(--border);
+  border-radius:var(--r-md);padding:var(--s4) var(--s5);
+  margin-bottom:var(--s3);display:flex;align-items:center;gap:var(--s4)}
+.s-item span{flex:1;font-size:.85rem;color:var(--ink-80)}
+.s-del{
+  background:rgba(200,30,30,.08);border:1px solid rgba(200,30,30,.2);
+  border-radius:var(--r-sm);padding:4px 12px;color:#b02020;
+  font-family:var(--mono);font-size:.6rem;cursor:pointer;transition:all .3s}
+.s-del:hover{background:rgba(200,30,30,.15)}
+.btn-add-s{
+  font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;
+  padding:10px 20px;border-radius:var(--r-full);
+  border:1px solid var(--border2);color:var(--blue);
+  background:transparent;cursor:pointer;transition:all .3s;margin-top:var(--s3)}
+.btn-add-s:hover{background:var(--blue-mist);border-color:var(--blue)}
+.save-all{
+  width:100%;font-family:var(--sans);font-size:.88rem;font-weight:600;
+  letter-spacing:.04em;padding:14px;border-radius:var(--r-full);
+  background:var(--ink);color:var(--white);border:none;
+  cursor:pointer;box-shadow:var(--shadow-sm);
+  transition:all .3s;margin-top:var(--s4)}
+.save-all:hover{background:var(--blue);box-shadow:var(--shadow-blue);transform:translateY(-1px)}
+.save-ok{
+  font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;
+  color:#1a9a5a;text-align:center;margin-top:var(--s4);display:none}
+
+/* ═══════════════════════════════════════════════
+   KEYFRAMES
+═══════════════════════════════════════════════ */
+@keyframes fadeSlideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes scrollPulse{0%,100%{opacity:.4;transform:scaleY(1)}50%{opacity:.8;transform:scaleY(1.08)}}
+@keyframes glowPulse{0%,100%{opacity:.5}50%{opacity:.9}}
+@keyframes mapPulse{0%,100%{box-shadow:0 0 0 8px rgba(0,85,255,.15),0 0 0 16px rgba(0,85,255,.07)}50%{box-shadow:0 0 0 12px rgba(0,85,255,.2),0 0 0 24px rgba(0,85,255,.05)}}
+@keyframes waPulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.5);opacity:0}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-16px)}to{opacity:1;transform:translateX(0)}}
+
+/* Mobile refinements */
+@media(max-width:768px){
+  section{padding-left:var(--s5);padding-right:var(--s5)}
+  #nav{padding:0 var(--s5)}
+  .footer-top{gap:var(--s8)}
+  .artists-masonry{gap:var(--s3)}
+  .artists-stats{border-radius:var(--r-lg)}
+}
+</style>
 </head>
 <body>
 
-<!-- ===== NAVIGATION ===== -->
-<nav id="navbar">
-  <div class="nav-logo">
-    <img src="logo.jpg" alt="Dark or Blue Lounge Logo" />
-    <div class="nav-logo-text">DARK <span>OR</span> BLUE</div>
+<!-- ════ STICKY BOTTOM BAR ════ -->
+<div class="sticky-bar" id="sticky-bar">
+  <div class="sticky-bar-left">
+    <div>
+      <div class="sticky-bar-logo">Dark or Blue Lounge</div>
+      <div class="sticky-bar-sub">Ntuzuma, Durban</div>
+    </div>
   </div>
-  <ul class="nav-links">
-    <li><a href="#experiences">Experiences</a></li>
-    <li><a href="#artists">Artists</a></li>
-    <li><a href="#events">Events</a></li>
-    <li><a href="#specials">Specials</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#location">Find Us</a></li>
-  </ul>
-  <a href="https://wa.me/27742270872" class="nav-cta" target="_blank" rel="noopener">Book Now</a>
-  <div class="hamburger" id="hamburger" role="button" aria-label="Open menu">
-    <span></span><span></span><span></span>
+  <a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I%20would%20like%20to%20make%20a%20booking!" target="_blank" class="btn btn-primary" style="font-size:.78rem;padding:11px 22px">
+    Book Now
+    <svg class="btn-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h12M9 3l6 6-6 6"/></svg>
+  </a>
+</div>
+
+<!-- ════ NAV ════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <div class="nav-logo-mark" id="logo-mark">
+        <img src="logo.png" alt="Dark or Blue" onerror="this.style.display='none';document.getElementById('logo-fallback').style.display='flex'"/>
+        <div class="nav-logo-mark-fallback" id="logo-fallback" style="display:none">D</div>
+      </div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Dark or Blue</span>
+        <span class="nav-logo-sub">Lounge · Ntuzuma</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#artists">Artists</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#bookings">Bookings</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <a href="https://wa.me/27742270872?text=Hi%20I%20want%20to%20book!" target="_blank" class="nav-cta">
+      Book a Table
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+    </a>
+    <button class="hamburger" id="ham" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mob">
+    <a href="#experiences" onclick="closeMenu()">Experiences</a>
+    <a href="#artists" onclick="closeMenu()">Artists</a>
+    <a href="#events" onclick="closeMenu()">Events</a>
+    <a href="#reviews" onclick="closeMenu()">Reviews</a>
+    <a href="#bookings" onclick="closeMenu()">Bookings</a>
+    <a href="#location" onclick="closeMenu()">Location</a>
+    <a href="https://wa.me/27742270872?text=Hi%20I%20want%20to%20book!" target="_blank" class="btn btn-primary" style="margin-top:8px">Book a Table</a>
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="mobileClose">&times;</span>
-  <a href="#experiences" onclick="closeMobile()">Experiences</a>
-  <a href="#artists" onclick="closeMobile()">Artists</a>
-  <a href="#events" onclick="closeMobile()">Events</a>
-  <a href="#specials" onclick="closeMobile()">Specials</a>
-  <a href="#reviews" onclick="closeMobile()">Reviews</a>
-  <a href="#location" onclick="closeMobile()">Find Us</a>
-  <a href="https://wa.me/27742270872" target="_blank" rel="noopener" onclick="closeMobile()">📲 Book Now</a>
+<!-- ════ HERO ════ -->
+<section id="home">
+  <div class="hero-media">
+    <img src="hero-bg.jpg" alt="Dark or Blue Lounge" onerror="this.style.display='none';document.querySelector('.hero-media-fallback').style.display='block'"/>
+    <div class="hero-media-fallback" style="display:none"></div>
+  </div>
+  <div class="hero-gradient"></div>
+  <div class="hero-content max">
+    <div class="hero-eyebrow">
+      <div class="dot"></div>
+      <span>Ntuzuma · Durban · 92 Uxamu Drive · Est. 2024</span>
+    </div>
+    <h1 class="hero-headline">
+      <em>Dark</em> or<br/>
+      <span class="accent">Blue Lounge</span>
+    </h1>
+    <p class="hero-sub">
+      Ntuzuma's most <strong>electrifying entertainment destination</strong> — where elite artists perform, premium shisanyama is served, and every night becomes a memory that lasts forever.
+    </p>
+    <div class="hero-actions">
+      <a href="#bookings" class="btn btn-white">
+        Book Your Experience
+        <span class="btn-arrow">→</span>
+      </a>
+      <a href="#artists" class="btn btn-outline-white">
+        Featured Artists
+        <span class="btn-arrow">↓</span>
+      </a>
+    </div>
+    <div class="hero-pills">
+      <span class="hero-pill">Shisanyama</span>
+      <span class="hero-pill">Car Wash</span>
+      <span class="hero-pill">Hubbly</span>
+      <span class="hero-pill">Beverages</span>
+      <span class="hero-pill">Live Artists</span>
+      <span class="hero-pill">Top DJs</span>
+      <span class="hero-pill">Sport TV</span>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item">
+        <div>
+          <div class="t-val">4.6★</div>
+          <div class="t-lbl">Google Rating</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div>
+          <div class="t-val">500+</div>
+          <div class="t-lbl">Guests Per Night</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div>
+          <div class="t-val">50+</div>
+          <div class="t-lbl">Artists Hosted</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ════ TICKER ════ -->
+<div class="ticker">
+  <div class="ticker-track" id="ticker-track"></div>
 </div>
 
-<!-- ===== HERO ===== -->
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-overlay-side"></div>
-  <div class="hero-blue-accent"></div>
-
-  <div class="hero-content">
-    <div class="hero-eyebrow">
-      <div class="hero-eyebrow-line"></div>
-      <span class="hero-eyebrow-text">Est. 2020 · Ntuzuma, Durban</span>
+<!-- ════ EXPERIENCES ════ -->
+<section id="experiences" style="padding:var(--s14) var(--s7)">
+  <div class="max">
+    <div class="exp-header">
+      <div class="reveal-left">
+        <div class="section-eyebrow">What We Offer</div>
+        <h2 class="section-title">Five Premium<br/>Experiences</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="exp-header-right reveal-right">
+        <p class="section-body" style="margin-left:auto;text-align:right">Every corner of Dark or Blue Lounge is crafted to immerse you in a premium township lifestyle. One venue. Infinite experiences.</p>
+      </div>
     </div>
-    <h1 class="hero-title">
-      DARK<br/><span class="blue">OR</span><br/>BLUE
-    </h1>
-    <p class="hero-tagline">
-      <strong>Where the night comes alive.</strong><br/>
-      Ntuzuma's most exclusive lifestyle destination — shisanyama, live DJs, elite entertainment & beyond.
-    </p>
-    <div class="hero-buttons">
-      <a href="https://wa.me/27742270872" class="btn-primary" target="_blank" rel="noopener">
-        📲 Book a Table
-      </a>
-      <a href="#events" class="btn-outline">View Events</a>
-    </div>
-  </div>
-
-  <div class="hero-stats">
-    <div>
-      <div class="hero-stat-num">4.6★</div>
-      <div class="hero-stat-label">Google Rating</div>
-    </div>
-    <div>
-      <div class="hero-stat-num">200+</div>
-      <div class="hero-stat-label">Nights Hosted</div>
-    </div>
-    <div>
-      <div class="hero-stat-num">5</div>
-      <div class="hero-stat-label">Experiences</div>
-    </div>
-  </div>
-
-  <div class="hero-scroll-hint">
-    <div class="scroll-line"></div>
-    <span>Scroll</span>
+    <div class="exp-grid" id="exp-grid"></div>
   </div>
 </section>
 
-<!-- ===== EXPERIENCES ===== -->
-<section id="experiences">
-  <div class="section-label reveal">
-    <div class="section-label-line"></div>
-    <span class="section-label-text">What We Offer</span>
-  </div>
-  <h2 class="section-title reveal">THE FULL<br/>EXPERIENCE</h2>
-  <p class="section-subtitle reveal">Five premium offerings under one roof. Dark or Blue Lounge is not just a night out — it's a complete lifestyle destination.</p>
-
-  <div class="exp-grid reveal">
-    <div class="exp-card">
-      <div class="exp-icon">🍖</div>
-      <div class="exp-name">Shisanyama</div>
-      <p class="exp-desc">Premium grilled meats served hot off the fire. Platters for 2 to 8 featuring beef, wors, chicken wings & more.</p>
+<!-- ════ GALLERY ════ -->
+<section id="gallery">
+  <div class="max">
+    <div class="gallery-header reveal">
+      <div class="section-eyebrow">The Vibe</div>
+      <h2 class="section-title">Live the Lifestyle</h2>
+      <span class="rule rule-center"></span>
     </div>
-    <div class="exp-card">
-      <div class="exp-icon">🚗</div>
-      <div class="exp-name">Car Wash</div>
-      <p class="exp-desc">Get your ride gleaming while you relax, sip, and enjoy the vibe. Premium car wash on-site.</p>
+    <div class="gallery-mosaic reveal">
+      <div class="gallery-cell">
+        <img src="dining.jpg" alt="Shisanyama at Dark or Blue" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="gallery-cell-fallback gcf-1" style="display:none;height:100%"><span class="gcf-icon">🍖</span><span class="gcf-text">Shisanyama</span></div>
+        <div class="gallery-cell-overlay"></div>
+        <div class="gallery-caption"><div class="eyebrow">Shisanyama & Dining</div><h3>Fire-Kissed Flavour</h3></div>
+      </div>
+      <div class="gallery-cell">
+        <img src="lifestyle.jpg" alt="Nightlife" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="gallery-cell-fallback gcf-2" style="display:none;height:100%"><span class="gcf-icon">🎶</span><span class="gcf-text">Nightlife</span></div>
+        <div class="gallery-cell-overlay"></div>
+        <div class="gallery-caption"><div class="eyebrow">Nightlife</div><h3>Electric Nights</h3></div>
+      </div>
+      <div class="gallery-cell">
+        <div class="gallery-cell-fallback gcf-3" style="height:100%"><span class="gcf-icon">💨</span><span class="gcf-text">Hubbly Lounge</span></div>
+        <div class="gallery-cell-overlay"></div>
+        <div class="gallery-caption"><div class="eyebrow">Hubbly</div><h3>Premium Shisha</h3></div>
+      </div>
+      <div class="gallery-cell">
+        <div class="gallery-cell-fallback gcf-4" style="height:100%"><span class="gcf-icon">🍹</span><span class="gcf-text">Beverages</span></div>
+        <div class="gallery-cell-overlay"></div>
+        <div class="gallery-caption"><div class="eyebrow">Bar</div><h3>Signature Cocktails</h3></div>
+      </div>
+      <div class="gallery-cell" style="display:none" id="gal-5">
+        <div class="gallery-cell-fallback gcf-5" style="height:100%"><span class="gcf-icon">🚗</span><span class="gcf-text">Car Wash</span></div>
+      </div>
     </div>
-    <div class="exp-card">
-      <div class="exp-icon">💨</div>
-      <div class="exp-name">Hubbly</div>
-      <p class="exp-desc">Chill with premium hubbly sessions while the music sets the tone. The ultimate lounge experience.</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-icon">🍹</div>
-      <div class="exp-name">Beverages</div>
-      <p class="exp-desc">Craft cocktails, top-shelf spirits, beer, wine & more. Great cocktails and a great beer selection on tap.</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-icon">🎶</div>
-      <div class="exp-name">Entertainment</div>
-      <p class="exp-desc">Live DJs, popular artists, weekend events. High-energy nights that keep you coming back every week.</p>
+    <div class="stats-band reveal">
+      <div class="stat-card d1"><span class="s-num">500+</span><span class="s-lbl">Guests Per Night</span></div>
+      <div class="stat-card d2"><span class="s-num">4.6★</span><span class="s-lbl">Google Rating</span></div>
+      <div class="stat-card d3"><span class="s-num">100%</span><span class="s-lbl">Premium Experience</span></div>
+      <div class="stat-card d4"><span class="s-num">3×</span><span class="s-lbl">Live Sets Weekly</span></div>
     </div>
   </div>
 </section>
 
-<!-- ===== GALLERY ===== -->
-<section id="gallery" style="padding-bottom: 0;">
-  <div class="section-label reveal">
-    <div class="section-label-line"></div>
-    <span class="section-label-text">The Vibe</span>
-  </div>
-  <h2 class="section-title reveal">LIVE THE<br/>EXPERIENCE</h2>
-
-  <div class="gallery-grid reveal">
-    <div class="gallery-item">
-      <img src="lifestyle.jpg" alt="Dark or Blue Lounge nightlife" loading="lazy" />
-      <div class="gallery-item-overlay">
-        <span class="gallery-item-label">The Vibe</span>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="dining.jpg" alt="Dark or Blue Lounge dining area" loading="lazy" />
-      <div class="gallery-item-overlay">
-        <span class="gallery-item-label">Lounge Area</span>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="hero-bg.jpg" alt="Dark or Blue Lounge specials" loading="lazy" />
-      <div class="gallery-item-overlay">
-        <span class="gallery-item-label">Gin & Vodka Sundays</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="gallery-cta-strip">
-    <p>Follow our journey on social media</p>
-    <a onclick="window.open('https://www.instagram.com/darkorblueloungersa','_blank')" style="cursor:pointer;">Follow @darkorblueloungersa</a>
-  </div>
-</section>
-
-<!-- ===== ARTISTS ===== -->
+<!-- ════════════════════════════════════
+     FEATURED ARTISTS — PREMIUM SHOWCASE
+════════════════════════════════════ -->
 <section id="artists">
-  <div class="section-label reveal">
-    <div class="section-label-line"></div>
-    <span class="section-label-text">Entertainment</span>
-  </div>
+  <div class="artists-bg"></div>
+  <div class="max" style="position:relative;z-index:2">
 
-  <div class="artists-intro-grid">
-    <div>
-      <div class="artists-big-text reveal">
-        WHERE<br/><span class="blue">TOP</span><br/><span class="outline">ARTISTS</span><br/>PERFORM
+    <!-- Header -->
+    <div class="artists-header">
+      <div class="reveal-left">
+        <div class="section-eyebrow">Elite Entertainment</div>
+        <h2 class="section-title section-title-light" style="font-size:clamp(2.5rem,6vw,5rem)">Where Top<br/>Artists Perform</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="artists-header-right reveal-right">
+        <p>Dark or Blue Lounge is <strong>Ntuzuma's most prestigious entertainment stage</strong> — hosting chart-topping DJs, acclaimed performers and high-energy headline acts that keep the crowd electric from sundown to sunrise.</p>
+        <a href="https://wa.me/27742270872?text=Hi%2C%20I%20want%20to%20book%20an%20artist!" target="_blank" class="btn btn-outline-white" style="margin-top:var(--s6);font-size:.78rem">Book an Artist →</a>
       </div>
     </div>
-    <div class="reveal reveal-delay-2">
-      <p class="artists-para">
-        Dark or Blue Lounge has hosted <strong>the best in the game</strong>. From headline DJs to celebrated live performers, our stage has seen it all. We don't just host events — we create <strong>unforgettable nights</strong> that become stories people tell for years.<br/><br/>
-        Every weekend is an opportunity to witness <strong>elite entertainment</strong> in an intimate, premium setting that no arena could replicate.
-      </p>
-    </div>
-  </div>
 
-  <div class="artists-showcase reveal">
-    <!-- Artist 1 - Daliwonga -->
-    <div class="artist-card">
-      <img id="artist1-img" src="" alt="Daliwonga" loading="lazy" />
-      <div class="artist-card-overlay"></div>
-      <div class="artist-card-glow"></div>
-      <div class="artist-card-info">
-        <div class="artist-card-name" id="artist1-name">Daliwonga</div>
-        <div class="artist-card-tag">Live Performance</div>
-      </div>
-      <div class="artist-card-border"></div>
-    </div>
-    <!-- Artist 2 - DJ Tira -->
-    <div class="artist-card">
-      <img id="artist2-img" src="" alt="DJ Tira" loading="lazy" />
-      <div class="artist-card-overlay"></div>
-      <div class="artist-card-glow"></div>
-      <div class="artist-card-info">
-        <div class="artist-card-name" id="artist2-name">DJ Tira</div>
-        <div class="artist-card-tag">DJ Set</div>
-      </div>
-      <div class="artist-card-border"></div>
-    </div>
-    <!-- Artist 3 - Dlala Thukzin -->
-    <div class="artist-card">
-      <img id="artist3-img" src="" alt="Dlala Thukzin" loading="lazy" />
-      <div class="artist-card-overlay"></div>
-      <div class="artist-card-glow"></div>
-      <div class="artist-card-info">
-        <div class="artist-card-name" id="artist3-name">Dlala Thukzin</div>
-        <div class="artist-card-tag">Special Appearance</div>
-      </div>
-      <div class="artist-card-border"></div>
-    </div>
-    <!-- Artist 4 - Gold Max / Distruction Boyz -->
-    <div class="artist-card">
-      <img id="artist4-img" src="" alt="Distruction Boyz" loading="lazy" />
-      <div class="artist-card-overlay"></div>
-      <div class="artist-card-glow"></div>
-      <div class="artist-card-info">
-        <div class="artist-card-name" id="artist4-name">Distruction Boyz</div>
-        <div class="artist-card-tag">Weekend Set</div>
-      </div>
-      <div class="artist-card-border"></div>
-    </div>
-    <!-- Artist 5 - Indaba Kabani -->
-    <div class="artist-card">
-      <img id="artist5-img" src="" alt="Indaba Kabani" loading="lazy" />
-      <div class="artist-card-overlay"></div>
-      <div class="artist-card-glow"></div>
-      <div class="artist-card-info">
-        <div class="artist-card-name" id="artist5-name">Indaba Kabani</div>
-        <div class="artist-card-tag">Live Show</div>
-      </div>
-      <div class="artist-card-border"></div>
-    </div>
-  </div>
+    <!-- MASONRY IMAGE GRID -->
+    <div class="artists-masonry">
 
-  <div class="artists-bottom-bar reveal">
-    <p><span>Hosted by the best in the game.</span> Your favourite artists have graced our stage — who's next?</p>
-    <a href="https://wa.me/27742270872" class="btn-primary" target="_blank" rel="noopener" style="font-size:0.85rem; padding: 0.65rem 1.4rem;">Book for Events</a>
+      <!-- CARD 1 — Featured (spans rows) -->
+      <div class="artist-card reveal-left">
+        <img src="artists/artist1.jpg" alt="Headline Artist" id="ai1" onload="this.classList.add('loaded');document.getElementById('ap1').style.display='none'" onerror="this.style.display='none'"/>
+        <div class="artist-placeholder ap-bg-1" id="ap1">
+          <div class="ap-grid-lines"></div>
+          <div class="ap-glow"></div>
+          <div class="ap-content">
+            <span class="ap-icon">🎧</span>
+            <div class="ap-name">Headline<br/>Performer</div>
+            <div class="ap-genre">Amapiano · Afrobeats · Gqom</div>
+          </div>
+        </div>
+        <div class="artist-overlay"></div>
+        <div class="artist-glow-border"></div>
+        <div class="artist-cap">
+          <div class="badge"><span class="badge-dot"></span>Headline Act</div>
+          <div class="a-name">Featured<br/>Artist</div>
+          <div class="a-role">Main Stage · Dark or Blue Lounge</div>
+          <div class="a-badge gold-b">👑 Headliner of the Night</div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="artist-card reveal d1" style="height:440px">
+        <img src="artists/artist2.jpg" alt="Resident DJ" id="ai2" onload="this.classList.add('loaded');document.getElementById('ap2').style.display='none'" onerror="this.style.display='none'"/>
+        <div class="artist-placeholder ap-bg-2" id="ap2">
+          <div class="ap-grid-lines"></div>
+          <div class="ap-glow"></div>
+          <div class="ap-content">
+            <span class="ap-icon">🎶</span>
+            <div class="ap-name">Resident<br/>DJ</div>
+            <div class="ap-genre">Deep House · Electronic</div>
+          </div>
+        </div>
+        <div class="artist-overlay"></div>
+        <div class="artist-glow-border"></div>
+        <div class="artist-cap">
+          <div class="badge"><span class="badge-dot"></span>Resident DJ</div>
+          <div class="a-name">Dark or Blue<br/>Resident</div>
+          <div class="a-role">Every Friday & Saturday</div>
+          <div class="a-badge">🎵 Every Weekend</div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="artist-card reveal d2" style="height:440px">
+        <img src="artists/artist3.jpg" alt="Live Artist" id="ai3" onload="this.classList.add('loaded');document.getElementById('ap3').style.display='none'" onerror="this.style.display='none'"/>
+        <div class="artist-placeholder ap-bg-3" id="ap3">
+          <div class="ap-grid-lines"></div>
+          <div class="ap-glow"></div>
+          <div class="ap-content">
+            <span class="ap-icon">🎤</span>
+            <div class="ap-name">Live<br/>Vocalist</div>
+            <div class="ap-genre">R&B · Soul · Afropop</div>
+          </div>
+        </div>
+        <div class="artist-overlay"></div>
+        <div class="artist-glow-border"></div>
+        <div class="artist-cap">
+          <div class="badge"><span class="badge-dot"></span>Live Performance</div>
+          <div class="a-name">Vocal<br/>Artist</div>
+          <div class="a-role">Special Guest Performances</div>
+          <div class="a-badge">🎤 Live Stage</div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="artist-card reveal d3" style="height:280px">
+        <img src="artists/artist4.jpg" alt="Guest DJ" id="ai4" onload="this.classList.add('loaded');document.getElementById('ap4').style.display='none'" onerror="this.style.display='none'"/>
+        <div class="artist-placeholder ap-bg-4" id="ap4">
+          <div class="ap-grid-lines"></div>
+          <div class="ap-glow"></div>
+          <div class="ap-content">
+            <span class="ap-icon">🎛️</span>
+            <div class="ap-name">Guest<br/>DJ</div>
+            <div class="ap-genre">Gqom · Amapiano</div>
+          </div>
+        </div>
+        <div class="artist-overlay"></div>
+        <div class="artist-glow-border"></div>
+        <div class="artist-cap">
+          <div class="badge"><span class="badge-dot"></span>Guest DJ</div>
+          <div class="a-name">Guest<br/>Selector</div>
+          <div class="a-role">Monthly Special Sets</div>
+          <div class="a-badge">⚡ Special Guest</div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="artist-card reveal d4" style="height:280px">
+        <div class="artist-placeholder ap-bg-1">
+          <div class="ap-grid-lines"></div>
+          <div class="ap-glow"></div>
+          <div class="ap-content">
+            <span class="ap-icon">👑</span>
+            <div class="ap-name">Your Artist<br/>Here</div>
+            <div class="ap-genre">Book · Perform · Shine</div>
+          </div>
+        </div>
+        <div class="artist-overlay"></div>
+        <div class="artist-glow-border"></div>
+        <div class="artist-cap">
+          <div class="badge"><span class="badge-dot"></span>Open Booking</div>
+          <div class="a-name">Next<br/>Headliner</div>
+          <div class="a-role">Contact us to book your slot</div>
+          <div class="a-badge gold-b">📞 Book Now</div>
+        </div>
+      </div>
+
+    </div><!-- end masonry -->
+
+    <!-- MINI STRIP -->
+    <div class="artists-mini reveal">
+      <div class="artist-mini-card d1">
+        <div class="mini-avatar">AF</div>
+        <div><div class="mini-name">Amapiano Fridays</div><div class="mini-genre">Every Friday</div></div>
+      </div>
+      <div class="artist-mini-card d2">
+        <div class="mini-avatar">SS</div>
+        <div><div class="mini-name">Saturday Selectors</div><div class="mini-genre">Deep House & Gqom</div></div>
+      </div>
+      <div class="artist-mini-card d3">
+        <div class="mini-avatar">SD</div>
+        <div><div class="mini-name">Sundaze Sessions</div><div class="mini-genre">Afro Tech & Chill</div></div>
+      </div>
+      <div class="artist-mini-card d4">
+        <div class="mini-avatar">VIP</div>
+        <div><div class="mini-name">Private Bookings</div><div class="mini-genre">Artist & DJ Hire</div></div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="artists-stats reveal">
+      <div class="pstat"><span class="pstat-num">50+</span><span class="pstat-lbl">Artists Hosted</span><span class="pstat-sub">Since opening</span></div>
+      <div class="pstat"><span class="pstat-num">3×</span><span class="pstat-lbl">Weekly Live Sets</span><span class="pstat-sub">Fri, Sat & Sun</span></div>
+      <div class="pstat"><span class="pstat-num">100%</span><span class="pstat-lbl">Energy Every Night</span><span class="pstat-sub">No off nights</span></div>
+      <div class="pstat"><span class="pstat-num">∞</span><span class="pstat-lbl">Unforgettable Memories</span><span class="pstat-sub">You had to be there</span></div>
+    </div>
+
+    <!-- QUOTE -->
+    <div class="artists-quote reveal">
+      <span class="quote-mark">&ldquo;</span>
+      <div class="quote-body">Not just a venue — a stage for the very best in South African music. When top artists want to connect with real energy, they come to Dark or Blue.</div>
+      <span class="quote-src">Dark or Blue Lounge · Ntuzuma, Durban · Est. 2024</span>
+    </div>
+
   </div>
 </section>
 
-<!-- ===== EVENTS ===== -->
+<!-- ════ EVENTS ════ -->
 <section id="events">
-  <div class="section-label reveal">
-    <div class="section-label-line"></div>
-    <span class="section-label-text">What's On</span>
-  </div>
-  <h2 class="section-title reveal">UPCOMING<br/>EVENTS</h2>
-
-  <div class="events-layout">
-    <div class="events-list reveal" id="eventsList">
-      <div class="event-item">
-        <div class="event-item-top">
-          <div class="event-name">Gin & Vodka Sundays</div>
-          <span class="event-badge hot">🔥 HOT</span>
-        </div>
-        <div class="event-detail">Every Sunday · 12pm till late · R770 & R850 bundles</div>
+  <div class="max">
+    <div class="events-header">
+      <div class="reveal-left">
+        <div class="section-eyebrow">Upcoming</div>
+        <h2 class="section-title">Don't Miss<br/>a Single Night</h2>
+        <span class="rule"></span>
       </div>
-      <div class="event-item">
-        <div class="event-item-top">
-          <div class="event-name">Friday Night Takeover</div>
-          <span class="event-badge">WEEKLY</span>
-        </div>
-        <div class="event-detail">Every Friday · Live DJ · High-energy night from 7pm</div>
-      </div>
-      <div class="event-item">
-        <div class="event-item-top">
-          <div class="event-name">Shisanyama Saturday</div>
-          <span class="event-badge">WEEKEND</span>
-        </div>
-        <div class="event-detail">Every Saturday · Premium grills + cocktails + music</div>
-      </div>
-      <div class="event-item">
-        <div class="event-item-top">
-          <div class="event-name">VIP Artist Night</div>
-          <span class="event-badge">SPECIAL</span>
-        </div>
-        <div class="event-detail">Monthly headliner event · Table reservations required</div>
-      </div>
-      <div class="event-item">
-        <div class="event-item-top">
-          <div class="event-name">Hubbly & Chill Sessions</div>
-          <span class="event-badge">WEEKDAYS</span>
-        </div>
-        <div class="event-detail">Mon–Thu · Exclusive hubbly + beverages experience</div>
+      <div class="reveal-right" style="padding-bottom:var(--s2)">
+        <p class="section-body">The hottest events in Ntuzuma — live artists, headline DJs, and nights you'll never forget. Book your spot before it's too late.</p>
       </div>
     </div>
-
-    <div class="event-cta-block reveal reveal-delay-2">
-      <div class="event-cta-heading">Don't miss<br/><span>a single night.</span></div>
-      <p class="event-cta-text">
-        Every event at Dark or Blue Lounge is crafted to deliver an experience beyond the ordinary. Limited spots. Guaranteed vibes. Reserve your place before it fills up.
-      </p>
-      <a href="https://wa.me/27742270872" class="btn-primary" target="_blank" rel="noopener">Reserve Your Spot</a>
+    <div class="events-list" id="ev-list"></div>
+    <div style="text-align:center;margin-top:var(--s10)" class="reveal">
+      <p style="font-family:var(--mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:var(--s5)">More events added weekly</p>
+      <a href="https://wa.me/27742270872?text=Hi%2C%20please%20add%20me%20to%20your%20events%20list!" target="_blank" class="btn btn-primary">Get Event Updates →</a>
     </div>
   </div>
 </section>
 
-<!-- ===== SPECIALS ===== -->
-<section id="specials">
-  <div class="section-label reveal">
-    <div class="section-label-line"></div>
-    <span class="section-label-text">Menu & Deals</span>
-  </div>
-  <h2 class="section-title reveal">EXCLUSIVE<br/>DEALS</h2>
-  <p class="section-subtitle reveal">Premium packages curated for an elite experience. Value that doesn't compromise on quality.</p>
-
-  <div class="specials-grid reveal">
-    <div class="special-card">
-      <div class="special-price">R150</div>
-      <div class="special-name">Platter for Two</div>
-      <p class="special-includes">Beef meat, wors & jeqe or pap. The perfect duo meal.</p>
-      <span class="special-tag">Most Popular</span>
+<!-- ════ MENU ════ -->
+<section id="menu">
+  <div class="max">
+    <div class="menu-header reveal">
+      <div class="section-eyebrow">Food Menu</div>
+      <h2 class="section-title">Platters & Meals</h2>
+      <span class="rule rule-center"></span>
+      <p class="section-body" style="margin:0 auto;text-align:center">Authentic township flavours elevated to premium status. Every platter is a celebration.</p>
     </div>
-    <div class="special-card">
-      <div class="special-price">R250</div>
-      <div class="special-name">Platter for Four</div>
-      <p class="special-includes">French fries, beef meat, wors, salads & more. Share the love.</p>
-    </div>
-    <div class="special-card">
-      <div class="special-price">R400</div>
-      <div class="special-name">Platter for Six</div>
-      <p class="special-includes">Salads, beef meat, pap, wors, fries, chicken wings & beef livers.</p>
-    </div>
-    <div class="special-card">
-      <div class="special-price">R600</div>
-      <div class="special-name">Platter for Eight</div>
-      <p class="special-includes">The full feast: beef meat, kidneys, liver, wors, fries, wings & salads.</p>
-      <span class="special-tag">Best Value</span>
-    </div>
-  </div>
-
-  <div style="margin-top:2rem;" class="reveal">
-    <p class="section-subtitle" style="margin-bottom:1rem;">Gin & Vodka Sunday Bundles</p>
-    <div class="specials-grid" style="max-width: 600px;">
-      <div class="special-card">
-        <div class="special-price">R770</div>
-        <div class="special-name">Smirnoff Bundle</div>
-        <p class="special-includes">1× Smirnoff · 1× Mixer · 1× Platter · 1× Hubbly Session</p>
-        <span class="special-tag">Sundays Only</span>
-      </div>
-      <div class="special-card">
-        <div class="special-price">R850</div>
-        <div class="special-name">Belgravia Bundle</div>
-        <p class="special-includes">1× Belgravia Gin · 1× Mixer · 1× Platter · 2× Hubbly Sessions</p>
-        <span class="special-tag">Premium Pick</span>
-      </div>
-    </div>
+    <div class="menu-grid" id="menu-grid"></div>
   </div>
 </section>
 
-<!-- ===== BOOKING ===== -->
-<section id="booking">
-  <div class="booking-content">
-    <div class="section-label reveal" style="justify-content:center;">
-      <div class="section-label-line"></div>
-      <span class="section-label-text">Reservations</span>
-    </div>
-    <h2 class="section-title reveal" style="text-align:center;">SECURE YOUR<br/><span style="color:var(--blue-light);">SPOT TONIGHT</span></h2>
-    <p class="section-subtitle reveal" style="text-align:center; margin: 0 auto 0; max-width:500px;">
-      Don't leave your night to chance. Tables fill up fast — especially on weekends. Reach out directly and we'll take care of the rest.
-    </p>
-
-    <div class="reveal" style="text-align:center;">
-      <a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I%20would%20like%20to%20book%20a%20table." class="wa-btn" target="_blank" rel="noopener">
-        <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-        Book Now on WhatsApp · +27 74 227 0872
-      </a>
-
-      <div class="or-divider">
-        <div class="or-divider-line"></div>
-        <span class="or-divider-text">Or call us</span>
-        <div class="or-divider-line"></div>
-      </div>
-
-      <a href="tel:+27742270872" style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;letter-spacing:0.08em;color:var(--blue-light);">
-        +27 74 227 0872
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== REVIEWS ===== -->
+<!-- ════ REVIEWS ════ -->
 <section id="reviews">
-  <div class="section-label reveal">
-    <div class="section-label-line"></div>
-    <span class="section-label-text">What People Say</span>
-  </div>
-  <h2 class="section-title reveal">REAL REVIEWS.<br/>REAL VIBES.</h2>
-
-  <div class="reviews-ticker-wrap">
-    <div class="reviews-ticker" id="reviewsTicker">
-      <!-- Reviews will be injected by JS -->
-    </div>
-  </div>
-
-  <div class="add-review-section reveal">
-    <button class="add-review-toggle" onclick="toggleReviewForm()">+ Leave Your Review</button>
-    <div class="review-form-wrap" id="reviewForm">
-      <p style="font-family:var(--font-heading);font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--white);margin-bottom:1.2rem;">Share Your Experience</p>
-      <div class="form-group">
-        <label class="form-label">Your Name</label>
-        <input type="text" class="form-input" id="reviewName" placeholder="e.g. Sifiso Gumede" />
-      </div>
-      <div class="form-group">
-        <label class="form-label">Rating</label>
-        <div class="star-select" id="starSelect">
-          <button class="star-btn" data-val="1" onclick="setStars(1)">★</button>
-          <button class="star-btn" data-val="2" onclick="setStars(2)">★</button>
-          <button class="star-btn" data-val="3" onclick="setStars(3)">★</button>
-          <button class="star-btn" data-val="4" onclick="setStars(4)">★</button>
-          <button class="star-btn" data-val="5" onclick="setStars(5)">★</button>
+  <div class="max">
+    <div class="reviews-header reveal">
+      <div class="section-eyebrow">What People Say</div>
+      <h2 class="section-title">Guest Reviews</h2>
+      <span class="rule rule-center"></span>
+      <div class="rating-display">
+        <div class="rating-big" id="avg-score">4.6</div>
+        <div class="rating-right">
+          <div class="stars">★★★★★</div>
+          <div class="r-count" id="rev-count">29 Google Reviews</div>
         </div>
       </div>
-      <div class="form-group">
-        <label class="form-label">Your Review</label>
-        <textarea class="form-textarea" id="reviewText" placeholder="Tell us about your experience..."></textarea>
+    </div>
+    <div class="reviews-stream" id="rev-stream"></div>
+    <div class="add-review reveal">
+      <h3>Leave a Review</h3>
+      <p class="sub">Share your experience with the community.</p>
+      <div class="form-row">
+        <div class="form-field"><label>Your Name</label><input type="text" id="r-name" placeholder="e.g. Sipho M." maxlength="60"/></div>
+        <div class="form-field"><label>Price Paid (per person)</label>
+          <select id="r-price">
+            <option value="">Select range...</option>
+            <option>R 50–100</option><option>R 100–200</option>
+            <option>R 200–300</option><option>R 300–500</option><option>R 500+</option>
+          </select>
+        </div>
       </div>
-      <button class="form-submit" onclick="submitReview()">Submit Review</button>
+      <div style="margin-bottom:var(--s5)">
+        <label style="font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60);display:block;margin-bottom:var(--s3)">Your Rating</label>
+        <div class="star-picker" id="star-picker">
+          <button type="button" onclick="setStar(1)">★</button><button type="button" onclick="setStar(2)">★</button>
+          <button type="button" onclick="setStar(3)">★</button><button type="button" onclick="setStar(4)">★</button>
+          <button type="button" onclick="setStar(5)">★</button>
+        </div>
+      </div>
+      <div class="form-field" style="margin-bottom:0">
+        <label>Your Review</label>
+        <textarea id="r-text" placeholder="Tell others about the food, vibe, service..." maxlength="500"></textarea>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary" onclick="submitReview()">Post Review</button>
+        <span class="form-msg" id="rev-msg"></span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== LOCATION ===== -->
+<!-- ════ BOOKINGS ════ -->
+<section id="bookings">
+  <div class="bookings-bg"></div>
+  <div class="bookings-inner max reveal">
+    <div class="section-eyebrow">Reserve Your Experience</div>
+    <h2 class="section-title section-title-light" style="font-size:clamp(2.5rem,6vw,5rem)">Book Your<br/>Night Now</h2>
+    <span class="rule rule-center" style="background:rgba(80,140,255,.6)"></span>
+    <p style="color:rgba(255,255,255,.55);font-size:1rem;line-height:1.75;margin-top:var(--s5)">Secure your table, book a private event or reserve an exclusive area. Dark or Blue Lounge delivers premium experiences on demand.</p>
+    <div class="book-opts">
+      <div class="book-opt"><div class="bo-icon">🍽️</div><div class="bo-name">Table Booking</div><div class="bo-sub">Reserve your spot</div></div>
+      <div class="book-opt"><div class="bo-icon">🎂</div><div class="bo-name">Private Events</div><div class="bo-sub">Birthdays & functions</div></div>
+      <div class="book-opt"><div class="bo-icon">👑</div><div class="bo-name">VIP Packages</div><div class="bo-sub">Ultimate experience</div></div>
+    </div>
+    <a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I%20would%20like%20to%20make%20a%20booking!" target="_blank" class="btn btn-wa">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Book Now on WhatsApp
+    </a>
+    <p class="wa-note">+27 74 227 0872 · 7 days a week · Reservations required</p>
+  </div>
+</section>
+
+<!-- ════ LOCATION ════ -->
 <section id="location">
-  <div class="section-label reveal">
-    <div class="section-label-line"></div>
-    <span class="section-label-text">Find Us</span>
-  </div>
-  <h2 class="section-title reveal">WHERE TO<br/>FIND US</h2>
-
-  <div class="location-grid">
-    <div class="map-placeholder reveal">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.0!2d30.9347!3d-29.7961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6fe3a0a3d1f1f%3A0x0!2s92+Uxamu+Dr%2C+Ntuzuma+D+-+Lindelani%2C+Ntuzuma%2C+4360!5e0!3m2!1sen!2sza!4v1690000000000"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Dark or Blue Lounge Location">
-      </iframe>
-      <div class="map-overlay-text">
-        <div class="map-overlay-name">Dark or Blue Lounge</div>
-        <div class="map-overlay-addr">92 Uxamu Dr, Ntuzuma D, Durban 4360</div>
-      </div>
+  <div class="max">
+    <div class="location-header reveal">
+      <div class="section-eyebrow">Find Us</div>
+      <h2 class="section-title">Come Find the Vibe</h2>
+      <span class="rule rule-center"></span>
     </div>
-
-    <div class="location-info reveal reveal-delay-2">
-      <div class="location-detail">
-        <span class="location-detail-icon">📍</span>
-        <div>
-          <div class="location-detail-label">Address</div>
-          <div class="location-detail-value">92 Uxamu Dr, Ntuzuma D – Lindelani, Ntuzuma, 4360, Durban, KwaZulu-Natal</div>
+    <div class="location-grid">
+      <div class="map-visual reveal-left" onclick="window.open('https://maps.google.com/?q=92+Uxamu+Drive+Ntuzuma+Durban','_blank')">
+        <div class="map-grid"></div>
+        <div class="map-pin-wrap">
+          <div class="map-pin-dot"></div>
+          <div class="map-pin-label">
+            <strong>Ntuzuma</strong>
+            <span>Durban, KwaZulu-Natal</span>
+          </div>
+          <a class="map-cta-btn" href="https://maps.google.com/?q=92+Uxamu+Drive+Ntuzuma+Durban" target="_blank" onclick="event.stopPropagation()">Open in Google Maps →</a>
         </div>
       </div>
-      <div class="location-detail">
-        <span class="location-detail-icon">📞</span>
-        <div>
-          <div class="location-detail-label">Phone</div>
-          <a href="tel:+27742270872" class="location-detail-value" style="color:var(--blue-light);">+27 74 227 0872</a>
-        </div>
+      <div class="loc-details reveal-right">
+        <div class="loc-row"><div class="loc-icon">📍</div><div><div class="loc-label">Address</div><div class="loc-value">92 Uxamu Drive<br/>Ntuzuma D - Lindelani<br/>Ntuzuma 4360, Durban, KZN</div></div></div>
+        <div class="loc-row"><div class="loc-icon">📞</div><div><div class="loc-label">Phone / WhatsApp</div><div class="loc-value"><a href="tel:0742270872" style="color:inherit">074 227 0872</a></div></div></div>
+        <div class="loc-row"><div class="loc-icon">🕐</div><div><div class="loc-label">Opening Hours</div><div class="loc-value" id="hours-display">Mon – Sun: 11:00 AM – 12:00 AM</div></div></div>
+        <div class="loc-row"><div class="loc-icon">🚗</div><div><div class="loc-label">Parking</div><div class="loc-value">Free street parking available</div></div></div>
+        <div class="loc-row"><div class="loc-icon">💳</div><div><div class="loc-label">Payments</div><div class="loc-value">Cash · Cards · NFC Mobile Payments</div></div></div>
       </div>
-      <div class="location-detail">
-        <span class="location-detail-icon">🕐</span>
-        <div>
-          <div class="location-detail-label">Hours</div>
-          <div class="location-detail-value">Open Daily · Closes 12am<br/>Weekends: Extended hours</div>
-        </div>
-      </div>
-      <div class="location-detail">
-        <span class="location-detail-icon">🅿️</span>
-        <div>
-          <div class="location-detail-label">Parking</div>
-          <div class="location-detail-value">Free street parking available</div>
-        </div>
-      </div>
-      <div class="location-detail">
-        <span class="location-detail-icon">💳</span>
-        <div>
-          <div class="location-detail-label">Payments</div>
-          <div class="location-detail-value">Credit & Debit Cards · NFC / Tap to Pay · Cash</div>
-        </div>
-      </div>
-      <a href="https://wa.me/27742270872" class="btn-primary" target="_blank" rel="noopener" style="margin-top:0.5rem;">
-        📲 Get Directions via WhatsApp
-      </a>
     </div>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
+<!-- ════ FOOTER ════ -->
 <footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <div class="footer-logo-wrap">
-        <img src="logo.jpg" alt="Dark or Blue Lounge" class="footer-logo-img" />
-        <div class="footer-logo-name">DARK <span>OR</span> BLUE<br/><span style="font-size:0.75rem;color:rgba(240,244,255,0.35);font-family:var(--font-heading);letter-spacing:0.2em;">LOUNGE</span></div>
-      </div>
-      <p>Ntuzuma's premier lifestyle destination. Shisanyama, car wash, hubbly, beverages & elite entertainment since 2020.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Quick Links</div>
-      <ul class="footer-links">
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#artists">Artists</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#specials">Menu & Deals</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#location">Location</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Connect With Us</div>
-      <ul class="footer-links">
-        <li><a href="tel:+27742270872">+27 74 227 0872</a></li>
-        <li><a href="https://wa.me/27742270872" target="_blank" rel="noopener">WhatsApp Us</a></li>
-        <li><span style="color:rgba(240,244,255,0.35);">92 Uxamu Dr, Ntuzuma</span></li>
-        <li><span style="color:rgba(240,244,255,0.35);">Durban, KZN 4360</span></li>
-      </ul>
-      <div class="footer-social" style="margin-top:1rem;">
-        <div class="social-icon" title="Instagram" onclick="window.open('https://www.instagram.com/darkorblueloungersa','_blank')">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </div>
-        <div class="social-icon" title="Facebook" onclick="window.open('https://www.facebook.com/darkorbluelounge','_blank')">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </div>
-        <div class="social-icon" title="TikTok" onclick="window.open('https://vm.tiktok.com/ZS9RyNfoo2hwy-GEmf9/','_blank')">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.85a8.27 8.27 0 004.84 1.55V6.96a4.84 4.84 0 01-1.07-.27z"/></svg>
-        </div>
-        <div class="social-icon" title="WhatsApp" onclick="window.open('https://wa.me/27742270872','_blank')">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="ft-brand-name">Dark or Blue Lounge</div>
+        <p class="ft-brand-desc">The ultimate lifestyle destination in Ntuzuma. Shisanyama, entertainment, hubbly, car wash and nightlife experiences that define the township premium scene.</p>
+        <div class="footer-socials">
+          <button class="soc-btn" onclick="goSocial('ig')" title="Instagram">IG</button>
+          <button class="soc-btn" onclick="goSocial('fb')" title="Facebook">FB</button>
+          <button class="soc-btn" onclick="goSocial('tk')" title="TikTok">TK</button>
+          <a href="https://wa.me/27742270872" target="_blank" rel="noopener" class="soc-btn" title="WhatsApp">WA</a>
         </div>
       </div>
+      <div class="ft-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#artists">Artists</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#bookings">Bookings</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Experiences</h4>
+        <ul>
+          <li><a href="#experiences">Shisanyama</a></li>
+          <li><a href="#experiences">Car Wash</a></li>
+          <li><a href="#experiences">Hubbly Lounge</a></li>
+          <li><a href="#experiences">Beverages</a></li>
+          <li><a href="#experiences">Entertainment</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Contact</h4>
+        <div class="ft-contact-item"><div class="ft-contact-lbl">WhatsApp / Call</div><div class="ft-contact-val">+27 74 227 0872</div></div>
+        <div class="ft-contact-item"><div class="ft-contact-lbl">Address</div><div class="ft-contact-val">92 Uxamu Drive<br/>Ntuzuma, Durban 4360</div></div>
+        <div class="ft-contact-item"><div class="ft-contact-lbl">Plus Code</div><div class="ft-contact-val">7W6M+9G Ntuzuma</div></div>
+      </div>
     </div>
-  </div>
-
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2024 Dark or Blue Lounge. All rights reserved. Ntuzuma, Durban, KZN.</div>
-    <div class="footer-est">Est. 2020</div>
+    <div class="footer-bottom">
+      <p>© <span id="yr"></span> Dark or Blue Lounge · Ntuzuma, Durban · All Rights Reserved</p>
+      <p>Where the Night Comes Alive.</p>
+    </div>
   </div>
 </footer>
 
 <!-- FLOATING WA -->
-<a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I'd%20like%20to%20book%20a%20table." class="wa-float" target="_blank" rel="noopener" title="Book on WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+<a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I%20would%20like%20to%20book!" target="_blank" class="float-wa" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<!-- SETTINGS BUTTON -->
-<button class="settings-btn" id="settingsBtn" title="Admin Settings" onclick="openSettings()">
-  <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
-    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-  </svg>
+<!-- SETTINGS BTN -->
+<button class="settings-btn" onclick="openSettings()" title="Owner Settings">
+  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
 </button>
 
-<!-- SETTINGS OVERLAY -->
-<div class="settings-overlay" id="settingsOverlay" onclick="closeSettings()"></div>
+<!-- SETTINGS MODAL -->
+<div class="modal-wrap" id="settings-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeSettings()">✕</button>
+    <div id="pass-gate">
+      <h2>Settings</h2>
+      <div class="modal-sub">Owner Access Only</div>
+      <div class="pass-wrap">
+        <input class="pass-input" type="password" id="pass-input" placeholder="Enter password" onkeydown="if(event.key==='Enter')checkPass()"/>
+        <button class="btn btn-primary" onclick="checkPass()" style="padding:12px 28px">Unlock</button>
+        <span class="pass-err" id="pass-err">Incorrect password. Try again.</span>
+      </div>
+    </div>
+    <div id="settings-panel" style="display:none">
+      <h2>Site Settings</h2>
+      <div class="modal-sub">Manage your venue website</div>
 
-<!-- SETTINGS PANEL -->
-<div class="settings-panel" id="settingsPanel">
-  <div class="settings-header">
-    <div class="settings-header-title">⚙️ Admin Panel</div>
-    <button class="settings-close-x" onclick="closeSettings()">✕</button>
-  </div>
+      <div class="s-section">
+        <h3>Venue Information</h3>
+        <div class="s-row">
+          <div class="s-field"><label>Venue Name</label><input id="s-name"/></div>
+          <div class="s-field"><label>Tagline</label><input id="s-tagline"/></div>
+        </div>
+        <div class="s-row">
+          <div class="s-field"><label>Phone / WhatsApp</label><input id="s-phone"/></div>
+          <div class="s-field"><label>Address</label><input id="s-address"/></div>
+        </div>
+        <div class="s-field"><label>Opening Hours</label><textarea id="s-hours" rows="3"></textarea></div>
+      </div>
 
-  <!-- LOCK SCREEN -->
-  <div class="settings-lock" id="settingsLock">
-    <div class="settings-lock-title">Admin Access</div>
-    <label class="settings-lock-label">Enter Password</label>
-    <input type="password" class="settings-lock-input" id="settingsPassword" placeholder="Enter password" onkeydown="if(event.key==='Enter')unlockSettings()" />
-    <div class="settings-lock-error" id="settingsError">Incorrect password. Try again.</div>
-    <button class="settings-lock-btn" onclick="unlockSettings()">Unlock</button>
-  </div>
+      <div class="s-section">
+        <h3>Events Manager</h3>
+        <div id="events-admin"></div>
+        <button class="btn-add-s" onclick="addEventAdmin()">+ Add Event</button>
+      </div>
 
-  <!-- SETTINGS CONTENT (hidden until unlocked) -->
-  <div class="settings-content" id="settingsContent">
-    <p style="font-family:var(--font-heading);font-size:0.8rem;font-weight:600;color:var(--blue-light);letter-spacing:0.1em;">ADMIN MODE ACTIVE</p>
+      <div class="s-section">
+        <h3>Menu Manager</h3>
+        <div id="menu-admin"></div>
+        <button class="btn-add-s" onclick="addMenuAdmin()">+ Add Menu Item</button>
+      </div>
 
-    <div class="settings-section-title">Hero Section</div>
-    <div class="settings-field">
-      <label>Hero Tagline</label>
-      <input type="text" id="set-tagline" placeholder="Where the night comes alive." />
-    </div>
+      <div class="s-section">
+        <h3>Reviews Manager</h3>
+        <div id="reviews-admin"></div>
+      </div>
 
-    <div class="settings-section-title">Contact Info</div>
-    <div class="settings-field">
-      <label>WhatsApp Number</label>
-      <input type="text" id="set-phone" placeholder="+27742270872" />
-    </div>
+      <div class="s-section">
+        <h3>Social Media & Images</h3>
+        <div class="s-row">
+          <div class="s-field"><label>Instagram URL</label><input id="s-ig"/></div>
+          <div class="s-field"><label>Facebook URL</label><input id="s-fb"/></div>
+        </div>
+        <div class="s-row">
+          <div class="s-field"><label>TikTok URL</label><input id="s-tk"/></div>
+          <div class="s-field"><label>Hero Background Image</label><input id="s-hero"/></div>
+        </div>
+      </div>
 
-    <div class="settings-section-title">Events</div>
-    <div class="settings-field">
-      <label>Event 1 Name</label>
-      <input type="text" id="set-event1" placeholder="Gin & Vodka Sundays" />
+      <button class="save-all" onclick="saveAll()">Save All Changes</button>
+      <div class="save-ok" id="save-ok">✓ All changes saved successfully</div>
     </div>
-    <div class="settings-field">
-      <label>Event 2 Name</label>
-      <input type="text" id="set-event2" placeholder="Friday Night Takeover" />
-    </div>
-    <div class="settings-field">
-      <label>Event 3 Name</label>
-      <input type="text" id="set-event3" placeholder="Shisanyama Saturday" />
-    </div>
-
-    <div class="settings-section-title">Artists</div>
-    <div class="settings-field">
-      <label>Artist 1 Name</label>
-      <input type="text" id="set-artist1" placeholder="Featured Artist" />
-    </div>
-    <div class="settings-field">
-      <label>Artist 2 Name</label>
-      <input type="text" id="set-artist2" placeholder="Resident DJ" />
-    </div>
-    <div class="settings-field">
-      <label>Artist 3 Name</label>
-      <input type="text" id="set-artist3" placeholder="Headliner" />
-    </div>
-    <div class="settings-field">
-      <label>Artist 4 Name</label>
-      <input type="text" id="set-artist4" placeholder="Special Guest" />
-    </div>
-    <div class="settings-field">
-      <label>Artist 5 Name</label>
-      <input type="text" id="set-artist5" placeholder="Rising Star" />
-    </div>
-
-    <div class="settings-section-title">Announcements</div>
-    <div class="settings-field">
-      <label>Banner Message (leave empty to hide)</label>
-      <input type="text" id="set-banner" placeholder="e.g. This Friday: Special Guest Artist" />
-    </div>
-
-    <button class="settings-save-btn" onclick="applySettings()">💾 Apply Changes</button>
-    <button onclick="lockSettings()" style="width:100%;margin-top:0.5rem;font-family:var(--font-heading);font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.6rem;background:transparent;border:1px solid var(--border);color:var(--white-dim);border-radius:2px;cursor:pointer;">🔒 Lock & Close</button>
   </div>
 </div>
 
-<!-- TOAST -->
-<div class="toast" id="toast"></div>
-
-<!-- ANNOUNCEMENT BANNER -->
-<div id="announcementBanner" style="display:none;position:fixed;top:0;left:0;right:0;z-index:1100;background:var(--blue);color:#fff;text-align:center;padding:0.5rem 3rem;font-family:var(--font-heading);font-size:0.85rem;font-weight:600;letter-spacing:0.08em;">
-  <span id="bannerText"></span>
-  <button onclick="document.getElementById('announcementBanner').style.display='none'" style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);background:none;border:none;color:#fff;font-size:1.2rem;cursor:pointer;line-height:1;">×</button>
-</div>
-
+<!-- ════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════ -->
 <script>
-  // ===== AUTO-LOAD ARTIST IMAGES =====
-  const artistFiles = [
-    { id: 'artist1', prefix: 'artist1' },
-    { id: 'artist2', prefix: 'artist2' },
-    { id: 'artist3', prefix: 'artist3' },
-    { id: 'artist4', prefix: 'artist4' },
-    { id: 'artist5', prefix: 'artist5' },
-  ];
+/* ── SOCIAL LINKS (URLs hidden in JS only) ── */
+const SOCIALS = {
+  ig: 'https://www.instagram.com/darkorblueloungersa?igsh=azU4ZjYzeW1haGhv',
+  fb: 'https://www.facebook.com/darkorbluelounge',
+  tk: 'https://vm.tiktok.com/ZS9RyNfoo2hwy-GEmf9/'
+};
+function goSocial(k){ window.open((siteData[k]||SOCIALS[k]),'_blank','noopener,noreferrer'); }
 
-  artistFiles.forEach(({ id, prefix }) => {
-    const img = document.getElementById(id + '-img');
-    if (!img) return;
-    const exts = ['jpg','jpeg','png','webp'];
-    let loaded = false;
-    let idx = 0;
-    function tryNext() {
-      if (loaded || idx >= exts.length) {
-        if (!loaded) {
-          img.style.display = 'none';
-          const ph = document.createElement('div');
-          ph.style.cssText = 'width:100%;height:100%;background:linear-gradient(135deg,#0d0d18,#1a3a6a);display:flex;align-items:center;justify-content:center;font-size:3rem;position:absolute;inset:0;';
-          ph.textContent = '🎤';
-          img.parentNode.insertBefore(ph, img.parentNode.firstChild);
-        }
-        return;
-      }
-      const path = prefix + '.' + exts[idx++];
-      const t = new Image();
-      t.onload = () => { if (!loaded) { loaded = true; img.src = path; img.style.cssText = 'width:100%;height:100%;object-fit:cover;'; } };
-      t.onerror = tryNext;
-      t.src = path;
-    }
-    tryNext();
-  });
+/* ── DATA STORE ── */
+const PASS = 'd4rk';
+const ls = { get:(k,d)=>{ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):d; }catch(e){ return d; } }, set:(k,v)=>{ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} } };
 
-  // ===== REVIEWS DATA =====
-  let reviews = [
-    { name: 'Khulekani M.', stars: 4, text: 'Nice music and friendly staff. Great vibe overall!', time: '2 years ago', initials: 'KM' },
-    { name: 'Collen B.', stars: 5, text: 'Good food and excellent service. Will definitely be back!', time: '4 months ago', initials: 'CB' },
-    { name: 'Sphesihle M.', stars: 5, text: 'Nice place to chill with friends. Highly recommend!', time: '3 years ago', initials: 'SM' },
-    { name: 'Gcina G.', stars: 5, text: 'Good food and great service. One of the best spots in Ntuzuma.', time: '1 year ago', initials: 'GG' },
-    { name: 'Remeques G.', stars: 5, text: 'A Blast! Amazing atmosphere and great prices for R50–100.', time: '2 years ago', initials: 'RG' },
-    { name: 'Honey S.', stars: 5, text: 'Nice place. Great ambiance and friendly people everywhere.', time: '3 years ago', initials: 'HS' },
-    { name: 'Smiso', stars: 4, text: 'Decent experience. Worth the price range.', time: '5 months ago', initials: 'SM' },
-    { name: 'Simphiwe K.', stars: 4, text: 'Food was good, service was great. Will be back soon!', time: '11 months ago', initials: 'SK' },
-    { name: 'Ayanda J.', stars: 5, text: 'Food 4/5, Service 5/5. Absolutely loved the energy here!', time: '1 year ago', initials: 'AJ' },
-    { name: 'Nkosiyazi M.', stars: 5, text: 'Great spot! The entertainment was top-notch. Loved every moment.', time: '2 years ago', initials: 'NM' },
-  ];
+let siteData = ls.get('dob_v3_site',{
+  name:'Dark or Blue Lounge', tagline:'Where the Night Comes Alive.',
+  phone:'27742270872', address:'92 Uxamu Drive, Ntuzuma, Durban 4360',
+  hours:'Mon – Sun: 11:00 AM – 12:00 AM',
+  heroImg:'hero-bg.jpg', ...SOCIALS
+});
 
-  let selectedStars = 0;
+let events = ls.get('dob_v3_events',[
+  {date:'28',day:'MAR',title:'Dark Fridays',artist:'DJ Maphorisa',genre:'Amapiano · Afrobeats',hot:true},
+  {date:'29',day:'MAR',title:'Blue Saturday',artist:'Resident DJ Collective',genre:'Deep House · Gqom',hot:true},
+  {date:'30',day:'MAR',title:'Sundaze Session',artist:'DJ Lag + Special Guests',genre:'Gqom · Electronic',hot:false},
+  {date:'04',day:'APR',title:'Apex Nights',artist:'TBA — Exclusive Drop',genre:'Afro Tech · Deep',hot:false}
+]);
 
-  function renderStars(n) {
-    return '★'.repeat(n) + '☆'.repeat(5 - n);
-  }
+let menuItems = ls.get('dob_v3_menu',[
+  {price:'R 150',name:'Platter for Two',desc:'Beef meat, Wors & Jeqe or Pap'},
+  {price:'R 250',name:'Platter for Four',desc:'French Fries · Beef Meat · Wors · Salads'},
+  {price:'R 400',name:'Platter for Six',desc:'Salads · Beef Meat · Pap · Wors · Fries · Chicken Wings · Beef Livers'},
+  {price:'R 600',name:'Platter for Eight',desc:'Beef Meat · Kidneys · Liver · Wors · Fries · Wings · Salads'},
+  {price:'R 30',name:'Beef Curry Plate',desc:'Beef Stew · Rice or Pap · Salads'}
+]);
 
-  function buildReviewCard(r) {
-    return `
-      <div class="review-notification">
-        <div class="review-notif-header">
-          <div class="review-avatar">${r.initials}</div>
-          <div>
-            <div class="review-name">${r.name}</div>
-            <div class="review-stars">${renderStars(r.stars)}</div>
+const seedReviews = [
+  {name:'Khulekani M.',stars:4,text:'Nice music and friendly staff. The owner should consider pricing — it\'s a premium experience.',price:'R 50–100',time:'2 years ago',initials:'KM'},
+  {name:'Collen B.',stars:5,text:'Good vibes! Food and service are on point — definitely coming back.',price:'R 50–100',time:'4 months ago',initials:'CB'},
+  {name:'Sphesihle M.',stars:5,text:'Perfect place to chill with friends. The atmosphere is exactly what you need.',price:'',time:'3 years ago',initials:'SM'},
+  {name:'Remeques G.',stars:5,text:'A Blast! The shisanyama is absolutely fire. Great experience overall.',price:'R 50–100',time:'2 years ago',initials:'RG'},
+  {name:'Gcina G.',stars:5,text:'Good food, great service. Highly recommend to everyone.',price:'',time:'a year ago',initials:'GG'},
+  {name:'Simphiwe K.',stars:4,text:'Solid spot. Food was great, service attentive. Music kept the energy going all night.',price:'R 100–200',time:'11 months ago',initials:'SK'}
+];
+
+let reviews = ls.get('dob_v3_reviews', seedReviews);
+let selectedStars = 0;
+
+const experiences = [
+  {icon:'🍖',tag:'SIGNATURE',name:'Shisanyama',desc:'Premium township braai. Slow-grilled meats, bold flavours, fire-kissed perfection.'},
+  {icon:'🚗',tag:'EXCLUSIVE',name:'Car Wash',desc:'Full-service car wash. Arrive clean, leave immaculate.'},
+  {icon:'💨',tag:'PREMIUM',name:'Hubbly',desc:'Premium shisha with an extensive flavour menu. Hand-crafted sessions.'},
+  {icon:'🍹',tag:'CRAFTED',name:'Beverages',desc:'Cocktails, spirits, craft beers and signature blends served ice cold.'},
+  {icon:'🎶',tag:'LIVE',name:'Entertainment',desc:'Live DJs, headline artists and electric performances until dawn.'}
+];
+
+const tickerContent = [
+  '🔥 Dark Fridays Every Week','🎶 Top Artists Perform Live','🍖 Premium Shisanyama',
+  '💨 Hubbly Lounge Open Nightly','🚗 Full-Service Car Wash','🍹 Signature Cocktails',
+  '🎉 Weekend Events — Book Now','📍 Ntuzuma, Durban','⭐ 4.6 Stars on Google',
+  '👑 Hosted by the Best in the Game','🎤 Elite Entertainment Every Night'
+];
+
+/* ── TICKER ── */
+function renderTicker(){
+  const doubled = [...tickerContent,...tickerContent];
+  document.getElementById('ticker-track').innerHTML = doubled.map(i=>
+    `<div class="ticker-item"><span class="ticker-sep">✦</span>${i}</div>`
+  ).join('');
+}
+
+/* ── EXPERIENCES ── */
+function renderExperiences(){
+  document.getElementById('exp-grid').innerHTML = experiences.map((e,i)=>`
+    <div class="exp-card reveal d${i+1}">
+      <div class="exp-icon">${e.icon}</div>
+      <div class="exp-tag-lbl">${e.tag}</div>
+      <div class="exp-name">${e.name}</div>
+      <div class="exp-desc">${e.desc}</div>
+    </div>`).join('');
+}
+
+/* ── EVENTS ── */
+function renderEvents(){
+  document.getElementById('ev-list').innerHTML = events.map((ev,i)=>`
+    <a class="event-row reveal d${Math.min(i+1,4)}" href="https://wa.me/${siteData.phone||'27742270872'}?text=Hi%2C%20I%20want%20to%20reserve%20for%20${encodeURIComponent(ev.title)}!" target="_blank">
+      <div class="event-date">
+        <span class="e-day">${ev.date}</span>
+        <span class="e-month">${ev.day}</span>
+      </div>
+      <div class="event-sep"></div>
+      <div class="event-info">
+        <div class="event-title">${ev.title}${ev.hot?'<span class="event-hot">🔥 Hot</span>':''}</div>
+        <div class="event-artist">${ev.artist}</div>
+        <div class="event-genre">${ev.genre}</div>
+      </div>
+      <div class="event-cta">Reserve Spot →</div>
+    </a>`).join('');
+}
+
+/* ── MENU ── */
+function renderMenu(){
+  document.getElementById('menu-grid').innerHTML = menuItems.map((m,i)=>`
+    <div class="menu-card reveal d${Math.min(i+1,5)}">
+      <div class="menu-price">${m.price}</div>
+      <div class="menu-name">${m.name}</div>
+      <div class="menu-desc">${m.desc}</div>
+    </div>`).join('');
+}
+
+/* ── REVIEWS ── */
+function esc(t){ const d=document.createElement('div'); d.textContent=t; return d.innerHTML; }
+function stars(n){ return '★'.repeat(n)+'☆'.repeat(5-n); }
+function initials(n){ return n.trim().split(' ').map(w=>w[0]||'').slice(0,2).join('').toUpperCase()||'?'; }
+function timeAgo(ts){ if(!ts) return 'recently'; const s=Math.floor((Date.now()-ts)/1000); if(s<60) return 'just now'; if(s<3600) return Math.floor(s/60)+'m ago'; if(s<86400) return Math.floor(s/3600)+'h ago'; return Math.floor(s/86400)+'d ago'; }
+
+function renderReviews(){
+  document.getElementById('rev-stream').innerHTML = reviews.map((r,i)=>`
+    <div class="review-notif" style="animation-delay:${i*.06}s">
+      <div class="r-avatar">${esc(r.initials||initials(r.name))}</div>
+      <div class="r-body">
+        <div class="r-meta">
+          <span class="r-name">${esc(r.name)}</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            ${r.ts?`<span class="r-new">New</span>`:''}
+            <span class="r-time">${r.ts?timeAgo(r.ts):r.time||'recently'}</span>
           </div>
         </div>
-        <div class="review-text">"${r.text}"</div>
-        <div class="review-time">${r.time}</div>
-      </div>`;
+        <div class="r-stars">${stars(r.stars)}</div>
+        ${r.text?`<div class="r-text">${esc(r.text)}</div>`:''}
+        ${r.price?`<div class="r-price">Spent: ${esc(r.price)}/person</div>`:''}
+      </div>
+    </div>`).join('');
+  const avg = (reviews.reduce((s,r)=>s+r.stars,0)/reviews.length).toFixed(1);
+  document.getElementById('avg-score').textContent = avg;
+  document.getElementById('rev-count').textContent = reviews.length+' Reviews';
+}
+
+/* ── STAR PICKER ── */
+function setStar(n){
+  selectedStars = n;
+  document.querySelectorAll('.star-picker button').forEach((b,i)=>b.classList.toggle('active',i<n));
+}
+
+/* ── SUBMIT REVIEW ── */
+function submitReview(){
+  const name = document.getElementById('r-name').value.trim();
+  const text = document.getElementById('r-text').value.trim();
+  const price = document.getElementById('r-price').value;
+  const msg = document.getElementById('rev-msg');
+  if(!name){ showMsg(msg,'err','Please enter your name.'); return; }
+  if(!selectedStars){ showMsg(msg,'err','Please select a rating.'); return; }
+  if(!text){ showMsg(msg,'err','Please write a review.'); return; }
+  reviews.unshift({name,stars:selectedStars,text,price,initials:initials(name),ts:Date.now()});
+  ls.set('dob_v3_reviews',reviews); renderReviews();
+  document.getElementById('r-name').value='';
+  document.getElementById('r-text').value='';
+  document.getElementById('r-price').value='';
+  setStar(0);
+  showMsg(msg,'ok','Review posted — thank you! 🎉');
+  document.getElementById('rev-stream').scrollTop=0;
+}
+function showMsg(el,t,txt){ el.textContent=txt; el.className='form-msg '+t; el.style.display='inline-block'; setTimeout(()=>el.style.display='none',4000); }
+
+/* ── NAV ── */
+function toggleMenu(){ document.getElementById('mob').classList.toggle('open'); }
+function closeMenu(){ document.getElementById('mob').classList.remove('open'); }
+
+window.addEventListener('scroll',()=>{
+  const s = window.scrollY;
+  document.getElementById('nav').classList.toggle('scrolled', s>60);
+  document.getElementById('sticky-bar').classList.toggle('show', s>400);
+},{passive:true});
+
+/* ── SETTINGS ── */
+function openSettings(){
+  document.getElementById('settings-modal').classList.add('open');
+  document.getElementById('pass-gate').style.display='';
+  document.getElementById('settings-panel').style.display='none';
+  document.getElementById('pass-input').value='';
+  document.getElementById('pass-err').style.display='none';
+  setTimeout(()=>document.getElementById('pass-input').focus(),200);
+}
+function closeSettings(){ document.getElementById('settings-modal').classList.remove('open'); }
+
+function checkPass(){
+  if(document.getElementById('pass-input').value===PASS){
+    document.getElementById('pass-gate').style.display='none';
+    document.getElementById('settings-panel').style.display='block';
+    populateSettings();
+  } else {
+    const e=document.getElementById('pass-err'); e.style.display='block';
+    document.getElementById('pass-input').value='';
+    document.getElementById('pass-input').focus();
+    setTimeout(()=>e.style.display='none',3000);
   }
+}
 
-  function renderTicker() {
-    const ticker = document.getElementById('reviewsTicker');
-    // Double the reviews for seamless loop
-    const allCards = [...reviews, ...reviews].map(buildReviewCard).join('');
-    ticker.innerHTML = allCards;
-  }
+function populateSettings(){
+  document.getElementById('s-name').value = siteData.name||'';
+  document.getElementById('s-tagline').value = siteData.tagline||'';
+  document.getElementById('s-phone').value = siteData.phone||'';
+  document.getElementById('s-address').value = siteData.address||'';
+  document.getElementById('s-hours').value = siteData.hours||'';
+  document.getElementById('s-hero').value = siteData.heroImg||'';
+  document.getElementById('s-ig').value = siteData.ig||SOCIALS.ig;
+  document.getElementById('s-fb').value = siteData.fb||SOCIALS.fb;
+  document.getElementById('s-tk').value = siteData.tk||SOCIALS.tk;
+  renderAdminEvents(); renderAdminMenu(); renderAdminReviews();
+}
 
-  renderTicker();
+function renderAdminEvents(){
+  document.getElementById('events-admin').innerHTML = events.map((ev,i)=>`
+    <div class="s-item"><span><strong>${ev.date} ${ev.day}</strong> — ${ev.title} | ${ev.artist}</span><button class="s-del" onclick="removeEvent(${i})">Delete</button></div>`
+  ).join('') || '<p style="font-size:.82rem;color:var(--ink-40);padding:8px 0">No events. Add one below.</p>';
+}
+function removeEvent(i){ events.splice(i,1); ls.set('dob_v3_events',events); renderAdminEvents(); }
+function addEventAdmin(){
+  const d=prompt('Date (e.g. 28):',''); if(!d) return;
+  const m=prompt('Month (e.g. APR):',''); if(!m) return;
+  const t=prompt('Event Title:',''); if(!t) return;
+  const a=prompt('Artist / DJ:','TBA');
+  const g=prompt('Genre:','Amapiano');
+  events.push({date:d.trim(),day:m.toUpperCase().trim(),title:t.trim(),artist:a||'TBA',genre:g||'',hot:false});
+  ls.set('dob_v3_events',events); renderAdminEvents();
+}
 
-  // ===== REVIEW FORM =====
-  function toggleReviewForm() {
-    const form = document.getElementById('reviewForm');
-    form.classList.toggle('open');
-  }
+function renderAdminMenu(){
+  document.getElementById('menu-admin').innerHTML = menuItems.map((m,i)=>`
+    <div class="s-item"><span><strong>${m.price}</strong> — ${m.name}</span><button class="s-del" onclick="removeMenu(${i})">Delete</button></div>`
+  ).join('') || '<p style="font-size:.82rem;color:var(--ink-40);padding:8px 0">No menu items.</p>';
+}
+function removeMenu(i){ menuItems.splice(i,1); ls.set('dob_v3_menu',menuItems); renderAdminMenu(); }
+function addMenuAdmin(){
+  const p=prompt('Price (e.g. R 250):',''); if(!p) return;
+  const n=prompt('Item Name:',''); if(!n) return;
+  const d=prompt('Description:','');
+  menuItems.push({price:p.trim(),name:n.trim(),desc:d||''});
+  ls.set('dob_v3_menu',menuItems); renderAdminMenu();
+}
 
-  function setStars(n) {
-    selectedStars = n;
-    document.querySelectorAll('.star-btn').forEach((btn, i) => {
-      btn.classList.toggle('active', i < n);
-    });
-  }
+function renderAdminReviews(){
+  document.getElementById('reviews-admin').innerHTML = reviews.map((r,i)=>`
+    <div class="s-item"><span><strong>${esc(r.name)}</strong> (${stars(r.stars)}) — ${esc((r.text||'').slice(0,50))}${(r.text||'').length>50?'...':''}</span><button class="s-del" onclick="deleteReview(${i})">Delete</button></div>`
+  ).join('') || '<p style="font-size:.82rem;color:var(--ink-40);padding:8px 0">No reviews yet.</p>';
+}
+function deleteReview(i){
+  if(confirm('Delete this review?')){ reviews.splice(i,1); ls.set('dob_v3_reviews',reviews); renderAdminReviews(); renderReviews(); }
+}
 
-  function submitReview() {
-    const name = document.getElementById('reviewName').value.trim();
-    const text = document.getElementById('reviewText').value.trim();
-    if (!name || !text || !selectedStars) {
-      showToast('Please fill in all fields and select a rating.');
-      return;
-    }
-    const initials = name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
-    reviews.unshift({ name, stars: selectedStars, text, time: 'Just now', initials });
-    renderTicker();
-    document.getElementById('reviewName').value = '';
-    document.getElementById('reviewText').value = '';
-    setStars(0);
-    document.getElementById('reviewForm').classList.remove('open');
-    showToast('Thank you for your review! 🙏');
-  }
+function saveAll(){
+  siteData.name = document.getElementById('s-name').value.trim();
+  siteData.tagline = document.getElementById('s-tagline').value.trim();
+  siteData.phone = document.getElementById('s-phone').value.replace(/\D/g,'');
+  siteData.address = document.getElementById('s-address').value.trim();
+  siteData.hours = document.getElementById('s-hours').value.trim();
+  siteData.heroImg = document.getElementById('s-hero').value.trim();
+  siteData.ig = document.getElementById('s-ig').value.trim()||SOCIALS.ig;
+  siteData.fb = document.getElementById('s-fb').value.trim()||SOCIALS.fb;
+  siteData.tk = document.getElementById('s-tk').value.trim()||SOCIALS.tk;
+  ls.set('dob_v3_site',siteData); ls.set('dob_v3_events',events); ls.set('dob_v3_menu',menuItems);
+  document.getElementById('hours-display').innerHTML = siteData.hours.replace(/\n/g,'<br>');
+  const heroEl = document.querySelector('.hero-media img');
+  if(heroEl && siteData.heroImg) heroEl.src = siteData.heroImg;
+  renderEvents(); renderMenu();
+  const ok = document.getElementById('save-ok');
+  ok.style.display='block'; setTimeout(()=>ok.style.display='none',3500);
+}
 
-  // ===== NAV SCROLL =====
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 40);
-  });
+/* ── CLOSE MODAL ON BACKDROP ── */
+document.getElementById('settings-modal').addEventListener('click',function(e){ if(e.target===this) closeSettings(); });
 
-  // ===== HAMBURGER =====
-  document.getElementById('hamburger').addEventListener('click', () => {
-    document.getElementById('mobileMenu').classList.add('open');
-  });
-  document.getElementById('mobileClose').addEventListener('click', closeMobile);
-  function closeMobile() {
-    document.getElementById('mobileMenu').classList.remove('open');
-  }
+/* ── SCROLL REVEAL ── */
+const ro = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+},{threshold:0.1});
+function observeAll(){ document.querySelectorAll('.reveal,.reveal-up,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>ro.observe(el)); }
 
-  // ===== REVEAL ON SCROLL =====
-  const revealEls = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-  }, { threshold: 0.12 });
-  revealEls.forEach(el => observer.observe(el));
+/* ── YEAR ── */
+document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // ===== SETTINGS =====
-  let settingsUnlocked = false;
-  const SETTINGS_PASSWORD = 'd4rk';
-
-  function openSettings() {
-    document.getElementById('settingsPanel').classList.add('open');
-    document.getElementById('settingsOverlay').classList.add('open');
-    if (!settingsUnlocked) {
-      document.getElementById('settingsPassword').focus();
-    }
-  }
-
-  function closeSettings() {
-    document.getElementById('settingsPanel').classList.remove('open');
-    document.getElementById('settingsOverlay').classList.remove('open');
-  }
-
-  function unlockSettings() {
-    const pw = document.getElementById('settingsPassword').value;
-    if (pw === SETTINGS_PASSWORD) {
-      settingsUnlocked = true;
-      document.getElementById('settingsLock').style.display = 'none';
-      document.getElementById('settingsContent').classList.add('unlocked');
-      document.getElementById('settingsError').style.display = 'none';
-    } else {
-      document.getElementById('settingsError').style.display = 'block';
-      document.getElementById('settingsPassword').value = '';
-      document.getElementById('settingsPassword').focus();
-    }
-  }
-
-  function lockSettings() {
-    settingsUnlocked = false;
-    document.getElementById('settingsLock').style.display = 'flex';
-    document.getElementById('settingsContent').classList.remove('unlocked');
-    document.getElementById('settingsPassword').value = '';
-    closeSettings();
-  }
-
-  function applySettings() {
-    // Tagline
-    const tagline = document.getElementById('set-tagline').value.trim();
-    if (tagline) {
-      const el = document.querySelector('.hero-tagline');
-      if (el) el.innerHTML = `<strong>${tagline}</strong>`;
-    }
-    // Artist names
-    ['1','2','3','4','5'].forEach(n => {
-      const val = document.getElementById('set-artist' + n).value.trim();
-      if (val) {
-        const el = document.getElementById('artist' + n + '-name');
-        if (el) el.textContent = val;
-      }
-    });
-    // Events
-    const eventItems = document.querySelectorAll('.event-name');
-    ['1','2','3'].forEach((n, i) => {
-      const val = document.getElementById('set-event' + n).value.trim();
-      if (val && eventItems[i]) eventItems[i].textContent = val;
-    });
-    // Banner
-    const banner = document.getElementById('set-banner').value.trim();
-    const bannerEl = document.getElementById('announcementBanner');
-    if (banner) {
-      document.getElementById('bannerText').textContent = banner;
-      bannerEl.style.display = 'block';
-      document.body.style.paddingTop = '36px';
-    } else {
-      bannerEl.style.display = 'none';
-      document.body.style.paddingTop = '';
-    }
-    showToast('Changes applied successfully! ✅');
-    closeSettings();
-  }
-
-  // ===== TOAST =====
-  function showToast(msg) {
-    const t = document.getElementById('toast');
-    t.textContent = msg;
-    t.classList.add('show');
-    setTimeout(() => t.classList.remove('show'), 3200);
-  }
+/* ── INIT ── */
+document.addEventListener('DOMContentLoaded',()=>{
+  renderTicker(); renderExperiences(); renderEvents(); renderMenu(); renderReviews();
+  document.getElementById('hours-display').innerHTML = siteData.hours.replace(/\n/g,'<br>');
+  setTimeout(observeAll,120);
+});
 </script>
 </body>
 </html>
