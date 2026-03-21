@@ -2,1841 +2,2549 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
-<title>Dark or Blue Lounge | Premium Nightlife · Live Artists · Shisanyama · Ntuzuma, Durban</title>
-<meta name="description" content="Dark or Blue Lounge — Ntuzuma's most prestigious lifestyle destination. Elite shisanyama, hubbly, top DJs, live artists & unforgettable nightlife. 92 Uxamu Drive."/>
-<meta name="keywords" content="Dark or Blue Lounge, shisanyama Ntuzuma, lounge Ntuzuma, nightlife Durban, entertainment venue Durban, live artists Ntuzuma, DJ events Durban, hubbly lounge Ntuzuma"/>
-<meta property="og:title" content="Dark or Blue Lounge | Where Top Artists Perform"/>
-<meta property="og:description" content="Ntuzuma's elite lifestyle destination. Top artists, premium shisanyama, hubbly & live entertainment."/>
-<meta property="og:image" content="hero-bg.jpg"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dark or Blue Lounge | Premier Nightlife & Entertainment — Ntuzuma, Durban</title>
+<meta name="description" content="Dark or Blue Lounge — Ntuzuma's most elite nightlife destination. Shisanyama, Car Wash, Hubbly, Beverages & live entertainment. Book your table now."/>
+<meta name="keywords" content="shisanyama Ntuzuma, lounge near me, nightlife Ntuzuma, car wash Ntuzuma, entertainment venue Durban, Dark or Blue Lounge"/>
+<meta property="og:title" content="Dark or Blue Lounge | Premier Nightlife — Ntuzuma"/>
+<meta property="og:description" content="Where the night comes alive. Elite shisanyama, hubbly, beverages & live entertainment in Ntuzuma, Durban."/>
 <meta property="og:type" content="website"/>
-<meta property="og:locale" content="en_ZA"/>
-<meta name="theme-color" content="#ffffff"/>
+<meta property="og:image" content="hero-bg.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NightClub","name":"Dark or Blue Lounge","address":{"@type":"PostalAddress","streetAddress":"92 Uxamu Dr, Ntuzuma D - Lindelani","addressLocality":"Ntuzuma","postalCode":"4360","addressCountry":"ZA"},"telephone":"+27742270872","openingHours":"Mo-Su 00:00-00:00","priceRange":"R50-R500+"}</script>
+
 <style>
-/* ═══════════════════════════════════════════════
-   DESIGN TOKENS — WHITE LUXURY / BLUE ACCENT
-═══════════════════════════════════════════════ */
-:root{
-  /* Palette */
-  --white:    #ffffff;
-  --off:      #f8f8f6;
-  --surface:  #f2f2ef;
-  --border:   #e8e8e4;
-  --border2:  #d4d4ce;
-  --ink-5:    #f5f5f3;
-  --ink-10:   #ebebea;
-  --ink-20:   #d6d6d4;
-  --ink-40:   #aaaaaa;
-  --ink-60:   #777776;
-  --ink-80:   #444443;
-  --ink-90:   #222221;
-  --ink:      #0e0e0d;
-
-  --blue:     #0055ff;
-  --blue-mid: #0044cc;
-  --blue-lt:  #3377ff;
-  --blue-pale:#e8f0ff;
-  --blue-mist:#f0f5ff;
-
-  --gold:     #b8964a;
-  --gold-lt:  #f0e6cc;
-
-  /* Typography */
-  --serif:    'Cormorant Garamond', Georgia, serif;
-  --sans:     'Outfit', system-ui, sans-serif;
-  --mono:     'DM Mono', monospace;
-
-  /* Spacing system (8px base) */
-  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px;
-  --s6:24px; --s7:32px; --s8:40px; --s9:48px; --s10:64px;
-  --s11:80px; --s12:96px; --s13:120px; --s14:160px;
-
-  /* Radius */
-  --r-sm:6px; --r-md:12px; --r-lg:20px; --r-xl:32px; --r-full:999px;
-
-  /* Shadows */
-  --shadow-xs: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
-  --shadow-sm: 0 4px 12px rgba(0,0,0,.06), 0 2px 4px rgba(0,0,0,.04);
-  --shadow-md: 0 8px 24px rgba(0,0,0,.08), 0 4px 8px rgba(0,0,0,.04);
-  --shadow-lg: 0 20px 48px rgba(0,0,0,.10), 0 8px 16px rgba(0,0,0,.06);
-  --shadow-xl: 0 32px 80px rgba(0,0,0,.14), 0 12px 24px rgba(0,0,0,.08);
-  --shadow-blue: 0 8px 32px rgba(0,85,255,.18), 0 2px 8px rgba(0,85,255,.10);
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ROOT & RESET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  --cream: #faf9f6;
+  --white: #ffffff;
+  --offwhite: #f4f2ee;
+  --light: #ede9e3;
+  --blue: #1055d4;
+  --blue-mid: #1a6ef5;
+  --blue-light: #4a90e2;
+  --blue-ultra: #e8f0fe;
+  --ink: #0a0a0f;
+  --ink-soft: #1a1a2e;
+  --ink-mid: #2d2d3a;
+  --text: #3a3a4a;
+  --text-soft: #6b6b80;
+  --text-faint: #9898a8;
+  --gold: #c9a84c;
+  --gold-light: #f0d078;
+  --border-light: rgba(10,10,15,0.08);
+  --border-blue: rgba(16,85,212,0.15);
+  --glass: rgba(255,255,255,0.72);
+  --glass-dark: rgba(10,10,15,0.55);
+  --shadow-sm: 0 2px 12px rgba(10,10,15,0.08);
+  --shadow-md: 0 8px 40px rgba(10,10,15,0.12);
+  --shadow-lg: 0 24px 80px rgba(10,10,15,0.18);
+  --shadow-blue: 0 12px 50px rgba(16,85,212,0.22);
+  --FP: 'Playfair Display', Georgia, serif;
+  --FI: 'Inter', sans-serif;
+  --FD: 'Bebas Neue', sans-serif;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease2: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ═══════════════════════════════════════════════
-   RESET & BASE
-═══════════════════════════════════════════════ */
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-body{
-  background:var(--white);
-  color:var(--ink);
-  font-family:var(--sans);
-  font-size:16px;
-  line-height:1.6;
-  overflow-x:hidden;
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: var(--FI);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-img{display:block;max-width:100%}
-a{text-decoration:none;color:inherit}
-button{font-family:inherit;cursor:pointer}
-::-webkit-scrollbar{width:4px}
-::-webkit-scrollbar-track{background:var(--off)}
-::-webkit-scrollbar-thumb{background:var(--blue);border-radius:2px}
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--blue-light); border-radius: 2px; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
 
-/* ═══════════════════════════════════════════════
-   UTILITY
-═══════════════════════════════════════════════ */
-.max{max-width:1200px;margin:0 auto}
-.tag{
-  display:inline-flex;align-items:center;gap:var(--s2);
-  font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--blue);
-  padding:var(--s2) var(--s4);border-radius:var(--r-full);
-  background:var(--blue-mist);border:1px solid rgba(0,85,255,.12)}
-.tag-dark{color:rgba(255,255,255,.7);background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.15)}
-.tag-dot{width:5px;height:5px;border-radius:50%;background:currentColor}
-.section-eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);margin-bottom:var(--s4)}
-.section-title{font-family:var(--serif);font-size:clamp(2.8rem,6vw,5.2rem);font-weight:600;line-height:.95;letter-spacing:-.01em;color:var(--ink);margin-bottom:var(--s6)}
-.section-title-light{color:var(--white)}
-.section-body{font-size:1.05rem;color:var(--ink-60);line-height:1.75;max-width:560px}
-.rule{width:40px;height:1.5px;background:var(--blue);margin:var(--s5) 0;display:block}
-.rule-center{margin:var(--s5) auto}
-
-/* ═══════════════════════════════════════════════
-   REVEAL ANIMATIONS
-═══════════════════════════════════════════════ */
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
-.reveal.in{opacity:1;transform:translateY(0)}
-.reveal-up{opacity:0;transform:translateY(48px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
-.reveal-up.in{opacity:1;transform:translateY(0)}
-.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
-.reveal-left.in{opacity:1;transform:translateX(0)}
-.reveal-right{opacity:0;transform:translateX(32px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
-.reveal-right.in{opacity:1;transform:translateX(0)}
-.reveal-scale{opacity:0;transform:scale(.96);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
-.reveal-scale.in{opacity:1;transform:scale(1)}
-.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
-.d4{transition-delay:.32s}.d5{transition-delay:.40s}.d6{transition-delay:.48s}
-
-/* ═══════════════════════════════════════════════
-   STICKY BOOK BAR
-═══════════════════════════════════════════════ */
-.sticky-bar{
-  position:fixed;bottom:0;left:0;right:0;z-index:900;
-  background:rgba(255,255,255,.96);backdrop-filter:blur(20px);
-  border-top:1px solid var(--border);
-  padding:var(--s3) var(--s6);
-  display:flex;align-items:center;justify-content:space-between;gap:var(--s4);
-  transform:translateY(100%);transition:transform .5s cubic-bezier(.22,1,.36,1);
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   3D CANVAS (FIXED BACKGROUND)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#scene-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.55;
 }
-.sticky-bar.show{transform:translateY(0)}
-.sticky-bar-left{display:flex;align-items:center;gap:var(--s3)}
-.sticky-bar-logo{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--ink)}
-.sticky-bar-sub{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40)}
-@media(max-width:500px){.sticky-bar-left{display:none}}
 
-/* ═══════════════════════════════════════════════
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   AMBIENT ORBS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.orb-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  animation: orbDrift ease-in-out infinite alternate;
+}
+.orb-1 {
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(16,85,212,0.12) 0%, transparent 70%);
+  top: -15%; left: -15%;
+  animation-duration: 16s;
+}
+.orb-2 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(74,144,226,0.09) 0%, transparent 70%);
+  top: 30%; right: -10%;
+  animation-duration: 12s;
+  animation-delay: -5s;
+}
+.orb-3 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 70%);
+  bottom: -10%; left: 20%;
+  animation-duration: 19s;
+  animation-delay: -9s;
+}
+@keyframes orbDrift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(50px, 60px) scale(1.1); }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    NAVIGATION
-═══════════════════════════════════════════════ */
-#nav{
-  position:fixed;top:0;left:0;right:0;z-index:950;
-  transition:all .4s cubic-bezier(.22,1,.36,1);
-  padding:0 var(--s7)}
-#nav.scrolled{
-  background:rgba(255,255,255,.95);
-  backdrop-filter:blur(24px);
-  border-bottom:1px solid var(--border);
-  box-shadow:var(--shadow-sm)}
-.nav-inner{
-  max-width:1200px;margin:0 auto;
-  display:flex;align-items:center;justify-content:space-between;
-  height:72px}
-.nav-logo{display:flex;align-items:center;gap:var(--s3);text-decoration:none}
-.nav-logo-mark{
-  width:36px;height:36px;border-radius:var(--r-md);
-  background:var(--ink);display:flex;align-items:center;justify-content:center;
-  overflow:hidden;flex-shrink:0}
-.nav-logo-mark img{width:100%;height:100%;object-fit:contain}
-.nav-logo-mark-fallback{
-  font-family:var(--serif);font-size:1rem;font-weight:600;
-  color:var(--white);letter-spacing:.02em}
-.nav-logo-text{line-height:1.1}
-.nav-logo-name{
-  display:block;font-family:var(--serif);font-size:1.05rem;
-  font-weight:600;color:var(--ink);letter-spacing:.01em}
-.nav-logo-sub{
-  display:block;font-family:var(--mono);font-size:.58rem;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-40)}
-.nav-links{display:flex;align-items:center;gap:var(--s7);list-style:none}
-.nav-links a{
-  font-size:.82rem;font-weight:500;letter-spacing:.04em;
-  color:var(--ink-60);transition:color .25s;position:relative}
-.nav-links a::after{
-  content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;
-  background:var(--blue);transition:width .3s cubic-bezier(.22,1,.36,1)}
-.nav-links a:hover{color:var(--ink)}.nav-links a:hover::after{width:100%}
-.nav-cta{
-  display:inline-flex;align-items:center;gap:var(--s2);
-  font-size:.82rem;font-weight:600;letter-spacing:.04em;
-  padding:10px 20px;border-radius:var(--r-full);
-  background:var(--ink);color:var(--white);
-  transition:all .3s cubic-bezier(.22,1,.36,1);
-  box-shadow:var(--shadow-sm)}
-.nav-cta:hover{background:var(--blue);box-shadow:var(--shadow-blue);transform:translateY(-1px)}
-.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:var(--s2);cursor:pointer}
-.hamburger span{display:block;width:22px;height:1.5px;background:var(--ink);transition:all .3s;border-radius:2px}
-.mobile-menu{
-  display:none;position:absolute;top:100%;left:0;right:0;
-  background:var(--white);border-bottom:1px solid var(--border);
-  padding:var(--s6) var(--s7);flex-direction:column;gap:var(--s5);
-  box-shadow:var(--shadow-md)}
-.mobile-menu a,.mobile-menu button.mob-link{
-  font-size:.9rem;font-weight:500;color:var(--ink-80);
-  text-decoration:none;background:none;border:none;
-  text-align:left;cursor:pointer;font-family:var(--sans)}
-.mobile-menu.open{display:flex}
-@media(max-width:900px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s var(--ease);
+}
+nav.scrolled {
+  background: rgba(250,249,246,0.9);
+  backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  padding: 0.9rem 2rem;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.nav-logo-img {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(16,85,212,0.25);
+  transition: all 0.3s;
+}
+.nav-logo-img:hover { border-color: var(--blue); transform: scale(1.05); }
+.nav-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.nav-brand-main {
+  font-family: var(--FP);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.nav-brand-main span { color: var(--blue); }
+.nav-brand-sub {
+  font-family: var(--FI);
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.nav-links {
+  display: none;
+  list-style: none;
+  gap: 2.5rem;
+}
+.nav-links a {
+  font-family: var(--FI);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  transition: color 0.25s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0; right: 0;
+  height: 1px;
+  background: var(--blue);
+  transform: scaleX(0);
+  transition: transform 0.3s var(--ease);
+  transform-origin: left;
+}
+.nav-links a:hover { color: var(--blue); }
+.nav-links a:hover::after { transform: scaleX(1); }
+.nav-book {
+  font-family: var(--FI);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.5rem;
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s var(--ease);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.nav-book:hover {
+  background: var(--blue);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-blue);
+}
+.ham { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.ham span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: all 0.3s; }
+@media (min-width: 768px) {
+  .nav-links { display: flex; }
+  .ham { display: none; }
+  nav { padding: 1.5rem 4rem; }
+  nav.scrolled { padding: 1rem 4rem; }
+}
+@media (min-width: 1200px) { nav { padding: 1.5rem 6rem; } nav.scrolled { padding: 1rem 6rem; } }
 
-/* ═══════════════════════════════════════════════
+/* MOBILE MENU */
+.mob-menu {
+  display: none;
+  position: fixed; inset: 0;
+  background: var(--cream);
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.mob-menu.open { display: flex; }
+.mob-menu a {
+  font-family: var(--FP);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ink);
+  transition: color 0.2s;
+}
+.mob-menu a:hover { color: var(--blue); }
+.mob-close {
+  position: absolute; top: 1.5rem; right: 1.5rem;
+  font-size: 1.5rem; color: var(--text-soft);
+  cursor: pointer; background: none; border: none;
+  font-family: var(--FI); transition: color 0.2s;
+}
+.mob-close:hover { color: var(--ink); }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    HERO
-═══════════════════════════════════════════════ */
-#home{
-  position:relative;min-height:100svh;
-  display:flex;align-items:flex-end;
-  overflow:hidden;padding-bottom:var(--s13)}
-.hero-media{position:absolute;inset:0;z-index:0}
-.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center}
-.hero-media-fallback{
-  width:100%;height:100%;
-  background:linear-gradient(160deg,#0a0a12 0%,#0d1a2e 40%,#0a1020 100%)}
-.hero-gradient{
-  position:absolute;inset:0;z-index:1;
-  background:
-    linear-gradient(to top, rgba(0,0,0,.92) 0%, rgba(0,0,0,.6) 40%, rgba(0,0,0,.15) 100%),
-    linear-gradient(to right, rgba(0,0,0,.3) 0%, transparent 60%)}
-.hero-content{
-  position:relative;z-index:2;
-  padding:0 var(--s7) var(--s7);
-  max-width:1200px;margin:0 auto;width:100%}
-.hero-eyebrow{
-  display:inline-flex;align-items:center;gap:var(--s3);
-  margin-bottom:var(--s7);
-  opacity:0;animation:fadeSlideUp .9s .3s cubic-bezier(.22,1,.36,1) forwards}
-.hero-eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--blue-lt);flex-shrink:0}
-.hero-eyebrow span{font-family:var(--mono);font-size:.68rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.65)}
-.hero-headline{
-  font-family:var(--serif);
-  font-size:clamp(4rem,11vw,10rem);
-  font-weight:300;
-  line-height:.88;
-  letter-spacing:-.02em;
-  color:var(--white);
-  margin-bottom:var(--s6);
-  opacity:0;animation:fadeSlideUp .9s .5s cubic-bezier(.22,1,.36,1) forwards}
-.hero-headline em{font-style:normal;font-weight:600}
-.hero-headline .accent{
-  display:block;
-  background:linear-gradient(135deg,#fff 0%,rgba(100,160,255,.9) 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-sub{
-  font-size:clamp(1rem,2vw,1.2rem);
-  color:rgba(255,255,255,.6);
-  max-width:520px;line-height:1.7;
-  margin-bottom:var(--s8);
-  font-weight:300;
-  opacity:0;animation:fadeSlideUp .9s .7s cubic-bezier(.22,1,.36,1) forwards}
-.hero-sub strong{color:rgba(255,255,255,.9);font-weight:500}
-.hero-actions{
-  display:flex;flex-wrap:wrap;gap:var(--s4);
-  opacity:0;animation:fadeSlideUp .9s .85s cubic-bezier(.22,1,.36,1) forwards}
-.hero-pills{
-  display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s8);
-  opacity:0;animation:fadeSlideUp .9s 1s cubic-bezier(.22,1,.36,1) forwards}
-.hero-pill{
-  font-family:var(--mono);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;
-  padding:var(--s2) var(--s4);border-radius:var(--r-full);
-  border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.6);
-  background:rgba(255,255,255,.06);backdrop-filter:blur(8px);
-  transition:all .3s}
-.hero-pill:hover{border-color:rgba(255,255,255,.4);color:rgba(255,255,255,.9);background:rgba(255,255,255,.12)}
-.hero-trust{
-  display:flex;flex-wrap:wrap;gap:var(--s6);margin-top:var(--s7);
-  opacity:0;animation:fadeSlideUp .9s 1.1s cubic-bezier(.22,1,.36,1) forwards}
-.trust-item{display:flex;align-items:center;gap:var(--s2)}
-.trust-item .t-val{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--white);line-height:1}
-.trust-item .t-lbl{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.45)}
-.hero-scroll{
-  position:absolute;bottom:var(--s8);right:var(--s8);z-index:2;
-  display:flex;flex-direction:column;align-items:center;gap:var(--s3);
-  opacity:0;animation:fadeSlideUp .9s 1.2s cubic-bezier(.22,1,.36,1) forwards}
-.scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,rgba(255,255,255,.4),transparent);animation:scrollPulse 2s ease-in-out infinite}
-.hero-scroll span{font-family:var(--mono);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35);writing-mode:vertical-lr}
-@media(max-width:768px){.hero-scroll{display:none}.hero-headline{font-size:clamp(3.2rem,12vw,5rem)}}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#hero {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--ink);
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('dining.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: heroDrift 25s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes heroDrift {
+  from { transform: scale(1.05) translate(0, 0); }
+  to   { transform: scale(1.12) translate(-2%, -1%); }
+}
+.hero-ov-dark {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10,10,15,0.85) 0%,
+    rgba(10,10,15,0.55) 50%,
+    rgba(10,10,15,0.75) 100%
+  );
+}
+.hero-ov-grad {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(10,10,15,0.3) 60%,
+    rgba(10,10,15,0.95) 100%
+  );
+}
+/* animated noise grain */
+.hero-grain {
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.35;
+  pointer-events: none;
+  animation: grainAnim 0.4s steps(1) infinite;
+}
+@keyframes grainAnim { 0%,100%{transform:translate(0,0)} 25%{transform:translate(-2%,-1%)} 50%{transform:translate(1%,2%)} 75%{transform:translate(-1%,1%)} }
 
-/* ═══════════════════════════════════════════════
-   TICKER
-═══════════════════════════════════════════════ */
-.ticker{
-  overflow:hidden;border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  background:var(--white);padding:var(--s4) 0}
-.ticker-track{display:flex;width:max-content;animation:ticker 30s linear infinite}
-.ticker-item{
-  display:flex;align-items:center;gap:var(--s4);
-  font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--ink-60);padding-right:var(--s9);
-  white-space:nowrap}
-.ticker-sep{color:var(--blue);font-size:.8rem}
-.ticker:hover .ticker-track{animation-play-state:paused}
+.hero-line-top {
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.4), transparent);
+}
+.hero-line-bottom {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(16,85,212,0.5), rgba(74,144,226,0.3), transparent);
+  animation: lineShimmer 4s ease-in-out infinite;
+}
+@keyframes lineShimmer { 0%,100%{opacity:0.5} 50%{opacity:1} }
 
-/* ═══════════════════════════════════════════════
-   BUTTONS
-═══════════════════════════════════════════════ */
-.btn{
-  display:inline-flex;align-items:center;gap:var(--s3);
-  font-family:var(--sans);font-size:.85rem;font-weight:600;
-  letter-spacing:.03em;border-radius:var(--r-full);
-  transition:all .3s cubic-bezier(.22,1,.36,1);
-  white-space:nowrap;border:none;cursor:pointer}
-.btn-primary{
-  background:var(--blue);color:var(--white);
-  padding:14px 28px;box-shadow:var(--shadow-blue)}
-.btn-primary:hover{background:var(--blue-mid);box-shadow:0 12px 40px rgba(0,85,255,.28);transform:translateY(-2px) scale(1.01)}
-.btn-white{
-  background:var(--white);color:var(--ink);
-  padding:14px 28px;box-shadow:var(--shadow-md)}
-.btn-white:hover{background:var(--off);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
-.btn-outline-white{
-  background:transparent;color:var(--white);
-  padding:13px 28px;border:1px solid rgba(255,255,255,.35)}
-.btn-outline-white:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.7);transform:translateY(-1px)}
-.btn-outline{
-  background:transparent;color:var(--ink);
-  padding:13px 28px;border:1px solid var(--border2)}
-.btn-outline:hover{background:var(--ink);color:var(--white);border-color:var(--ink);transform:translateY(-1px)}
-.btn-wa{
-  background:linear-gradient(135deg,#1a9a6a,#25d366);color:var(--white);
-  padding:16px 32px;box-shadow:0 8px 28px rgba(37,211,102,.3);font-size:.9rem}
-.btn-wa:hover{box-shadow:0 14px 40px rgba(37,211,102,.45);transform:translateY(-3px) scale(1.01)}
-.btn-icon{width:18px;height:18px;flex-shrink:0}
-.btn-arrow{font-size:1.1rem;transition:transform .3s}
-.btn:hover .btn-arrow{transform:translateX(3px)}
+.hero-content {
+  position: relative; z-index: 5;
+  padding: 0 1.5rem;
+  padding-top: 110px;
+  max-width: 900px;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  animation: slideUp 0.8s var(--ease) both;
+}
+.hero-eyebrow-line {
+  width: 32px; height: 1px;
+  background: var(--gold);
+}
+.hero-eyebrow-text {
+  font-family: var(--FI);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.hero-eyebrow-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: dotBlink 2.5s ease-in-out infinite;
+}
+@keyframes dotBlink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.7)} }
 
-/* ═══════════════════════════════════════════════
-   EXPERIENCES SECTION
-═══════════════════════════════════════════════ */
-#experiences{padding:var(--s14) var(--s7);background:var(--white)}
-.exp-header{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:var(--s8);align-items:end;margin-bottom:var(--s12)}
-@media(max-width:768px){.exp-header{grid-template-columns:1fr}.exp-header-right{display:none}}
-.exp-header-right{text-align:right}
-.exp-grid{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:1px;background:var(--border)}
-@media(max-width:1000px){.exp-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:600px){.exp-grid{grid-template-columns:repeat(2,1fr)}}
-.exp-card{
-  background:var(--white);
-  padding:var(--s9) var(--s7);
-  display:flex;flex-direction:column;gap:var(--s5);
-  transition:all .4s cubic-bezier(.22,1,.36,1);
-  position:relative;overflow:hidden;cursor:default}
-.exp-card::before{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,var(--blue-mist),transparent);
-  opacity:0;transition:opacity .4s}
-.exp-card:hover{background:var(--ink);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.exp-card:hover::before{opacity:0}
-.exp-card:hover .exp-icon{color:var(--white)}
-.exp-card:hover .exp-tag-lbl{color:rgba(255,255,255,.45)}
-.exp-card:hover .exp-name{color:var(--white)}
-.exp-card:hover .exp-desc{color:rgba(255,255,255,.55)}
-.exp-icon{font-size:2rem;transition:all .4s;position:relative;z-index:1}
-.exp-tag-lbl{
-  font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--blue);
-  transition:color .4s;position:relative;z-index:1}
-.exp-name{
-  font-family:var(--serif);font-size:1.5rem;font-weight:600;
-  color:var(--ink);transition:color .4s;
-  line-height:1.1;position:relative;z-index:1}
-.exp-desc{
-  font-size:.85rem;color:var(--ink-60);line-height:1.65;
-  transition:color .4s;position:relative;z-index:1}
+.hero-title {
+  font-family: var(--FP);
+  font-size: clamp(3.5rem, 13vw, 8.5rem);
+  font-weight: 800;
+  line-height: 0.9;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+.hero-title .line-1 { display: block; animation: slideUp 0.7s 0.1s var(--ease) both; }
+.hero-title .line-2 {
+  display: block;
+  background: linear-gradient(135deg, #4a90e2, #1055d4, #7ab8f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: slideUp 0.7s 0.25s var(--ease) both;
+}
+.hero-title .line-3 { display: block; animation: slideUp 0.7s 0.4s var(--ease) both; }
+.hero-title .line-serif { font-style: italic; font-weight: 400; }
 
-/* ═══════════════════════════════════════════════
-   GALLERY / LIFESTYLE SECTION
-═══════════════════════════════════════════════ */
-#gallery{padding:var(--s14) var(--s7);background:var(--off)}
-.gallery-header{text-align:center;margin-bottom:var(--s11)}
-.gallery-mosaic{
-  display:grid;
-  grid-template-columns:1.4fr 1fr 1fr;
-  grid-template-rows:320px 200px;
-  gap:var(--s3)}
-@media(max-width:900px){.gallery-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:240px 200px 200px}}
-@media(max-width:580px){.gallery-mosaic{grid-template-columns:1fr;grid-template-rows:auto}}
-.gallery-cell{
-  position:relative;border-radius:var(--r-lg);
-  overflow:hidden;cursor:default;background:var(--surface)}
-.gallery-cell:first-child{grid-row:1/3}
-@media(max-width:900px){.gallery-cell:first-child{grid-row:auto}}
-.gallery-cell img{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform .7s cubic-bezier(.22,1,.36,1)}
-.gallery-cell:hover img{transform:scale(1.06)}
-.gallery-cell-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(0,0,0,.7) 0%,rgba(0,0,0,.15) 50%,transparent 100%);
-  transition:opacity .4s}
-.gallery-cell:hover .gallery-cell-overlay{opacity:.8}
-.gallery-caption{position:absolute;bottom:0;left:0;right:0;padding:var(--s7) var(--s6)}
-.gallery-caption .eyebrow{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:var(--s2)}
-.gallery-caption h3{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--white);line-height:1.1}
-.gallery-cell-fallback{
-  width:100%;height:100%;min-height:220px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--s3)}
-.gcf-1{background:linear-gradient(135deg,#0d1a2e,#1a2840)}
-.gcf-2{background:linear-gradient(135deg,#111827,#1f2937)}
-.gcf-3{background:linear-gradient(135deg,#0a1628,#162034)}
-.gcf-4{background:linear-gradient(135deg,#141e2e,#0d1520)}
-.gcf-5{background:linear-gradient(135deg,#0e1a28,#1a2538)}
-.gcf-icon{font-size:2.5rem;opacity:.3}
-.gcf-text{font-family:var(--serif);font-size:1.1rem;color:rgba(255,255,255,.3);letter-spacing:.05em}
-.stats-band{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:var(--s3);margin-top:var(--s7)}
-@media(max-width:700px){.stats-band{grid-template-columns:repeat(2,1fr)}}
-.stat-card{
-  background:var(--white);border-radius:var(--r-lg);
-  padding:var(--s7) var(--s6);text-align:center;
-  box-shadow:var(--shadow-xs);border:1px solid var(--border);
-  transition:all .3s cubic-bezier(.22,1,.36,1)}
-.stat-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);border-color:var(--blue)}
-.stat-card .s-num{
-  font-family:var(--serif);font-size:2.8rem;font-weight:600;
-  color:var(--blue);line-height:1;display:block;margin-bottom:var(--s2)}
-.stat-card .s-lbl{
-  font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--ink-40)}
+.hero-sub {
+  font-family: var(--FI);
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  font-weight: 300;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.85;
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+  animation: slideUp 0.7s 0.55s var(--ease) both;
+}
+.hero-sub strong { color: rgba(255,255,255,0.9); font-weight: 500; }
 
-/* ═══════════════════════════════════════════════
-   ARTISTS — PREMIUM SHOWCASE
-═══════════════════════════════════════════════ */
-#artists{
-  padding:var(--s14) var(--s7);
-  background:var(--ink);
-  position:relative;overflow:hidden}
-.artists-bg{
-  position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse at 20% 40%,rgba(0,85,255,.15) 0%,transparent 55%),
-    radial-gradient(ellipse at 80% 60%,rgba(0,85,255,.08) 0%,transparent 50%),
-    var(--ink)}
-.artists-header{
-  display:flex;flex-wrap:wrap;align-items:flex-end;
-  justify-content:space-between;gap:var(--s8);
-  margin-bottom:var(--s12);position:relative;z-index:2}
-.artists-header-left .section-eyebrow{color:rgba(0,120,255,.85)}
-.artists-header-right{max-width:360px}
-.artists-header-right p{font-size:.95rem;color:rgba(255,255,255,.5);line-height:1.75}
-.artists-header-right strong{color:rgba(255,255,255,.8);font-weight:500}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  animation: slideUp 0.7s 0.7s var(--ease) both;
+}
+.btn-hero-primary {
+  font-family: var(--FI);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1rem 2.2rem;
+  background: var(--white);
+  color: var(--ink);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.35s var(--ease);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 24px rgba(255,255,255,0.15);
+}
+.btn-hero-primary:hover {
+  background: var(--blue);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-blue);
+}
+.btn-hero-ghost {
+  font-family: var(--FI);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1rem 2.2rem;
+  background: transparent;
+  color: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.35s var(--ease);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-hero-ghost:hover {
+  border-color: rgba(255,255,255,0.55);
+  color: var(--white);
+  transform: translateY(-1px);
+}
 
-/* MASONRY-STYLE GRID */
-.artists-masonry{
-  display:grid;
-  grid-template-columns:1.5fr 1fr 1fr;
-  grid-template-rows:440px 280px;
-  gap:var(--s3);
-  position:relative;z-index:2}
-@media(max-width:1000px){.artists-masonry{grid-template-columns:1fr 1fr;grid-template-rows:360px 280px 280px}}
-@media(max-width:580px){.artists-masonry{grid-template-columns:1fr;grid-template-rows:auto}}
+/* Hero stats */
+.hero-stats {
+  position: absolute;
+  bottom: 10vh; right: 4rem;
+  z-index: 5;
+  display: none;
+  flex-direction: column;
+  gap: 1.8rem;
+  text-align: right;
+  animation: slideLeft 0.8s 1s var(--ease) both;
+}
+.hstat { cursor: default; }
+.hstat-n {
+  font-family: var(--FD);
+  font-size: 2.5rem;
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+.hstat-l {
+  font-family: var(--FI);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.38);
+  margin-top: 0.15rem;
+}
+@media (min-width: 768px) {
+  .hero-content { padding: 0 4rem; padding-top: 130px; }
+  .hero-stats { display: flex; }
+}
+@media (min-width: 1200px) { .hero-content { padding: 0 6rem; padding-top: 140px; } }
 
-.artist-card{
-  position:relative;border-radius:var(--r-lg);
-  overflow:hidden;cursor:default}
-.artist-card:nth-child(1){grid-row:1/3}
-@media(max-width:1000px){.artist-card:nth-child(1){grid-row:auto;height:360px}}
-@media(max-width:580px){.artist-card:nth-child(1){height:300px}}
-.artist-card:nth-child(n+2){height:auto}
+.hero-scroll {
+  position: absolute; bottom: 2.5rem; left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+  animation: fadeIn 1s 1.3s var(--ease) both;
+}
+.scroll-track {
+  width: 18px; height: 30px;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: 9px;
+  position: relative;
+  overflow: hidden;
+}
+.scroll-thumb {
+  position: absolute; top: 4px; left: 50%;
+  transform: translateX(-50%);
+  width: 3px; height: 7px;
+  background: var(--white);
+  border-radius: 2px;
+  animation: scrollDown 2s ease-in-out infinite;
+}
+@keyframes scrollDown {
+  0% { top: 4px; opacity: 1; }
+  70% { top: 16px; opacity: 0.3; }
+  100% { top: 4px; opacity: 0; }
+}
+.scroll-label {
+  font-family: var(--FI);
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.28);
+}
 
-/* IMAGE HANDLING */
-.artist-card img{
-  width:100%;height:100%;object-fit:cover;
-  object-position:center top;
-  transition:transform .7s cubic-bezier(.22,1,.36,1);
-  display:none}
-.artist-card img.loaded{display:block}
-.artist-placeholder{
-  position:absolute;inset:0;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:var(--s4)}
-.ap-bg-1{background:linear-gradient(150deg,#0d1a35 0%,#1a2d50 100%)}
-.ap-bg-2{background:linear-gradient(150deg,#0a1520 0%,#142030 100%)}
-.ap-bg-3{background:linear-gradient(150deg,#111828 0%,#1c2a3e 100%)}
-.ap-bg-4{background:linear-gradient(150deg,#0e1c30 0%,#162640 100%)}
-.ap-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(0,85,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,85,255,.06) 1px,transparent 1px);background-size:36px 36px}
-.ap-glow{position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(0,85,255,.25) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation:glowPulse 3s ease-in-out infinite}
-.ap-content{position:relative;z-index:1;text-align:center;padding:var(--s6)}
-.ap-icon{font-size:clamp(2rem,4vw,2.8rem);opacity:.35;display:block;margin-bottom:var(--s4)}
-.ap-name{font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,2rem);font-weight:300;color:rgba(255,255,255,.35);letter-spacing:.04em;line-height:1.1}
-.ap-genre{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,100,255,.5);margin-top:var(--s3)}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   KEYFRAMES SHARED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@keyframes slideUp { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
+@keyframes slideLeft { from{opacity:0;transform:translateX(30px)} to{opacity:1;transform:translateX(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
 
-/* OVERLAY + CAPTION */
-.artist-overlay{
-  position:absolute;inset:0;z-index:2;
-  background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.35) 45%,transparent 100%);
-  transition:background .4s}
-.artist-card:hover .artist-overlay{background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(0,0,30,.5) 55%,rgba(0,0,60,.1) 100%)}
-.artist-glow-border{
-  position:absolute;inset:0;z-index:3;border-radius:inherit;
-  box-shadow:inset 0 0 0 1px rgba(0,85,255,0);
-  transition:box-shadow .4s}
-.artist-card:hover .artist-glow-border{box-shadow:inset 0 0 0 1.5px rgba(0,85,255,.6),0 0 30px rgba(0,85,255,.2)}
-.artist-cap{
-  position:absolute;bottom:0;left:0;right:0;
-  padding:var(--s6) var(--s6) var(--s6);
-  z-index:4}
-.artist-cap .badge{
-  display:inline-flex;align-items:center;gap:var(--s2);
-  font-family:var(--mono);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;
-  color:rgba(80,160,255,.9);margin-bottom:var(--s3)}
-.badge-dot{width:4px;height:4px;border-radius:50%;background:currentColor;flex-shrink:0}
-.artist-cap .a-name{
-  font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,2rem);
-  font-weight:600;color:var(--white);line-height:1.05;
-  text-shadow:0 2px 16px rgba(0,0,0,.4)}
-.artist-card:nth-child(1) .a-name{font-size:clamp(1.8rem,3.5vw,2.8rem)}
-.artist-cap .a-role{font-size:.82rem;color:rgba(255,255,255,.5);margin-top:var(--s2)}
-.artist-cap .a-badge{
-  display:inline-flex;align-items:center;gap:var(--s2);
-  margin-top:var(--s4);font-family:var(--mono);font-size:.6rem;
-  letter-spacing:.15em;text-transform:uppercase;
-  padding:5px 12px;border-radius:var(--r-full);
-  border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.65);
-  background:rgba(255,255,255,.07)}
-.a-badge.gold-b{border-color:rgba(184,150,74,.5);color:var(--gold);background:rgba(184,150,74,.1)}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   DIVIDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.divider {
+  width: 100%; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+  position: relative; z-index: 5;
+}
+.divider-blue {
+  background: linear-gradient(90deg, transparent, rgba(16,85,212,0.2), rgba(74,144,226,0.1), transparent);
+}
 
-/* MINI STRIP */
-.artists-mini{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:var(--s3);margin-top:var(--s3);position:relative;z-index:2}
-@media(max-width:800px){.artists-mini{grid-template-columns:repeat(2,1fr)}}
-.artist-mini-card{
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:var(--r-md);
-  padding:var(--s5) var(--s5);
-  display:flex;align-items:center;gap:var(--s4);
-  transition:all .3s cubic-bezier(.22,1,.36,1)}
-.artist-mini-card:hover{background:rgba(255,255,255,.07);border-color:rgba(0,85,255,.3);box-shadow:0 0 20px rgba(0,85,255,.1);transform:translateY(-3px)}
-.mini-avatar{
-  width:44px;height:44px;border-radius:50%;flex-shrink:0;
-  background:linear-gradient(135deg,var(--blue),var(--blue-lt));
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--white);
-  box-shadow:0 0 12px rgba(0,85,255,.3)}
-.mini-name{font-family:var(--sans);font-size:.85rem;font-weight:500;color:var(--white)}
-.mini-genre{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:2px}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SECTIONS BASE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+section { position: relative; z-index: 5; padding: 6rem 1.5rem; }
+@media (min-width: 768px) { section { padding: 8rem 4rem; } }
+@media (min-width: 1200px) { section { padding: 10rem 6rem; } }
 
-/* STATS BAND DARK */
-.artists-stats{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:var(--r-xl);overflow:hidden;
-  margin-top:var(--s10);position:relative;z-index:2}
-@media(max-width:700px){.artists-stats{grid-template-columns:repeat(2,1fr)}}
-.pstat{padding:var(--s8) var(--s6);text-align:center;background:rgba(255,255,255,.03)}
-.pstat:not(:last-child){border-right:1px solid rgba(255,255,255,.06)}
-@media(max-width:700px){
-  .pstat:nth-child(2){border-right:none}
-  .pstat:nth-child(1),.pstat:nth-child(2){border-bottom:1px solid rgba(255,255,255,.06)}}
-.pstat-num{font-family:var(--serif);font-size:clamp(2.5rem,4vw,3.5rem);font-weight:600;color:rgba(100,160,255,.9);line-height:1;display:block}
-.pstat-lbl{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:var(--s3);display:block}
-.pstat-sub{font-size:.8rem;color:rgba(255,255,255,.4);margin-top:var(--s2);display:block}
+.sec-tag {
+  display: inline-flex; align-items: center; gap: 0.65rem;
+  margin-bottom: 1.2rem;
+}
+.sec-tag-dash { width: 20px; height: 1px; background: var(--blue); }
+.sec-tag-text {
+  font-family: var(--FI);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.sec-h {
+  font-family: var(--FP);
+  font-size: clamp(2.2rem, 7vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.0;
+  color: var(--ink);
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.02em;
+}
+.sec-h .italic { font-style: italic; font-weight: 400; color: var(--blue); }
+.sec-h .light { font-weight: 300; color: var(--text-soft); }
+.sec-p {
+  font-family: var(--FI);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-soft);
+  line-height: 1.9;
+  max-width: 560px;
+  margin-bottom: 3rem;
+}
 
-/* QUOTE */
-.artists-quote{
-  margin-top:var(--s9);text-align:center;padding:var(--s10) var(--s8);
-  background:rgba(0,85,255,.06);border:1px solid rgba(0,85,255,.15);
-  border-radius:var(--r-xl);position:relative;z-index:2}
-.quote-mark{font-family:var(--serif);font-size:5rem;line-height:.5;color:rgba(0,85,255,.25);display:block;margin-bottom:var(--s5)}
-.quote-body{font-family:var(--serif);font-size:clamp(1.1rem,2.5vw,1.5rem);font-style:italic;font-weight:300;color:rgba(255,255,255,.75);line-height:1.6;letter-spacing:.01em}
-.quote-src{font-family:var(--mono);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(100,150,255,.55);margin-top:var(--s6);display:block}
+/* REVEAL ANIMATIONS */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+}
+.reveal.visible { opacity: 1; transform: none; }
+.reveal.d1 { transition-delay: 0.1s; }
+.reveal.d2 { transition-delay: 0.2s; }
+.reveal.d3 { transition-delay: 0.3s; }
+.reveal.d4 { transition-delay: 0.4s; }
+.reveal.d5 { transition-delay: 0.5s; }
+.reveal.d6 { transition-delay: 0.6s; }
 
-/* ═══════════════════════════════════════════════
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   MARQUEE TICKER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.marquee-strip {
+  background: var(--ink);
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative; z-index: 5;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 0.85rem 0;
+}
+.marquee-inner {
+  display: inline-flex;
+  gap: 3rem;
+  animation: marqueeScroll 28s linear infinite;
+}
+.marquee-inner span {
+  font-family: var(--FI);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+.marquee-inner .dot { color: var(--blue-light); }
+@keyframes marqueeScroll { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   EXPERIENCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#experiences { background: var(--cream); }
+.exp-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+@media (min-width: 900px) {
+  .exp-layout { grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+}
+.exp-visual {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background: var(--light);
+}
+.exp-visual img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s var(--ease);
+}
+.exp-visual:hover img { transform: scale(1.04); }
+.exp-visual-badge {
+  position: absolute;
+  bottom: 1.5rem; left: 1.5rem;
+  background: var(--glass);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 0.9rem 1.2rem;
+  border-radius: 4px;
+  box-shadow: var(--shadow-md);
+}
+.exp-badge-rating {
+  font-family: var(--FP);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+}
+.exp-badge-sub {
+  font-family: var(--FI);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: var(--text-soft);
+  margin-top: 0.2rem;
+}
+.exp-float-stat {
+  position: absolute;
+  top: 2rem; right: -1rem;
+  background: var(--ink);
+  color: var(--white);
+  padding: 1rem 1.2rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+.exp-float-n {
+  font-family: var(--FD);
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 1;
+}
+.exp-float-l {
+  font-family: var(--FI);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+}
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border-light);
+  border: 1px solid var(--border-light);
+  margin-top: 2.5rem;
+}
+.exp-card {
+  background: var(--white);
+  padding: 1.8rem 1.4rem;
+  transition: all 0.35s var(--ease);
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+.exp-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue), #7ab8f5);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease);
+}
+.exp-card:hover { background: var(--offwhite); box-shadow: var(--shadow-sm); }
+.exp-card:hover::before { transform: scaleX(1); }
+.exp-card-ico {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  display: block;
+  transition: transform 0.3s var(--ease);
+}
+.exp-card:hover .exp-card-ico { transform: scale(1.1) rotate(-5deg); }
+.exp-card-name {
+  font-family: var(--FP);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+.exp-card-desc {
+  font-family: var(--FI);
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   GALLERY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#gallery { background: var(--ink); padding-bottom: 0; }
+#gallery .sec-h { color: var(--white); }
+#gallery .sec-p { color: rgba(255,255,255,0.5); }
+#gallery .sec-tag-text { color: var(--gold-light); }
+#gallery .sec-tag-dash { background: var(--gold); }
+.gallery-mosaic {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3px;
+  margin-top: 3rem;
+}
+@media (min-width: 640px) {
+  .gallery-mosaic {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 400px 400px;
+  }
+  .gallery-mosaic .gi:first-child { grid-row: 1 / 3; }
+}
+@media (min-width: 1000px) {
+  .gallery-mosaic { grid-template-rows: 500px 500px; }
+}
+.gi {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  background: var(--ink-mid);
+}
+.gi img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 1s var(--ease), filter 0.6s;
+}
+.gi:hover img { transform: scale(1.07); filter: brightness(1.08) saturate(1.1); }
+.gi-ov {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(10,10,15,0.75) 100%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  display: flex; align-items: flex-end; padding: 1.5rem;
+}
+.gi:hover .gi-ov { opacity: 1; }
+.gi-label {
+  font-family: var(--FI);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.gallery-cta-strip {
+  background: var(--blue);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.gcs-text {
+  font-family: var(--FP);
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  font-weight: 600;
+  color: var(--white);
+  font-style: italic;
+}
+.gcs-btn {
+  font-family: var(--FI);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.35);
+  padding: 0.65rem 1.5rem;
+  border-radius: 2px;
+  transition: all 0.25s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.gcs-btn:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ARTISTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#artists { background: var(--offwhite); }
+.artists-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .artists-header { grid-template-columns: 1fr 1fr; align-items: end; }
+}
+.artists-right-text {
+  font-family: var(--FI);
+  font-size: 0.92rem;
+  font-weight: 300;
+  color: var(--text-soft);
+  line-height: 1.9;
+}
+.artists-right-text strong { color: var(--ink); font-weight: 500; }
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+@media (min-width: 640px) { .artists-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 900px) { .artists-grid { grid-template-columns: repeat(5, 1fr); gap: 1rem; } }
+.ac {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  background: var(--light);
+  cursor: pointer;
+}
+.ac img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease), filter 0.5s;
+  filter: grayscale(20%) brightness(0.95);
+}
+.ac:hover img { transform: scale(1.08); filter: grayscale(0%) brightness(1.05); }
+.ac-ov {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(10,10,15,0.85) 100%);
+}
+.ac-shimmer {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, transparent 40%, rgba(16,85,212,0.18) 100%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.ac:hover .ac-shimmer { opacity: 1; }
+.ac-scan {
+  position: absolute; top: -100%; left: 0; right: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, rgba(74,144,226,0.7), transparent);
+  transition: top 0.6s var(--ease);
+}
+.ac:hover .ac-scan { top: 105%; }
+.ac-info {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 1.2rem 1rem;
+  transform: translateY(5px);
+  transition: transform 0.35s var(--ease);
+}
+.ac:hover .ac-info { transform: translateY(0); }
+.ac-name {
+  font-family: var(--FP);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.18rem;
+}
+.ac-tag {
+  font-family: var(--FI);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.ac-frame {
+  position: absolute; inset: 0;
+  border: 1px solid transparent;
+  transition: border-color 0.35s;
+  pointer-events: none;
+}
+.ac:hover .ac-frame { border-color: rgba(16,85,212,0.35); }
+.artists-strip {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+.as-text {
+  font-family: var(--FP);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink);
+  font-style: italic;
+}
+.as-text span { color: var(--blue); }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    EVENTS
-═══════════════════════════════════════════════ */
-#events{padding:var(--s14) var(--s7);background:var(--white)}
-.events-header{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:var(--s8);align-items:end;margin-bottom:var(--s11)}
-@media(max-width:768px){.events-header{grid-template-columns:1fr}}
-.events-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border)}
-.event-row{
-  display:flex;align-items:center;gap:var(--s7);
-  padding:var(--s7) 0;
-  border-bottom:1px solid var(--border);
-  text-decoration:none;color:inherit;
-  transition:all .3s cubic-bezier(.22,1,.36,1);
-  cursor:pointer;flex-wrap:wrap}
-.event-row:hover{padding-left:var(--s5);background:var(--off)}
-.event-date{
-  min-width:70px;flex-shrink:0}
-.event-date .e-day{
-  font-family:var(--serif);font-size:2.8rem;font-weight:600;
-  line-height:1;color:var(--blue);display:block}
-.event-date .e-month{
-  font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--ink-40);display:block;margin-top:2px}
-.event-sep{width:1px;height:48px;background:var(--border);flex-shrink:0}
-@media(max-width:500px){.event-sep{display:none}}
-.event-info{flex:1;min-width:180px}
-.event-title{
-  font-family:var(--serif);font-size:1.4rem;font-weight:600;
-  color:var(--ink);display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap}
-.event-hot{
-  font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;
-  padding:3px 10px;border-radius:var(--r-full);
-  background:rgba(255,100,50,.1);color:#e05020;
-  border:1px solid rgba(255,100,50,.2)}
-.event-artist{font-size:.9rem;color:var(--ink-60);margin-top:4px}
-.event-genre{
-  font-family:var(--mono);font-size:.62rem;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--blue);margin-top:4px}
-.event-cta{
-  font-family:var(--mono);font-size:.68rem;letter-spacing:.15em;
-  text-transform:uppercase;padding:10px 20px;border-radius:var(--r-full);
-  border:1px solid var(--border2);color:var(--ink-60);
-  transition:all .3s;flex-shrink:0;background:transparent;white-space:nowrap}
-.event-row:hover .event-cta{background:var(--blue);color:var(--white);border-color:var(--blue);box-shadow:var(--shadow-blue)}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#events { background: var(--white); }
+.events-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+@media (min-width: 900px) { .events-layout { grid-template-columns: 1fr 1fr; gap: 5rem; } }
+.ev-list { display: flex; flex-direction: column; }
+.ev-item {
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  transition: all 0.3s;
+  cursor: default;
+  position: relative;
+}
+.ev-item::before {
+  content: '';
+  position: absolute; left: -1rem; top: 50%;
+  transform: translateY(-50%);
+  width: 3px; height: 0;
+  background: var(--blue);
+  transition: height 0.3s var(--ease);
+}
+@media (min-width: 768px) {
+  .ev-item:hover { padding-left: 1rem; }
+  .ev-item:hover::before { height: 60%; }
+}
+.ev-num {
+  font-family: var(--FD);
+  font-size: 2.5rem;
+  color: var(--blue-ultra);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 3rem;
+  text-align: right;
+  color: rgba(16,85,212,0.15);
+  transition: color 0.3s;
+}
+.ev-item:hover .ev-num { color: rgba(16,85,212,0.3); }
+.ev-body { flex: 1; }
+.ev-name {
+  font-family: var(--FP);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.ev-badge {
+  font-family: var(--FI);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.6rem;
+  border-radius: 1px;
+  background: var(--blue-ultra);
+  color: var(--blue);
+  border: 1px solid rgba(16,85,212,0.15);
+}
+.ev-badge.hot {
+  background: rgba(255,80,80,0.08);
+  color: #d94040;
+  border-color: rgba(217,64,64,0.2);
+}
+.ev-detail {
+  font-family: var(--FI);
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--text-soft);
+}
+.ev-cta-box {
+  background: var(--ink);
+  padding: 3rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.ev-cta-box::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(16,85,212,0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+.ev-cta-box::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(74,144,226,0.4), transparent);
+}
+.ecb-h {
+  font-family: var(--FP);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+.ecb-h em { font-style: italic; color: #7ab8f5; }
+.ecb-p {
+  font-family: var(--FI);
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.btn-dark {
+  font-family: var(--FI);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background: var(--white);
+  color: var(--ink);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.35s var(--ease);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.btn-dark:hover {
+  background: var(--blue);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-blue);
+}
 
-/* ═══════════════════════════════════════════════
-   MENU
-═══════════════════════════════════════════════ */
-#menu{padding:var(--s14) var(--s7);background:var(--off)}
-.menu-header{text-align:center;margin-bottom:var(--s11)}
-.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--s5)}
-.menu-card{
-  background:var(--white);border-radius:var(--r-xl);
-  padding:var(--s8) var(--s7);
-  box-shadow:var(--shadow-sm);border:1px solid var(--border);
-  transition:all .35s cubic-bezier(.22,1,.36,1)}
-.menu-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-5px);border-color:var(--blue)}
-.menu-price{
-  font-family:var(--serif);font-size:2.2rem;font-weight:600;
-  color:var(--blue);line-height:1;margin-bottom:var(--s4)}
-.menu-name{
-  font-family:var(--serif);font-size:1.1rem;font-weight:600;
-  color:var(--ink);margin-bottom:var(--s3)}
-.menu-desc{font-size:.85rem;color:var(--ink-60);line-height:1.65}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SPECIALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#specials { background: var(--cream); }
+.sp-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 640px) { .sp-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1000px) { .sp-grid { grid-template-columns: repeat(4, 1fr); } }
+.sp-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s var(--ease);
+  cursor: default;
+  transform-style: preserve-3d;
+}
+.sp-card::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue), #7ab8f5);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease);
+}
+.sp-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: rgba(16,85,212,0.18);
+}
+.sp-card:hover::after { transform: scaleX(1); }
+.sp-price {
+  font-family: var(--FD);
+  font-size: 2.8rem;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.02em;
+}
+.sp-name {
+  font-family: var(--FP);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.sp-includes {
+  font-family: var(--FI);
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+.sp-tag-pill {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: var(--FI);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.7rem;
+  background: var(--blue-ultra);
+  color: var(--blue);
+  border: 1px solid rgba(16,85,212,0.15);
+}
+.sp-sunday-title {
+  font-family: var(--FP);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 3rem 0 1.5rem;
+  font-style: italic;
+}
+.sp-sunday-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 600px;
+}
+@media (min-width: 640px) { .sp-sunday-grid { grid-template-columns: 1fr 1fr; } }
 
-/* ═══════════════════════════════════════════════
-   REVIEWS
-═══════════════════════════════════════════════ */
-#reviews{padding:var(--s14) var(--s7);background:var(--white)}
-.reviews-header{text-align:center;margin-bottom:var(--s11)}
-.rating-display{
-  display:flex;align-items:center;justify-content:center;
-  gap:var(--s6);margin-top:var(--s6)}
-.rating-big{font-family:var(--serif);font-size:5rem;font-weight:600;color:var(--blue);line-height:1}
-.rating-right .stars{color:#f0a020;font-size:1.3rem;letter-spacing:2px}
-.rating-right .r-count{font-family:var(--mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-top:4px}
-
-/* REVIEW NOTIFICATIONS */
-.reviews-stream{
-  display:flex;flex-direction:column;gap:var(--s4);
-  margin-bottom:var(--s9);
-  max-height:500px;overflow-y:auto;padding-right:var(--s3)}
-.reviews-stream::-webkit-scrollbar{width:3px}
-.reviews-stream::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
-.review-notif{
-  display:flex;align-items:flex-start;gap:var(--s5);
-  background:var(--white);border:1px solid var(--border);
-  border-radius:var(--r-xl);padding:var(--s6) var(--s7);
-  box-shadow:var(--shadow-xs);
-  animation:slideInLeft .5s cubic-bezier(.22,1,.36,1) forwards;
-  border-left:3px solid var(--blue);
-  transition:box-shadow .3s,transform .3s}
-.review-notif:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
-.r-avatar{
-  width:44px;height:44px;border-radius:50%;flex-shrink:0;
-  background:linear-gradient(135deg,var(--blue),var(--blue-lt));
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--serif);font-size:.9rem;font-weight:600;color:var(--white)}
-.r-body{flex:1;min-width:0}
-.r-meta{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);flex-wrap:wrap;margin-bottom:var(--s2)}
-.r-name{font-family:var(--sans);font-size:.88rem;font-weight:600;color:var(--ink)}
-.r-stars{font-size:.9rem;color:#f0a020;letter-spacing:1px}
-.r-time{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-40)}
-.r-text{font-size:.88rem;color:var(--ink-60);line-height:1.65}
-.r-price{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);margin-top:var(--s2);opacity:.7}
-.r-new{
-  font-family:var(--mono);font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;
-  padding:2px 8px;border-radius:var(--r-full);
-  background:var(--blue-mist);color:var(--blue);border:1px solid rgba(0,85,255,.2)}
-
-/* ADD REVIEW */
-.add-review{
-  background:var(--off);border:1px solid var(--border);
-  border-radius:var(--r-xl);padding:var(--s9) var(--s8)}
-.add-review h3{font-family:var(--serif);font-size:1.8rem;font-weight:600;color:var(--ink);margin-bottom:var(--s3)}
-.add-review .sub{font-size:.9rem;color:var(--ink-60);margin-bottom:var(--s7)}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);margin-bottom:var(--s5)}
-@media(max-width:600px){.form-row{grid-template-columns:1fr}}
-.form-field{display:flex;flex-direction:column;gap:var(--s2)}
-.form-field label{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60)}
-.form-field input,.form-field select,.form-field textarea{
-  background:var(--white);border:1px solid var(--border2);
-  border-radius:var(--r-md);padding:12px 14px;
-  color:var(--ink);font-family:var(--sans);font-size:.9rem;
-  outline:none;transition:border-color .25s,box-shadow .25s}
-.form-field input:focus,.form-field select:focus,.form-field textarea:focus{
-  border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,85,255,.08)}
-.form-field select option{background:var(--white);color:var(--ink)}
-.form-field textarea{resize:vertical;min-height:100px}
-.star-picker{display:flex;gap:var(--s3);margin-bottom:var(--s5)}
-.star-picker button{background:none;border:none;font-size:1.6rem;cursor:pointer;color:var(--border2);transition:color .2s,transform .2s;padding:0;line-height:1}
-.star-picker button:hover{transform:scale(1.15)}
-.star-picker button.active{color:#f0a020}
-.form-actions{display:flex;gap:var(--s4);flex-wrap:wrap;align-items:center;margin-top:var(--s5)}
-.form-msg{font-family:var(--mono);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;padding:10px 18px;border-radius:var(--r-full);display:none}
-.form-msg.ok{background:rgba(30,180,100,.1);color:#1a9a5a;border:1px solid rgba(30,180,100,.25)}
-.form-msg.err{background:rgba(220,50,50,.08);color:#c03030;border:1px solid rgba(220,50,50,.2)}
-
-/* ═══════════════════════════════════════════════
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    BOOKING
-═══════════════════════════════════════════════ */
-#bookings{
-  padding:var(--s14) var(--s7);
-  background:linear-gradient(160deg,#050c1a 0%,#0a1528 60%,#050c1a 100%);
-  text-align:center;position:relative;overflow:hidden}
-.bookings-bg{
-  position:absolute;inset:0;
-  background:radial-gradient(ellipse at 50% 0%,rgba(0,85,255,.18) 0%,transparent 60%)}
-.bookings-inner{position:relative;z-index:2;max-width:700px;margin:0 auto}
-.bookings-inner .section-eyebrow{color:rgba(80,140,255,.8)}
-.book-opts{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:var(--s4);margin:var(--s10) 0;text-align:left}
-@media(max-width:600px){.book-opts{grid-template-columns:1fr}}
-.book-opt{
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:var(--r-xl);padding:var(--s6);
-  transition:all .3s cubic-bezier(.22,1,.36,1)}
-.book-opt:hover{background:rgba(255,255,255,.08);border-color:rgba(0,85,255,.4);transform:translateY(-3px)}
-.book-opt .bo-icon{font-size:1.8rem;margin-bottom:var(--s4)}
-.book-opt .bo-name{font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--white);margin-bottom:4px}
-.book-opt .bo-sub{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35)}
-.wa-number{font-family:var(--mono);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:var(--s5)}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#booking {
+  background: var(--ink);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.booking-bg-anim {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(16,85,212,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 50%, rgba(74,144,226,0.08) 0%, transparent 55%);
+  animation: bgPulse 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes bgPulse { from{opacity:0.7} to{opacity:1.3} }
+#booking .sec-tag-text { color: var(--gold-light); }
+#booking .sec-tag-dash { background: var(--gold); }
+#booking .sec-h { color: var(--white); }
+#booking .sec-p { color: rgba(255,255,255,0.45); margin: 0 auto 3rem; }
+.bk-content { position: relative; z-index: 1; }
+.wa-big-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: var(--FP);
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: italic;
+  padding: 1.3rem 2.8rem;
+  background: linear-gradient(135deg, #25d366, #1db954);
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.4s var(--ease);
+  box-shadow: 0 8px 40px rgba(37,211,102,0.3);
+  margin-bottom: 1.5rem;
+}
+.wa-big-btn:hover {
+  box-shadow: 0 16px 60px rgba(37,211,102,0.45);
+  transform: translateY(-3px) scale(1.02);
+}
+.wa-big-btn svg { width: 24px; height: 24px; fill: var(--white); flex-shrink: 0; }
+.bk-divider { display: flex; align-items: center; gap: 1rem; max-width: 280px; margin: 0.5rem auto 1.5rem; }
+.bk-div-line { flex: 1; height: 1px; background: rgba(255,255,255,0.12); }
+.bk-div-text {
+  font-family: var(--FI); font-size: 0.65rem;
+  font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: rgba(255,255,255,0.28);
+}
+.bk-phone {
+  font-family: var(--FP);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue-light);
+  letter-spacing: 0.02em;
+  font-style: italic;
+}
 
-/* ═══════════════════════════════════════════════
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   REVIEWS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#reviews { background: var(--offwhite); }
+.reviews-ticker-wrap {
+  overflow: hidden;
+  position: relative;
+  margin-top: 2.5rem;
+}
+.reviews-ticker-wrap::before,
+.reviews-ticker-wrap::after {
+  content: '';
+  position: absolute; top: 0; bottom: 0;
+  width: 120px; z-index: 2; pointer-events: none;
+}
+.reviews-ticker-wrap::before { left: 0; background: linear-gradient(90deg, var(--offwhite), transparent); }
+.reviews-ticker-wrap::after  { right: 0; background: linear-gradient(270deg, var(--offwhite), transparent); }
+.reviews-ticker {
+  display: flex;
+  gap: 1.2rem;
+  animation: rvTicker 38s linear infinite;
+  width: max-content;
+}
+.reviews-ticker:hover { animation-play-state: paused; }
+@keyframes rvTicker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+.rv-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 1.5rem;
+  min-width: 270px;
+  max-width: 280px;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.rv-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: linear-gradient(180deg, var(--blue), #7ab8f5);
+}
+.rv-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.rv-head {
+  display: flex; align-items: center; gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+.rv-avatar {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue), #7ab8f5);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--FP); font-size: 0.68rem; font-weight: 700;
+  color: var(--white); flex-shrink: 0;
+}
+.rv-name {
+  font-family: var(--FP);
+  font-size: 0.88rem; font-weight: 700;
+  color: var(--ink);
+}
+.rv-stars { font-size: 0.72rem; color: var(--gold); letter-spacing: 1px; }
+.rv-text {
+  font-family: var(--FI);
+  font-size: 0.82rem; font-weight: 300;
+  color: var(--text-soft); line-height: 1.7;
+  font-style: italic;
+}
+.rv-time {
+  font-family: var(--FI);
+  font-size: 0.65rem; font-weight: 500;
+  letter-spacing: 0.12em; color: var(--text-faint);
+  margin-top: 0.6rem;
+}
+.add-review { margin-top: 3rem; }
+.add-review-toggle {
+  font-family: var(--FI);
+  font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 0.75rem 1.8rem;
+  background: transparent;
+  border: 1px solid var(--border-light);
+  color: var(--text-soft);
+  cursor: pointer; transition: all 0.25s;
+  border-radius: 2px;
+}
+.add-review-toggle:hover { border-color: var(--blue); color: var(--blue); }
+.rv-form {
+  display: none;
+  margin-top: 1.8rem;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 2.5rem;
+  max-width: 500px;
+  box-shadow: var(--shadow-sm);
+}
+.rv-form.open { display: block; }
+.fg { margin-bottom: 1rem; }
+.fl {
+  display: block;
+  font-family: var(--FI); font-size: 0.7rem;
+  font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--text-soft);
+  margin-bottom: 0.4rem;
+}
+.fi, .fta {
+  width: 100%;
+  background: var(--cream);
+  border: 1px solid var(--border-light);
+  color: var(--ink);
+  font-family: var(--FI); font-size: 0.88rem;
+  padding: 0.7rem 0.95rem;
+  border-radius: 2px; outline: none;
+  transition: border-color 0.2s;
+}
+.fi:focus, .fta:focus { border-color: var(--blue); }
+.fta { min-height: 90px; resize: vertical; }
+.star-row { display: flex; gap: 0.4rem; margin-top: 0.3rem; }
+.star-btn {
+  font-size: 1.4rem; cursor: pointer;
+  color: var(--border-light); transition: color 0.15s;
+  background: none; border: none; padding: 0;
+}
+.star-btn.on { color: var(--gold); }
+.fsub {
+  font-family: var(--FI); font-size: 0.82rem;
+  font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  background: var(--ink); color: var(--white);
+  border: none; border-radius: 2px;
+  cursor: pointer; transition: all 0.3s var(--ease);
+  margin-top: 0.5rem;
+}
+.fsub:hover { background: var(--blue); box-shadow: var(--shadow-blue); }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    LOCATION
-═══════════════════════════════════════════════ */
-#location{padding:var(--s14) var(--s7);background:var(--off)}
-.location-header{text-align:center;margin-bottom:var(--s11)}
-.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s10);align-items:center}
-@media(max-width:800px){.location-grid{grid-template-columns:1fr}}
-.map-visual{
-  border-radius:var(--r-xl);overflow:hidden;
-  border:1px solid var(--border);
-  height:380px;display:flex;align-items:center;justify-content:center;
-  background:linear-gradient(135deg,#e8f0ff 0%,#f0f5ff 100%);
-  cursor:pointer;position:relative;
-  transition:box-shadow .3s}
-.map-visual:hover{box-shadow:var(--shadow-lg)}
-.map-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,85,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(0,85,255,.07) 1px,transparent 1px);background-size:32px 32px}
-.map-pin-wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:var(--s5)}
-.map-pin-dot{width:24px;height:24px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 8px rgba(0,85,255,.15),0 0 0 16px rgba(0,85,255,.07);animation:mapPulse 2.5s ease-in-out infinite}
-.map-pin-label{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--s4) var(--s6);text-align:center;box-shadow:var(--shadow-md)}
-.map-pin-label strong{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--blue);display:block}
-.map-pin-label span{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40)}
-.map-cta-btn{
-  font-family:var(--mono);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;
-  padding:10px 20px;border-radius:var(--r-full);
-  border:1px solid var(--blue);color:var(--blue);
-  background:transparent;transition:all .3s;text-decoration:none;display:inline-block}
-.map-cta-btn:hover{background:var(--blue);color:var(--white)}
-.loc-details{display:flex;flex-direction:column;gap:0}
-.loc-row{
-  display:flex;align-items:flex-start;gap:var(--s5);
-  padding:var(--s6) 0;border-bottom:1px solid var(--border)}
-.loc-row:last-child{border-bottom:none}
-.loc-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px;width:28px}
-.loc-label{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:4px}
-.loc-value{font-size:.9rem;color:var(--ink-80);line-height:1.6}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#location { background: var(--white); }
+.loc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+@media (min-width: 768px) { .loc-grid { grid-template-columns: 1fr 1fr; } }
+.map-container {
+  background: var(--light);
+  border: 1px solid var(--border-light);
+  min-height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+.map-container iframe {
+  width: 100%; height: 100%;
+  min-height: 320px; border: none;
+  filter: grayscale(30%) contrast(1.05);
+  opacity: 0.85;
+}
+.map-overlay-card {
+  position: absolute; bottom: 1.5rem; left: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 1rem 1.2rem;
+  box-shadow: var(--shadow-md);
+}
+.moc-name {
+  font-family: var(--FP);
+  font-size: 0.95rem; font-weight: 700;
+  color: var(--ink);
+}
+.moc-addr {
+  font-family: var(--FI);
+  font-size: 0.75rem; font-weight: 300;
+  color: var(--text-soft); margin-top: 0.2rem;
+}
+.loc-info {
+  background: var(--cream);
+  border: 1px solid var(--border-light);
+  padding: 2.5rem;
+  display: flex; flex-direction: column; gap: 1.5rem;
+}
+.loc-row { display: flex; gap: 1rem; align-items: flex-start; }
+.loc-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+.loc-label {
+  font-family: var(--FI); font-size: 0.68rem;
+  font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--blue);
+  margin-bottom: 0.2rem;
+}
+.loc-value { font-family: var(--FI); font-size: 0.9rem; color: var(--ink); }
+.btn-blue {
+  font-family: var(--FI);
+  font-size: 0.8rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.9rem 2rem;
+  background: var(--blue); color: var(--white);
+  border: none; border-radius: 2px;
+  cursor: pointer; transition: all 0.35s var(--ease);
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  box-shadow: var(--shadow-blue);
+  margin-top: 0.5rem;
+}
+.btn-blue:hover { background: var(--ink); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
 
-/* ═══════════════════════════════════════════════
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    FOOTER
-═══════════════════════════════════════════════ */
-footer{
-  background:var(--ink);color:rgba(255,255,255,.65);
-  padding:var(--s13) var(--s7) var(--s8)}
-.footer-inner{max-width:1200px;margin:0 auto}
-.footer-top{
-  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;
-  gap:var(--s10);margin-bottom:var(--s11);
-  padding-bottom:var(--s11);
-  border-bottom:1px solid rgba(255,255,255,.08)}
-@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr}}
-@media(max-width:500px){.footer-top{grid-template-columns:1fr}}
-.ft-brand-name{font-family:var(--serif);font-size:1.8rem;font-weight:600;color:var(--white);margin-bottom:var(--s4)}
-.ft-brand-desc{font-size:.85rem;line-height:1.75;color:rgba(255,255,255,.45);margin-bottom:var(--s6)}
-.footer-socials{display:flex;gap:var(--s3)}
-.soc-btn{
-  width:40px;height:40px;border-radius:50%;
-  border:1px solid rgba(255,255,255,.15);
-  background:rgba(255,255,255,.06);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--mono);font-size:.62rem;
-  color:rgba(255,255,255,.55);
-  transition:all .3s;cursor:pointer;font-weight:500}
-.soc-btn:hover{background:var(--blue);border-color:var(--blue);color:var(--white);transform:scale(1.08)}
-.ft-col h4{font-family:var(--mono);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:var(--s6)}
-.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:var(--s4)}
-.ft-col a{font-size:.85rem;color:rgba(255,255,255,.5);transition:color .25s}
-.ft-col a:hover{color:var(--white)}
-.ft-contact-item{margin-bottom:var(--s5)}
-.ft-contact-lbl{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px}
-.ft-contact-val{font-size:.85rem;color:rgba(255,255,255,.55)}
-.footer-bottom{
-  display:flex;align-items:center;justify-content:space-between;
-  flex-wrap:wrap;gap:var(--s4)}
-.footer-bottom p{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.2)}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+footer {
+  background: var(--ink);
+  padding: 5rem 1.5rem 2.5rem;
+  position: relative; z-index: 5;
+}
+footer::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(74,144,226,0.3), transparent);
+}
+@media (min-width: 768px) { footer { padding: 6rem 4rem 3rem; } }
+@media (min-width: 1200px) { footer { padding: 6rem 6rem 3rem; } }
+.ft-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 640px) { .ft-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .ft-grid { grid-template-columns: 2fr 1fr 1fr; } }
+.ft-brand-logo { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1rem; }
+.ft-brand-logo img {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(74,144,226,0.3);
+  object-fit: cover;
+}
+.ft-brand-name {
+  font-family: var(--FP);
+  font-size: 1.1rem; font-weight: 700;
+  color: var(--white); line-height: 1.1;
+}
+.ft-brand-name span { color: var(--blue-light); }
+.ft-brand-sub {
+  font-family: var(--FI);
+  font-size: 0.6rem; letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.28);
+}
+.ft-brand-desc {
+  font-family: var(--FI);
+  font-size: 0.82rem; font-weight: 300;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.8; max-width: 280px;
+}
+.ft-col-title {
+  font-family: var(--FI);
+  font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  color: rgba(255,255,255,0.35); margin-bottom: 1.2rem;
+}
+.ft-links { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.ft-links a, .ft-links span {
+  font-family: var(--FI);
+  font-size: 0.85rem; font-weight: 300;
+  color: rgba(255,255,255,0.42);
+  transition: color 0.2s; cursor: pointer;
+}
+.ft-links a:hover { color: var(--blue-light); }
+.ft-socials { display: flex; gap: 0.8rem; margin-top: 1.2rem; }
+.soc-btn {
+  width: 38px; height: 38px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.4);
+  transition: all 0.3s; cursor: pointer;
+}
+.soc-btn:hover {
+  border-color: var(--blue-light);
+  color: var(--blue-light);
+  box-shadow: 0 0 14px rgba(74,144,226,0.25);
+  background: rgba(74,144,226,0.08);
+}
+.ft-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 2rem;
+  display: flex; align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; gap: 0.5rem;
+}
+.ft-copy {
+  font-family: var(--FI); font-size: 0.75rem; font-weight: 300;
+  color: rgba(255,255,255,0.22);
+}
+.ft-est {
+  font-family: var(--FP); font-size: 0.75rem;
+  font-style: italic; color: rgba(255,255,255,0.18);
+}
 
-/* ═══════════════════════════════════════════════
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    FLOATING ELEMENTS
-═══════════════════════════════════════════════ */
-.float-wa{
-  position:fixed;bottom:90px;right:var(--s6);z-index:800;
-  width:56px;height:56px;border-radius:50%;
-  background:linear-gradient(135deg,#1a9a6a,#25d366);
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 4px 20px rgba(37,211,102,.4);
-  transition:all .3s cubic-bezier(.22,1,.36,1);text-decoration:none}
-.float-wa:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.55)}
-.float-wa::before{content:'';position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:waPulse 2.5s ease-in-out infinite}
-.float-wa svg{position:relative;z-index:1}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.wa-float {
+  position: fixed; bottom: 1.8rem; right: 1.8rem;
+  z-index: 500;
+  width: 58px; height: 58px;
+  background: linear-gradient(135deg, #25d366, #1db954);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 28px rgba(37,211,102,0.38);
+  animation: waFloat 3.5s ease-in-out infinite;
+  transition: all 0.3s var(--ease);
+}
+@keyframes waFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+.wa-float:hover {
+  animation: none;
+  transform: scale(1.12);
+  box-shadow: 0 10px 45px rgba(37,211,102,0.55);
+}
+.wa-float svg { width: 27px; height: 27px; fill: var(--white); }
 
-.settings-btn{
-  position:fixed;bottom:var(--s6);left:var(--s6);z-index:800;
-  width:44px;height:44px;border-radius:50%;
-  background:rgba(255,255,255,.9);border:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  cursor:pointer;box-shadow:var(--shadow-sm);
-  transition:all .3s;backdrop-filter:blur(10px)}
-.settings-btn:hover{box-shadow:var(--shadow-md);transform:scale(1.05);border-color:var(--blue)}
-.settings-btn svg{width:18px;height:18px;stroke:var(--ink-60);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s}
-.settings-btn:hover svg{stroke:var(--blue)}
+/* STICKY BOOK */
+.sticky-book {
+  position: fixed; bottom: 1.8rem; left: 50%;
+  transform: translateX(-50%);
+  z-index: 490;
+  display: none;
+  font-family: var(--FP);
+  font-size: 0.88rem; font-weight: 600;
+  font-style: italic;
+  padding: 0.75rem 2rem;
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 50px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-decoration: none;
+  transition: all 0.3s var(--ease);
+}
+.sticky-book.visible { display: block; }
+.sticky-book:hover {
+  background: var(--blue);
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: var(--shadow-blue);
+}
 
-/* ═══════════════════════════════════════════════
-   SETTINGS MODAL
-═══════════════════════════════════════════════ */
-.modal-wrap{
-  position:fixed;inset:0;z-index:9000;
-  display:none;align-items:center;justify-content:center;
-  background:rgba(14,14,13,.75);backdrop-filter:blur(12px)}
-.modal-wrap.open{display:flex}
-.modal{
-  background:var(--white);border-radius:var(--r-xl);
-  width:90%;max-width:680px;max-height:90vh;
-  overflow-y:auto;padding:var(--s9);position:relative;
-  box-shadow:var(--shadow-xl);border:1px solid var(--border)}
-.modal::-webkit-scrollbar{width:3px}.modal::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
-.modal-close{
-  position:absolute;top:var(--s6);right:var(--s6);
-  width:36px;height:36px;border-radius:50%;
-  background:var(--surface);border:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  cursor:pointer;font-size:1rem;color:var(--ink-60);
-  transition:all .3s;font-family:var(--sans)}
-.modal-close:hover{background:var(--ink);color:var(--white);border-color:var(--ink)}
-.modal h2{font-family:var(--serif);font-size:2rem;font-weight:600;color:var(--ink);margin-bottom:var(--s2)}
-.modal-sub{font-family:var(--mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:var(--s8)}
-.pass-wrap{display:flex;flex-direction:column;align-items:center;gap:var(--s5);padding:var(--s7) 0}
-.pass-input{
-  background:var(--off);border:1px solid var(--border2);
-  border-radius:var(--r-md);padding:14px 18px;
-  color:var(--ink);font-family:var(--mono);font-size:1rem;
-  letter-spacing:.3em;width:100%;max-width:300px;
-  text-align:center;outline:none;transition:border-color .25s}
-.pass-input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,85,255,.1)}
-.pass-err{font-family:var(--mono);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:#c03030;display:none}
-.s-section{margin-bottom:var(--s8)}
-.s-section h3{
-  font-family:var(--sans);font-size:.88rem;font-weight:600;
-  color:var(--ink);margin-bottom:var(--s5);
-  padding-bottom:var(--s4);border-bottom:1px solid var(--border)}
-.s-field{display:flex;flex-direction:column;gap:var(--s2);margin-bottom:var(--s4)}
-.s-field label{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40)}
-.s-field input,.s-field textarea,.s-field select{
-  background:var(--off);border:1px solid var(--border2);
-  border-radius:var(--r-md);padding:11px 14px;
-  color:var(--ink);font-family:var(--sans);font-size:.9rem;
-  outline:none;transition:border-color .25s;width:100%}
-.s-field input:focus,.s-field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,85,255,.08)}
-.s-field textarea{resize:vertical;min-height:70px}
-.s-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5)}
-@media(max-width:500px){.s-row{grid-template-columns:1fr}}
-.s-item{
-  background:var(--off);border:1px solid var(--border);
-  border-radius:var(--r-md);padding:var(--s4) var(--s5);
-  margin-bottom:var(--s3);display:flex;align-items:center;gap:var(--s4)}
-.s-item span{flex:1;font-size:.85rem;color:var(--ink-80)}
-.s-del{
-  background:rgba(200,30,30,.08);border:1px solid rgba(200,30,30,.2);
-  border-radius:var(--r-sm);padding:4px 12px;color:#b02020;
-  font-family:var(--mono);font-size:.6rem;cursor:pointer;transition:all .3s}
-.s-del:hover{background:rgba(200,30,30,.15)}
-.btn-add-s{
-  font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;
-  padding:10px 20px;border-radius:var(--r-full);
-  border:1px solid var(--border2);color:var(--blue);
-  background:transparent;cursor:pointer;transition:all .3s;margin-top:var(--s3)}
-.btn-add-s:hover{background:var(--blue-mist);border-color:var(--blue)}
-.save-all{
-  width:100%;font-family:var(--sans);font-size:.88rem;font-weight:600;
-  letter-spacing:.04em;padding:14px;border-radius:var(--r-full);
-  background:var(--ink);color:var(--white);border:none;
-  cursor:pointer;box-shadow:var(--shadow-sm);
-  transition:all .3s;margin-top:var(--s4)}
-.save-all:hover{background:var(--blue);box-shadow:var(--shadow-blue);transform:translateY(-1px)}
-.save-ok{
-  font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;
-  color:#1a9a5a;text-align:center;margin-top:var(--s4);display:none}
+/* SETTINGS */
+.set-btn {
+  position: fixed; bottom: 1.8rem; left: 1.8rem;
+  z-index: 500;
+  width: 44px; height: 44px;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s;
+}
+.set-btn:hover { border-color: var(--blue); box-shadow: var(--shadow-blue); }
+.set-btn svg { width: 18px; height: 18px; stroke: var(--text-soft); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.set-overlay { display: none; position: fixed; inset: 0; background: rgba(10,10,15,0.5); z-index: 800; backdrop-filter: blur(4px); }
+.set-overlay.open { display: block; }
+.set-drawer {
+  display: none;
+  position: fixed; bottom: 0; left: 0;
+  width: 100%; max-width: 420px;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-bottom: none;
+  z-index: 900;
+  padding: 2.5rem;
+  border-radius: 12px 12px 0 0;
+  max-height: 82vh; overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+@media (min-width: 480px) {
+  .set-drawer {
+    bottom: 5.5rem; left: 1.8rem;
+    border-radius: 8px; border-bottom: 1px solid var(--border-light);
+  }
+}
+.set-drawer.open { display: block; }
+.sd-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.8rem; }
+.sd-title { font-family: var(--FP); font-size: 1.2rem; font-weight: 700; color: var(--ink); }
+.sd-close { font-size: 1.1rem; color: var(--text-soft); cursor: pointer; background: none; border: none; font-family: var(--FI); transition: color 0.2s; }
+.sd-close:hover { color: var(--ink); }
+.sd-lock { display: flex; flex-direction: column; gap: 1.1rem; }
+.sd-lock-title { font-family: var(--FP); font-size: 1.1rem; font-weight: 600; color: var(--ink); }
+.sd-lock-label { font-family: var(--FI); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft); }
+.sd-lock-input { width: 100%; background: var(--cream); border: 1px solid var(--border-light); color: var(--ink); font-family: var(--FI); font-size: 0.88rem; padding: 0.7rem 0.95rem; border-radius: 2px; outline: none; transition: border-color 0.2s; }
+.sd-lock-input:focus { border-color: var(--blue); }
+.sd-lock-err { font-family: var(--FI); font-size: 0.78rem; color: #d94040; display: none; }
+.sd-lock-btn { font-family: var(--FI); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.7rem 1.5rem; background: var(--ink); color: var(--white); border: none; border-radius: 2px; cursor: pointer; transition: all 0.25s; }
+.sd-lock-btn:hover { background: var(--blue); }
+.sd-content { display: none; }
+.sd-content.on { display: block; }
+.sd-sec { font-family: var(--FI); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--blue); margin: 1.3rem 0 0.7rem; border-bottom: 1px solid var(--border-light); padding-bottom: 0.4rem; }
+.sd-field { margin-bottom: 0.75rem; }
+.sd-field label { display: block; font-family: var(--FI); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-soft); margin-bottom: 0.3rem; }
+.sd-field input { width: 100%; background: var(--cream); border: 1px solid var(--border-light); color: var(--ink); font-family: var(--FI); font-size: 0.82rem; padding: 0.48rem 0.8rem; border-radius: 2px; outline: none; }
+.sd-save { font-family: var(--FI); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.7rem 1.5rem; background: var(--ink); color: var(--white); border: none; border-radius: 2px; cursor: pointer; margin-top: 1.2rem; width: 100%; transition: all 0.25s; }
+.sd-save:hover { background: var(--blue); }
+.sd-logout { width: 100%; margin-top: 0.5rem; font-family: var(--FI); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.5rem; background: transparent; border: 1px solid var(--border-light); color: var(--text-soft); border-radius: 2px; cursor: pointer; transition: all 0.2s; }
+.sd-logout:hover { border-color: var(--ink); color: var(--ink); }
 
-/* ═══════════════════════════════════════════════
-   KEYFRAMES
-═══════════════════════════════════════════════ */
-@keyframes fadeSlideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-@keyframes scrollPulse{0%,100%{opacity:.4;transform:scaleY(1)}50%{opacity:.8;transform:scaleY(1.08)}}
-@keyframes glowPulse{0%,100%{opacity:.5}50%{opacity:.9}}
-@keyframes mapPulse{0%,100%{box-shadow:0 0 0 8px rgba(0,85,255,.15),0 0 0 16px rgba(0,85,255,.07)}50%{box-shadow:0 0 0 12px rgba(0,85,255,.2),0 0 0 24px rgba(0,85,255,.05)}}
-@keyframes waPulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.5);opacity:0}}
-@keyframes slideInLeft{from{opacity:0;transform:translateX(-16px)}to{opacity:1;transform:translateX(0)}}
+/* TOAST */
+.toast {
+  position: fixed; bottom: 6.5rem; left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: var(--ink); color: var(--white);
+  font-family: var(--FP); font-size: 0.9rem;
+  font-weight: 500; font-style: italic;
+  padding: 0.8rem 2rem; border-radius: 2px;
+  opacity: 0; transition: all 0.35s var(--ease);
+  pointer-events: none; z-index: 2000;
+  white-space: nowrap;
+  box-shadow: var(--shadow-lg);
+  border-left: 3px solid var(--blue);
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-/* Mobile refinements */
-@media(max-width:768px){
-  section{padding-left:var(--s5);padding-right:var(--s5)}
-  #nav{padding:0 var(--s5)}
-  .footer-top{gap:var(--s8)}
-  .artists-masonry{gap:var(--s3)}
-  .artists-stats{border-radius:var(--r-lg)}
+/* ANNOUNCEMENT */
+#ann-bar {
+  display: none; position: fixed; top: 0; left: 0; right: 0;
+  z-index: 1100;
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 0.55rem 3rem;
+  font-family: var(--FI); font-size: 0.78rem;
+  font-weight: 500; letter-spacing: 0.08em;
+}
+#ann-close { position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--white); font-size: 1.1rem; cursor: pointer; line-height: 1; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   PARTICLES (light mode)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.light-particle {
+  position: fixed; border-radius: 50%;
+  pointer-events: none; z-index: 2;
+  animation: lpFloat linear infinite;
+}
+@keyframes lpFloat {
+  0%   { transform: translateY(100vh) translateX(0) scale(0); opacity: 0; }
+  5%   { opacity: 1; }
+  95%  { opacity: 0.4; }
+  100% { transform: translateY(-20vh) translateX(var(--dx)) scale(1); opacity: 0; }
 }
 </style>
 </head>
 <body>
 
-<!-- ════ STICKY BOTTOM BAR ════ -->
-<div class="sticky-bar" id="sticky-bar">
-  <div class="sticky-bar-left">
-    <div>
-      <div class="sticky-bar-logo">Dark or Blue Lounge</div>
-      <div class="sticky-bar-sub">Ntuzuma, Durban</div>
-    </div>
-  </div>
-  <a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I%20would%20like%20to%20make%20a%20booking!" target="_blank" class="btn btn-primary" style="font-size:.78rem;padding:11px 22px">
-    Book Now
-    <svg class="btn-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h12M9 3l6 6-6 6"/></svg>
-  </a>
+<!-- 3D CANVAS -->
+<canvas id="scene-canvas"></canvas>
+
+<!-- AMBIENT ORBS -->
+<div class="orb-layer">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
 </div>
 
-<!-- ════ NAV ════ -->
-<nav id="nav">
-  <div class="nav-inner">
-    <a href="#home" class="nav-logo">
-      <div class="nav-logo-mark" id="logo-mark">
-        <img src="logo.png" alt="Dark or Blue" onerror="this.style.display='none';document.getElementById('logo-fallback').style.display='flex'"/>
-        <div class="nav-logo-mark-fallback" id="logo-fallback" style="display:none">D</div>
-      </div>
-      <div class="nav-logo-text">
-        <span class="nav-logo-name">Dark or Blue</span>
-        <span class="nav-logo-sub">Lounge · Ntuzuma</span>
-      </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#experiences">Experiences</a></li>
-      <li><a href="#artists">Artists</a></li>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#bookings">Bookings</a></li>
-      <li><a href="#location">Location</a></li>
-    </ul>
-    <a href="https://wa.me/27742270872?text=Hi%20I%20want%20to%20book!" target="_blank" class="nav-cta">
-      Book a Table
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
-    </a>
-    <button class="hamburger" id="ham" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-brand">
+    <img src="logo.jpg" alt="Dark or Blue Lounge" class="nav-logo-img"/>
+    <div class="nav-brand-text">
+      <div class="nav-brand-main">Dark <span>or</span> Blue</div>
+      <div class="nav-brand-sub">Lounge · Ntuzuma, Durban</div>
+    </div>
   </div>
-  <div class="mobile-menu" id="mob">
-    <a href="#experiences" onclick="closeMenu()">Experiences</a>
-    <a href="#artists" onclick="closeMenu()">Artists</a>
-    <a href="#events" onclick="closeMenu()">Events</a>
-    <a href="#reviews" onclick="closeMenu()">Reviews</a>
-    <a href="#bookings" onclick="closeMenu()">Bookings</a>
-    <a href="#location" onclick="closeMenu()">Location</a>
-    <a href="https://wa.me/27742270872?text=Hi%20I%20want%20to%20book!" target="_blank" class="btn btn-primary" style="margin-top:8px">Book a Table</a>
-  </div>
+  <ul class="nav-links">
+    <li><a href="#experiences">Experiences</a></li>
+    <li><a href="#artists">Artists</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#specials">Specials</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#location">Find Us</a></li>
+  </ul>
+  <a href="https://wa.me/27742270872" class="nav-book" target="_blank" rel="noopener">Book Now ↗</a>
+  <div class="ham" id="hamBtn"><span></span><span></span><span></span></div>
 </nav>
 
-<!-- ════ HERO ════ -->
-<section id="home">
-  <div class="hero-media">
-    <img src="hero-bg.jpg" alt="Dark or Blue Lounge" onerror="this.style.display='none';document.querySelector('.hero-media-fallback').style.display='block'"/>
-    <div class="hero-media-fallback" style="display:none"></div>
-  </div>
-  <div class="hero-gradient"></div>
-  <div class="hero-content max">
-    <div class="hero-eyebrow">
-      <div class="dot"></div>
-      <span>Ntuzuma · Durban · 92 Uxamu Drive · Est. 2024</span>
-    </div>
-    <h1 class="hero-headline">
-      <em>Dark</em> or<br/>
-      <span class="accent">Blue Lounge</span>
-    </h1>
-    <p class="hero-sub">
-      Ntuzuma's most <strong>electrifying entertainment destination</strong> — where elite artists perform, premium shisanyama is served, and every night becomes a memory that lasts forever.
-    </p>
-    <div class="hero-actions">
-      <a href="#bookings" class="btn btn-white">
-        Book Your Experience
-        <span class="btn-arrow">→</span>
-      </a>
-      <a href="#artists" class="btn btn-outline-white">
-        Featured Artists
-        <span class="btn-arrow">↓</span>
-      </a>
-    </div>
-    <div class="hero-pills">
-      <span class="hero-pill">Shisanyama</span>
-      <span class="hero-pill">Car Wash</span>
-      <span class="hero-pill">Hubbly</span>
-      <span class="hero-pill">Beverages</span>
-      <span class="hero-pill">Live Artists</span>
-      <span class="hero-pill">Top DJs</span>
-      <span class="hero-pill">Sport TV</span>
-    </div>
-    <div class="hero-trust">
-      <div class="trust-item">
-        <div>
-          <div class="t-val">4.6★</div>
-          <div class="t-lbl">Google Rating</div>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div>
-          <div class="t-val">500+</div>
-          <div class="t-lbl">Guests Per Night</div>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div>
-          <div class="t-val">50+</div>
-          <div class="t-lbl">Artists Hosted</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
-
-<!-- ════ TICKER ════ -->
-<div class="ticker">
-  <div class="ticker-track" id="ticker-track"></div>
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" id="mobClose">✕</button>
+  <a href="#experiences" onclick="closeMob()">Experiences</a>
+  <a href="#artists" onclick="closeMob()">Artists</a>
+  <a href="#events" onclick="closeMob()">Events</a>
+  <a href="#specials" onclick="closeMob()">Specials</a>
+  <a href="#reviews" onclick="closeMob()">Reviews</a>
+  <a href="#location" onclick="closeMob()">Find Us</a>
+  <a href="https://wa.me/27742270872" target="_blank" rel="noopener" onclick="closeMob()">📲 Book Now</a>
 </div>
 
-<!-- ════ EXPERIENCES ════ -->
-<section id="experiences" style="padding:var(--s14) var(--s7)">
-  <div class="max">
-    <div class="exp-header">
-      <div class="reveal-left">
-        <div class="section-eyebrow">What We Offer</div>
-        <h2 class="section-title">Five Premium<br/>Experiences</h2>
-        <span class="rule"></span>
-      </div>
-      <div class="exp-header-right reveal-right">
-        <p class="section-body" style="margin-left:auto;text-align:right">Every corner of Dark or Blue Lounge is crafted to immerse you in a premium township lifestyle. One venue. Infinite experiences.</p>
-      </div>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ov-dark"></div>
+  <div class="hero-ov-grad"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-line-top"></div>
+  <div class="hero-line-bottom"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span class="hero-eyebrow-text">Est. 2020 · Ntuzuma, Durban · Now Open</span>
+      <div class="hero-eyebrow-dot"></div>
     </div>
-    <div class="exp-grid" id="exp-grid"></div>
+    <h1 class="hero-title">
+      <span class="line-1">Dark</span>
+      <span class="line-2 line-serif">or Blue</span>
+      <span class="line-3">Lounge</span>
+    </h1>
+    <p class="hero-sub"><strong>Where the night comes alive.</strong><br/>Ntuzuma's most exclusive lifestyle destination — shisanyama, live DJs, elite entertainment & beyond.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/27742270872" class="btn-hero-primary" target="_blank" rel="noopener">📲 Book a Table</a>
+      <a href="#events" class="btn-hero-ghost">View Events →</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hstat"><div class="hstat-n">4.6★</div><div class="hstat-l">Google Rating</div></div>
+    <div class="hstat"><div class="hstat-n">200+</div><div class="hstat-l">Nights Hosted</div></div>
+    <div class="hstat"><div class="hstat-n">5</div><div class="hstat-l">Experiences</div></div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-track"><div class="scroll-thumb"></div></div>
+    <span class="scroll-label">Scroll</span>
   </div>
 </section>
 
-<!-- ════ GALLERY ════ -->
-<section id="gallery">
-  <div class="max">
-    <div class="gallery-header reveal">
-      <div class="section-eyebrow">The Vibe</div>
-      <h2 class="section-title">Live the Lifestyle</h2>
-      <span class="rule rule-center"></span>
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span>SHISANYAMA</span><span class="dot">✦</span>
+    <span>CAR WASH</span><span class="dot">✦</span>
+    <span>HUBBLY LOUNGE</span><span class="dot">✦</span>
+    <span>LIVE DJs</span><span class="dot">✦</span>
+    <span>BEVERAGES</span><span class="dot">✦</span>
+    <span>ENTERTAINMENT</span><span class="dot">✦</span>
+    <span>NTUZUMA · DURBAN</span><span class="dot">✦</span>
+    <span>EST. 2020</span><span class="dot">✦</span>
+    <span>OPEN DAILY</span><span class="dot">✦</span>
+    <!-- duplicate for seamless scroll -->
+    <span>SHISANYAMA</span><span class="dot">✦</span>
+    <span>CAR WASH</span><span class="dot">✦</span>
+    <span>HUBBLY LOUNGE</span><span class="dot">✦</span>
+    <span>LIVE DJs</span><span class="dot">✦</span>
+    <span>BEVERAGES</span><span class="dot">✦</span>
+    <span>ENTERTAINMENT</span><span class="dot">✦</span>
+    <span>NTUZUMA · DURBAN</span><span class="dot">✦</span>
+    <span>EST. 2020</span><span class="dot">✦</span>
+    <span>OPEN DAILY</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- EXPERIENCES -->
+<section id="experiences">
+  <div class="exp-layout">
+    <div class="reveal">
+      <div class="exp-visual">
+        <img src="dining.jpg" alt="Dark or Blue Lounge Experience" loading="lazy"/>
+        <div class="exp-visual-badge">
+          <div class="exp-badge-rating">4.6 ★</div>
+          <div class="exp-badge-sub">Google Rating · 29 Reviews</div>
+        </div>
+        <div class="exp-float-stat">
+          <div class="exp-float-n">200+</div>
+          <div class="exp-float-l">Nights Hosted</div>
+        </div>
+      </div>
     </div>
-    <div class="gallery-mosaic reveal">
-      <div class="gallery-cell">
-        <img src="dining.jpg" alt="Shisanyama at Dark or Blue" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-        <div class="gallery-cell-fallback gcf-1" style="display:none;height:100%"><span class="gcf-icon">🍖</span><span class="gcf-text">Shisanyama</span></div>
-        <div class="gallery-cell-overlay"></div>
-        <div class="gallery-caption"><div class="eyebrow">Shisanyama & Dining</div><h3>Fire-Kissed Flavour</h3></div>
+    <div>
+      <div class="sec-tag reveal"><div class="sec-tag-dash"></div><span class="sec-tag-text">What We Offer</span></div>
+      <h2 class="sec-h reveal">The Full<br/><em class="italic">Experience</em></h2>
+      <p class="sec-p reveal">Five premium offerings under one roof. Dark or Blue Lounge isn't just a night out — it's a complete lifestyle destination in the heart of Ntuzuma.</p>
+      <div class="exp-grid reveal">
+        <div class="exp-card">
+          <span class="exp-card-ico">🍖</span>
+          <div class="exp-card-name">Shisanyama</div>
+          <p class="exp-card-desc">Premium grilled meats hot off the fire. Platters for 2 to 8.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-card-ico">🚗</span>
+          <div class="exp-card-name">Car Wash</div>
+          <p class="exp-card-desc">Your ride gleaming while you relax and enjoy the vibe.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-card-ico">💨</span>
+          <div class="exp-card-name">Hubbly</div>
+          <p class="exp-card-desc">Premium hubbly sessions while the music sets the tone.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-card-ico">🍹</span>
+          <div class="exp-card-name">Beverages</div>
+          <p class="exp-card-desc">Craft cocktails, top-shelf spirits, beer & wine.</p>
+        </div>
+        <div class="exp-card" style="grid-column:1/3">
+          <span class="exp-card-ico">🎶</span>
+          <div class="exp-card-name">Entertainment</div>
+          <p class="exp-card-desc">Live DJs, popular artists & weekend events. High-energy nights every week.</p>
+        </div>
       </div>
-      <div class="gallery-cell">
-        <img src="lifestyle.jpg" alt="Nightlife" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-        <div class="gallery-cell-fallback gcf-2" style="display:none;height:100%"><span class="gcf-icon">🎶</span><span class="gcf-text">Nightlife</span></div>
-        <div class="gallery-cell-overlay"></div>
-        <div class="gallery-caption"><div class="eyebrow">Nightlife</div><h3>Electric Nights</h3></div>
-      </div>
-      <div class="gallery-cell">
-        <div class="gallery-cell-fallback gcf-3" style="height:100%"><span class="gcf-icon">💨</span><span class="gcf-text">Hubbly Lounge</span></div>
-        <div class="gallery-cell-overlay"></div>
-        <div class="gallery-caption"><div class="eyebrow">Hubbly</div><h3>Premium Shisha</h3></div>
-      </div>
-      <div class="gallery-cell">
-        <div class="gallery-cell-fallback gcf-4" style="height:100%"><span class="gcf-icon">🍹</span><span class="gcf-text">Beverages</span></div>
-        <div class="gallery-cell-overlay"></div>
-        <div class="gallery-caption"><div class="eyebrow">Bar</div><h3>Signature Cocktails</h3></div>
-      </div>
-      <div class="gallery-cell" style="display:none" id="gal-5">
-        <div class="gallery-cell-fallback gcf-5" style="height:100%"><span class="gcf-icon">🚗</span><span class="gcf-text">Car Wash</span></div>
-      </div>
-    </div>
-    <div class="stats-band reveal">
-      <div class="stat-card d1"><span class="s-num">500+</span><span class="s-lbl">Guests Per Night</span></div>
-      <div class="stat-card d2"><span class="s-num">4.6★</span><span class="s-lbl">Google Rating</span></div>
-      <div class="stat-card d3"><span class="s-num">100%</span><span class="s-lbl">Premium Experience</span></div>
-      <div class="stat-card d4"><span class="s-num">3×</span><span class="s-lbl">Live Sets Weekly</span></div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════════════
-     FEATURED ARTISTS — PREMIUM SHOWCASE
-════════════════════════════════════ -->
+<div class="divider"></div>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding-bottom:0">
+  <div class="sec-tag reveal"><div class="sec-tag-dash"></div><span class="sec-tag-text">The Vibe</span></div>
+  <h2 class="sec-h reveal">Live the<br/><em class="italic" style="color:rgba(255,255,255,0.5);font-weight:300">Experience</em></h2>
+  <div class="gallery-mosaic reveal">
+    <div class="gi">
+      <img src="lifestyle.jpg" alt="Dark or Blue Nightlife" loading="lazy"/>
+      <div class="gi-ov"><span class="gi-label">The Vibe</span></div>
+    </div>
+    <div class="gi">
+      <img src="dining.jpg" alt="Lounge Area" loading="lazy"/>
+      <div class="gi-ov"><span class="gi-label">Lounge Area</span></div>
+    </div>
+    <div class="gi">
+      <img src="hero-bg.jpg" alt="Specials" loading="lazy"/>
+      <div class="gi-ov"><span class="gi-label">Gin & Vodka Sundays</span></div>
+    </div>
+  </div>
+  <div class="gallery-cta-strip">
+    <p class="gcs-text">"Follow our journey — @darkorblueloungersa"</p>
+    <a class="gcs-btn" onclick="window.open('https://www.instagram.com/darkorblueloungersa','_blank')">Follow on Instagram ↗</a>
+  </div>
+</section>
+
+<!-- ARTISTS -->
 <section id="artists">
-  <div class="artists-bg"></div>
-  <div class="max" style="position:relative;z-index:2">
-
-    <!-- Header -->
-    <div class="artists-header">
-      <div class="reveal-left">
-        <div class="section-eyebrow">Elite Entertainment</div>
-        <h2 class="section-title section-title-light" style="font-size:clamp(2.5rem,6vw,5rem)">Where Top<br/>Artists Perform</h2>
-        <span class="rule"></span>
-      </div>
-      <div class="artists-header-right reveal-right">
-        <p>Dark or Blue Lounge is <strong>Ntuzuma's most prestigious entertainment stage</strong> — hosting chart-topping DJs, acclaimed performers and high-energy headline acts that keep the crowd electric from sundown to sunrise.</p>
-        <a href="https://wa.me/27742270872?text=Hi%2C%20I%20want%20to%20book%20an%20artist!" target="_blank" class="btn btn-outline-white" style="margin-top:var(--s6);font-size:.78rem">Book an Artist →</a>
-      </div>
+  <div class="artists-header">
+    <div>
+      <div class="sec-tag reveal"><div class="sec-tag-dash"></div><span class="sec-tag-text">Entertainment</span></div>
+      <h2 class="sec-h reveal">Where <em class="italic">Top</em><br/>Artists Perform</h2>
     </div>
-
-    <!-- MASONRY IMAGE GRID -->
-    <div class="artists-masonry">
-
-      <!-- CARD 1 — Featured (spans rows) -->
-      <div class="artist-card reveal-left">
-        <img src="artists/artist1.jpg" alt="Headline Artist" id="ai1" onload="this.classList.add('loaded');document.getElementById('ap1').style.display='none'" onerror="this.style.display='none'"/>
-        <div class="artist-placeholder ap-bg-1" id="ap1">
-          <div class="ap-grid-lines"></div>
-          <div class="ap-glow"></div>
-          <div class="ap-content">
-            <span class="ap-icon">🎧</span>
-            <div class="ap-name">Headline<br/>Performer</div>
-            <div class="ap-genre">Amapiano · Afrobeats · Gqom</div>
-          </div>
-        </div>
-        <div class="artist-overlay"></div>
-        <div class="artist-glow-border"></div>
-        <div class="artist-cap">
-          <div class="badge"><span class="badge-dot"></span>Headline Act</div>
-          <div class="a-name">Featured<br/>Artist</div>
-          <div class="a-role">Main Stage · Dark or Blue Lounge</div>
-          <div class="a-badge gold-b">👑 Headliner of the Night</div>
-        </div>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="artist-card reveal d1" style="height:440px">
-        <img src="artists/artist2.jpg" alt="Resident DJ" id="ai2" onload="this.classList.add('loaded');document.getElementById('ap2').style.display='none'" onerror="this.style.display='none'"/>
-        <div class="artist-placeholder ap-bg-2" id="ap2">
-          <div class="ap-grid-lines"></div>
-          <div class="ap-glow"></div>
-          <div class="ap-content">
-            <span class="ap-icon">🎶</span>
-            <div class="ap-name">Resident<br/>DJ</div>
-            <div class="ap-genre">Deep House · Electronic</div>
-          </div>
-        </div>
-        <div class="artist-overlay"></div>
-        <div class="artist-glow-border"></div>
-        <div class="artist-cap">
-          <div class="badge"><span class="badge-dot"></span>Resident DJ</div>
-          <div class="a-name">Dark or Blue<br/>Resident</div>
-          <div class="a-role">Every Friday & Saturday</div>
-          <div class="a-badge">🎵 Every Weekend</div>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="artist-card reveal d2" style="height:440px">
-        <img src="artists/artist3.jpg" alt="Live Artist" id="ai3" onload="this.classList.add('loaded');document.getElementById('ap3').style.display='none'" onerror="this.style.display='none'"/>
-        <div class="artist-placeholder ap-bg-3" id="ap3">
-          <div class="ap-grid-lines"></div>
-          <div class="ap-glow"></div>
-          <div class="ap-content">
-            <span class="ap-icon">🎤</span>
-            <div class="ap-name">Live<br/>Vocalist</div>
-            <div class="ap-genre">R&B · Soul · Afropop</div>
-          </div>
-        </div>
-        <div class="artist-overlay"></div>
-        <div class="artist-glow-border"></div>
-        <div class="artist-cap">
-          <div class="badge"><span class="badge-dot"></span>Live Performance</div>
-          <div class="a-name">Vocal<br/>Artist</div>
-          <div class="a-role">Special Guest Performances</div>
-          <div class="a-badge">🎤 Live Stage</div>
-        </div>
-      </div>
-
-      <!-- CARD 4 -->
-      <div class="artist-card reveal d3" style="height:280px">
-        <img src="artists/artist4.jpg" alt="Guest DJ" id="ai4" onload="this.classList.add('loaded');document.getElementById('ap4').style.display='none'" onerror="this.style.display='none'"/>
-        <div class="artist-placeholder ap-bg-4" id="ap4">
-          <div class="ap-grid-lines"></div>
-          <div class="ap-glow"></div>
-          <div class="ap-content">
-            <span class="ap-icon">🎛️</span>
-            <div class="ap-name">Guest<br/>DJ</div>
-            <div class="ap-genre">Gqom · Amapiano</div>
-          </div>
-        </div>
-        <div class="artist-overlay"></div>
-        <div class="artist-glow-border"></div>
-        <div class="artist-cap">
-          <div class="badge"><span class="badge-dot"></span>Guest DJ</div>
-          <div class="a-name">Guest<br/>Selector</div>
-          <div class="a-role">Monthly Special Sets</div>
-          <div class="a-badge">⚡ Special Guest</div>
-        </div>
-      </div>
-
-      <!-- CARD 5 -->
-      <div class="artist-card reveal d4" style="height:280px">
-        <div class="artist-placeholder ap-bg-1">
-          <div class="ap-grid-lines"></div>
-          <div class="ap-glow"></div>
-          <div class="ap-content">
-            <span class="ap-icon">👑</span>
-            <div class="ap-name">Your Artist<br/>Here</div>
-            <div class="ap-genre">Book · Perform · Shine</div>
-          </div>
-        </div>
-        <div class="artist-overlay"></div>
-        <div class="artist-glow-border"></div>
-        <div class="artist-cap">
-          <div class="badge"><span class="badge-dot"></span>Open Booking</div>
-          <div class="a-name">Next<br/>Headliner</div>
-          <div class="a-role">Contact us to book your slot</div>
-          <div class="a-badge gold-b">📞 Book Now</div>
-        </div>
-      </div>
-
-    </div><!-- end masonry -->
-
-    <!-- MINI STRIP -->
-    <div class="artists-mini reveal">
-      <div class="artist-mini-card d1">
-        <div class="mini-avatar">AF</div>
-        <div><div class="mini-name">Amapiano Fridays</div><div class="mini-genre">Every Friday</div></div>
-      </div>
-      <div class="artist-mini-card d2">
-        <div class="mini-avatar">SS</div>
-        <div><div class="mini-name">Saturday Selectors</div><div class="mini-genre">Deep House & Gqom</div></div>
-      </div>
-      <div class="artist-mini-card d3">
-        <div class="mini-avatar">SD</div>
-        <div><div class="mini-name">Sundaze Sessions</div><div class="mini-genre">Afro Tech & Chill</div></div>
-      </div>
-      <div class="artist-mini-card d4">
-        <div class="mini-avatar">VIP</div>
-        <div><div class="mini-name">Private Bookings</div><div class="mini-genre">Artist & DJ Hire</div></div>
-      </div>
+    <div class="reveal d2">
+      <p class="artists-right-text">
+        Dark or Blue Lounge has hosted <strong>the best in the game</strong>. From headline DJs to celebrated live performers, our stage has seen it all. We don't just host events — we create <strong>unforgettable nights</strong> that become stories told for years.<br/><br/>Every weekend is an opportunity to witness <strong>elite entertainment</strong> in an intimate, premium setting.
+      </p>
     </div>
-
-    <!-- STATS -->
-    <div class="artists-stats reveal">
-      <div class="pstat"><span class="pstat-num">50+</span><span class="pstat-lbl">Artists Hosted</span><span class="pstat-sub">Since opening</span></div>
-      <div class="pstat"><span class="pstat-num">3×</span><span class="pstat-lbl">Weekly Live Sets</span><span class="pstat-sub">Fri, Sat & Sun</span></div>
-      <div class="pstat"><span class="pstat-num">100%</span><span class="pstat-lbl">Energy Every Night</span><span class="pstat-sub">No off nights</span></div>
-      <div class="pstat"><span class="pstat-num">∞</span><span class="pstat-lbl">Unforgettable Memories</span><span class="pstat-sub">You had to be there</span></div>
+  </div>
+  <div class="artists-grid reveal">
+    <div class="ac">
+      <img id="a1" src="" alt="Daliwonga" loading="lazy"/>
+      <div class="ac-ov"></div><div class="ac-shimmer"></div><div class="ac-scan"></div>
+      <div class="ac-info"><div class="ac-name" id="a1n">Daliwonga</div><div class="ac-tag">Live Performance</div></div>
+      <div class="ac-frame"></div>
     </div>
-
-    <!-- QUOTE -->
-    <div class="artists-quote reveal">
-      <span class="quote-mark">&ldquo;</span>
-      <div class="quote-body">Not just a venue — a stage for the very best in South African music. When top artists want to connect with real energy, they come to Dark or Blue.</div>
-      <span class="quote-src">Dark or Blue Lounge · Ntuzuma, Durban · Est. 2024</span>
+    <div class="ac">
+      <img id="a2" src="" alt="DJ Tira" loading="lazy"/>
+      <div class="ac-ov"></div><div class="ac-shimmer"></div><div class="ac-scan"></div>
+      <div class="ac-info"><div class="ac-name" id="a2n">DJ Tira</div><div class="ac-tag">DJ Set</div></div>
+      <div class="ac-frame"></div>
     </div>
-
+    <div class="ac">
+      <img id="a3" src="" alt="Dlala Thukzin" loading="lazy"/>
+      <div class="ac-ov"></div><div class="ac-shimmer"></div><div class="ac-scan"></div>
+      <div class="ac-info"><div class="ac-name" id="a3n">Dlala Thukzin</div><div class="ac-tag">Special Appearance</div></div>
+      <div class="ac-frame"></div>
+    </div>
+    <div class="ac">
+      <img id="a4" src="" alt="Distruction Boyz" loading="lazy"/>
+      <div class="ac-ov"></div><div class="ac-shimmer"></div><div class="ac-scan"></div>
+      <div class="ac-info"><div class="ac-name" id="a4n">Distruction Boyz</div><div class="ac-tag">Weekend Set</div></div>
+      <div class="ac-frame"></div>
+    </div>
+    <div class="ac">
+      <img id="a5" src="" alt="Indaba Kabani" loading="lazy"/>
+      <div class="ac-ov"></div><div class="ac-shimmer"></div><div class="ac-scan"></div>
+      <div class="ac-info"><div class="ac-name" id="a5n">Indaba Kabani</div><div class="ac-tag">Live Show</div></div>
+      <div class="ac-frame"></div>
+    </div>
+  </div>
+  <div class="artists-strip reveal">
+    <p class="as-text">Hosted by <span>the best in the game</span> — who's performing next?</p>
+    <a href="https://wa.me/27742270872" class="btn-blue" target="_blank" rel="noopener">Reserve for Events ↗</a>
   </div>
 </section>
 
-<!-- ════ EVENTS ════ -->
+<div class="divider divider-blue"></div>
+
+<!-- EVENTS -->
 <section id="events">
-  <div class="max">
-    <div class="events-header">
-      <div class="reveal-left">
-        <div class="section-eyebrow">Upcoming</div>
-        <h2 class="section-title">Don't Miss<br/>a Single Night</h2>
-        <span class="rule"></span>
+  <div class="sec-tag reveal"><div class="sec-tag-dash"></div><span class="sec-tag-text">What's On</span></div>
+  <h2 class="sec-h reveal">Upcoming<br/><em class="italic" style="color:var(--text-soft);font-weight:300">Events</em></h2>
+  <div class="events-layout">
+    <div class="ev-list reveal" id="evList">
+      <div class="ev-item">
+        <div class="ev-num">01</div>
+        <div class="ev-body">
+          <div class="ev-name">Gin & Vodka Sundays <span class="ev-badge hot">🔥 Hot</span></div>
+          <div class="ev-detail">Every Sunday · 12pm till late · R770 & R850 bundles</div>
+        </div>
       </div>
-      <div class="reveal-right" style="padding-bottom:var(--s2)">
-        <p class="section-body">The hottest events in Ntuzuma — live artists, headline DJs, and nights you'll never forget. Book your spot before it's too late.</p>
+      <div class="ev-item">
+        <div class="ev-num">02</div>
+        <div class="ev-body">
+          <div class="ev-name">Friday Night Takeover <span class="ev-badge">Weekly</span></div>
+          <div class="ev-detail">Every Friday · Live DJ · High-energy night from 7pm</div>
+        </div>
+      </div>
+      <div class="ev-item">
+        <div class="ev-num">03</div>
+        <div class="ev-body">
+          <div class="ev-name">Shisanyama Saturday <span class="ev-badge">Weekend</span></div>
+          <div class="ev-detail">Every Saturday · Premium grills + cocktails + music</div>
+        </div>
+      </div>
+      <div class="ev-item">
+        <div class="ev-num">04</div>
+        <div class="ev-body">
+          <div class="ev-name">VIP Artist Night <span class="ev-badge">Special</span></div>
+          <div class="ev-detail">Monthly headliner event · Table reservations required</div>
+        </div>
+      </div>
+      <div class="ev-item">
+        <div class="ev-num">05</div>
+        <div class="ev-body">
+          <div class="ev-name">Hubbly & Chill <span class="ev-badge">Weekdays</span></div>
+          <div class="ev-detail">Mon–Thu · Exclusive hubbly + beverages experience</div>
+        </div>
       </div>
     </div>
-    <div class="events-list" id="ev-list"></div>
-    <div style="text-align:center;margin-top:var(--s10)" class="reveal">
-      <p style="font-family:var(--mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:var(--s5)">More events added weekly</p>
-      <a href="https://wa.me/27742270872?text=Hi%2C%20please%20add%20me%20to%20your%20events%20list!" target="_blank" class="btn btn-primary">Get Event Updates →</a>
+    <div class="ev-cta-box reveal d2">
+      <p class="ecb-h">Don't miss<br/><em>a single night.</em></p>
+      <p class="ecb-p">Every event at Dark or Blue Lounge is crafted to deliver an experience beyond the ordinary. Limited spots. Guaranteed vibes. Reserve your place before it fills up.</p>
+      <a href="https://wa.me/27742270872" class="btn-dark" target="_blank" rel="noopener">Reserve Your Spot ↗</a>
     </div>
   </div>
 </section>
 
-<!-- ════ MENU ════ -->
-<section id="menu">
-  <div class="max">
-    <div class="menu-header reveal">
-      <div class="section-eyebrow">Food Menu</div>
-      <h2 class="section-title">Platters & Meals</h2>
-      <span class="rule rule-center"></span>
-      <p class="section-body" style="margin:0 auto;text-align:center">Authentic township flavours elevated to premium status. Every platter is a celebration.</p>
+<!-- SPECIALS -->
+<section id="specials">
+  <div class="sec-tag reveal"><div class="sec-tag-dash"></div><span class="sec-tag-text">Menu & Deals</span></div>
+  <h2 class="sec-h reveal">Exclusive<br/><em class="italic" style="color:var(--blue)">Deals</em></h2>
+  <p class="sec-p reveal">Premium packages curated for an elite experience. Value that never compromises on quality.</p>
+  <div class="sp-grid reveal">
+    <div class="sp-card">
+      <div class="sp-price">R150</div>
+      <div class="sp-name">Platter for Two</div>
+      <p class="sp-includes">Beef meat, wors & jeqe or pap.</p>
+      <span class="sp-tag-pill">Most Popular</span>
     </div>
-    <div class="menu-grid" id="menu-grid"></div>
+    <div class="sp-card">
+      <div class="sp-price">R250</div>
+      <div class="sp-name">Platter for Four</div>
+      <p class="sp-includes">French fries, beef meat, wors, salads & more.</p>
+    </div>
+    <div class="sp-card">
+      <div class="sp-price">R400</div>
+      <div class="sp-name">Platter for Six</div>
+      <p class="sp-includes">Salads, beef, pap, wors, fries, wings & livers.</p>
+    </div>
+    <div class="sp-card">
+      <div class="sp-price">R600</div>
+      <div class="sp-name">Platter for Eight</div>
+      <p class="sp-includes">The full feast — everything on the menu.</p>
+      <span class="sp-tag-pill">Best Value</span>
+    </div>
+  </div>
+  <p class="sp-sunday-title reveal">Gin & Vodka Sunday Bundles</p>
+  <div class="sp-sunday-grid reveal">
+    <div class="sp-card">
+      <div class="sp-price">R770</div>
+      <div class="sp-name">Smirnoff Bundle</div>
+      <p class="sp-includes">1× Smirnoff · 1× Mixer · 1× Platter · 1× Hubbly</p>
+      <span class="sp-tag-pill">Sundays Only</span>
+    </div>
+    <div class="sp-card">
+      <div class="sp-price">R850</div>
+      <div class="sp-name">Belgravia Bundle</div>
+      <p class="sp-includes">1× Belgravia · 1× Mixer · 1× Platter · 2× Hubbly</p>
+      <span class="sp-tag-pill">Premium Pick</span>
+    </div>
   </div>
 </section>
 
-<!-- ════ REVIEWS ════ -->
+<!-- BOOKING -->
+<section id="booking">
+  <div class="booking-bg-anim"></div>
+  <div class="bk-content">
+    <div class="sec-tag reveal" style="justify-content:center"><div class="sec-tag-dash"></div><span class="sec-tag-text">Reservations</span></div>
+    <h2 class="sec-h reveal" style="text-align:center;color:var(--white)">Secure Your<br/><em class="italic" style="color:#7ab8f5">Spot Tonight</em></h2>
+    <p class="sec-p reveal" style="text-align:center;margin:0 auto 2rem;color:rgba(255,255,255,0.42)">Tables fill up fast — especially on weekends. Reach out directly on WhatsApp and we'll take care of the rest.</p>
+    <div class="reveal" style="text-align:center">
+      <a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I%20would%20like%20to%20book%20a%20table." class="wa-big-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Book Now on WhatsApp
+      </a>
+      <div class="bk-divider"><div class="bk-div-line"></div><span class="bk-div-text">Or call</span><div class="bk-div-line"></div></div>
+      <a href="tel:+27742270872" class="bk-phone">+27 74 227 0872</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
 <section id="reviews">
-  <div class="max">
-    <div class="reviews-header reveal">
-      <div class="section-eyebrow">What People Say</div>
-      <h2 class="section-title">Guest Reviews</h2>
-      <span class="rule rule-center"></span>
-      <div class="rating-display">
-        <div class="rating-big" id="avg-score">4.6</div>
-        <div class="rating-right">
-          <div class="stars">★★★★★</div>
-          <div class="r-count" id="rev-count">29 Google Reviews</div>
-        </div>
-      </div>
-    </div>
-    <div class="reviews-stream" id="rev-stream"></div>
-    <div class="add-review reveal">
-      <h3>Leave a Review</h3>
-      <p class="sub">Share your experience with the community.</p>
-      <div class="form-row">
-        <div class="form-field"><label>Your Name</label><input type="text" id="r-name" placeholder="e.g. Sipho M." maxlength="60"/></div>
-        <div class="form-field"><label>Price Paid (per person)</label>
-          <select id="r-price">
-            <option value="">Select range...</option>
-            <option>R 50–100</option><option>R 100–200</option>
-            <option>R 200–300</option><option>R 300–500</option><option>R 500+</option>
-          </select>
-        </div>
-      </div>
-      <div style="margin-bottom:var(--s5)">
-        <label style="font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60);display:block;margin-bottom:var(--s3)">Your Rating</label>
-        <div class="star-picker" id="star-picker">
-          <button type="button" onclick="setStar(1)">★</button><button type="button" onclick="setStar(2)">★</button>
-          <button type="button" onclick="setStar(3)">★</button><button type="button" onclick="setStar(4)">★</button>
-          <button type="button" onclick="setStar(5)">★</button>
-        </div>
-      </div>
-      <div class="form-field" style="margin-bottom:0">
-        <label>Your Review</label>
-        <textarea id="r-text" placeholder="Tell others about the food, vibe, service..." maxlength="500"></textarea>
-      </div>
-      <div class="form-actions">
-        <button class="btn btn-primary" onclick="submitReview()">Post Review</button>
-        <span class="form-msg" id="rev-msg"></span>
-      </div>
+  <div class="sec-tag reveal"><div class="sec-tag-dash"></div><span class="sec-tag-text">What People Say</span></div>
+  <h2 class="sec-h reveal">Real Reviews.<br/><em class="italic" style="color:var(--text-soft);font-weight:300">Real Vibes.</em></h2>
+  <div class="reviews-ticker-wrap">
+    <div class="reviews-ticker" id="rvTicker"></div>
+  </div>
+  <div class="add-review reveal">
+    <button class="add-review-toggle" onclick="toggleRvForm()">+ Share Your Experience</button>
+    <div class="rv-form" id="rvForm">
+      <p style="font-family:var(--FP);font-size:1rem;font-weight:600;font-style:italic;color:var(--ink);margin-bottom:1.5rem">Leave a Review</p>
+      <div class="fg"><label class="fl">Your Name</label><input type="text" class="fi" id="rvName" placeholder="e.g. Sifiso Gumede"/></div>
+      <div class="fg"><label class="fl">Rating</label><div class="star-row" id="starRow"><button class="star-btn" onclick="setStar(1)">★</button><button class="star-btn" onclick="setStar(2)">★</button><button class="star-btn" onclick="setStar(3)">★</button><button class="star-btn" onclick="setStar(4)">★</button><button class="star-btn" onclick="setStar(5)">★</button></div></div>
+      <div class="fg"><label class="fl">Your Review</label><textarea class="fta" id="rvText" placeholder="Tell us about your experience..."></textarea></div>
+      <button class="fsub" onclick="submitRv()">Submit Review</button>
     </div>
   </div>
 </section>
 
-<!-- ════ BOOKINGS ════ -->
-<section id="bookings">
-  <div class="bookings-bg"></div>
-  <div class="bookings-inner max reveal">
-    <div class="section-eyebrow">Reserve Your Experience</div>
-    <h2 class="section-title section-title-light" style="font-size:clamp(2.5rem,6vw,5rem)">Book Your<br/>Night Now</h2>
-    <span class="rule rule-center" style="background:rgba(80,140,255,.6)"></span>
-    <p style="color:rgba(255,255,255,.55);font-size:1rem;line-height:1.75;margin-top:var(--s5)">Secure your table, book a private event or reserve an exclusive area. Dark or Blue Lounge delivers premium experiences on demand.</p>
-    <div class="book-opts">
-      <div class="book-opt"><div class="bo-icon">🍽️</div><div class="bo-name">Table Booking</div><div class="bo-sub">Reserve your spot</div></div>
-      <div class="book-opt"><div class="bo-icon">🎂</div><div class="bo-name">Private Events</div><div class="bo-sub">Birthdays & functions</div></div>
-      <div class="book-opt"><div class="bo-icon">👑</div><div class="bo-name">VIP Packages</div><div class="bo-sub">Ultimate experience</div></div>
-    </div>
-    <a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I%20would%20like%20to%20make%20a%20booking!" target="_blank" class="btn btn-wa">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Book Now on WhatsApp
-    </a>
-    <p class="wa-note">+27 74 227 0872 · 7 days a week · Reservations required</p>
-  </div>
-</section>
-
-<!-- ════ LOCATION ════ -->
+<!-- LOCATION -->
 <section id="location">
-  <div class="max">
-    <div class="location-header reveal">
-      <div class="section-eyebrow">Find Us</div>
-      <h2 class="section-title">Come Find the Vibe</h2>
-      <span class="rule rule-center"></span>
+  <div class="sec-tag reveal"><div class="sec-tag-dash"></div><span class="sec-tag-text">Find Us</span></div>
+  <h2 class="sec-h reveal">Where to<br/><em class="italic" style="color:var(--blue)">Find Us</em></h2>
+  <div class="loc-grid">
+    <div class="map-container reveal">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.0!2d30.9347!3d-29.7961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6fe3a0a3d1f1f%3A0x0!2s92+Uxamu+Dr%2C+Ntuzuma+D+-+Lindelani%2C+Ntuzuma%2C+4360!5e0!3m2!1sen!2sza!4v1690000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Dark or Blue Lounge"></iframe>
+      <div class="map-overlay-card">
+        <div class="moc-name">Dark or Blue Lounge</div>
+        <div class="moc-addr">92 Uxamu Dr, Ntuzuma D, Durban 4360</div>
+      </div>
     </div>
-    <div class="location-grid">
-      <div class="map-visual reveal-left" onclick="window.open('https://maps.google.com/?q=92+Uxamu+Drive+Ntuzuma+Durban','_blank')">
-        <div class="map-grid"></div>
-        <div class="map-pin-wrap">
-          <div class="map-pin-dot"></div>
-          <div class="map-pin-label">
-            <strong>Ntuzuma</strong>
-            <span>Durban, KwaZulu-Natal</span>
-          </div>
-          <a class="map-cta-btn" href="https://maps.google.com/?q=92+Uxamu+Drive+Ntuzuma+Durban" target="_blank" onclick="event.stopPropagation()">Open in Google Maps →</a>
-        </div>
-      </div>
-      <div class="loc-details reveal-right">
-        <div class="loc-row"><div class="loc-icon">📍</div><div><div class="loc-label">Address</div><div class="loc-value">92 Uxamu Drive<br/>Ntuzuma D - Lindelani<br/>Ntuzuma 4360, Durban, KZN</div></div></div>
-        <div class="loc-row"><div class="loc-icon">📞</div><div><div class="loc-label">Phone / WhatsApp</div><div class="loc-value"><a href="tel:0742270872" style="color:inherit">074 227 0872</a></div></div></div>
-        <div class="loc-row"><div class="loc-icon">🕐</div><div><div class="loc-label">Opening Hours</div><div class="loc-value" id="hours-display">Mon – Sun: 11:00 AM – 12:00 AM</div></div></div>
-        <div class="loc-row"><div class="loc-icon">🚗</div><div><div class="loc-label">Parking</div><div class="loc-value">Free street parking available</div></div></div>
-        <div class="loc-row"><div class="loc-icon">💳</div><div><div class="loc-label">Payments</div><div class="loc-value">Cash · Cards · NFC Mobile Payments</div></div></div>
-      </div>
+    <div class="loc-info reveal d2">
+      <div class="loc-row"><span class="loc-icon">📍</span><div><div class="loc-label">Address</div><div class="loc-value">92 Uxamu Dr, Ntuzuma D – Lindelani, Ntuzuma, 4360, Durban, KZN</div></div></div>
+      <div class="loc-row"><span class="loc-icon">📞</span><div><div class="loc-label">Phone / WhatsApp</div><a href="tel:+27742270872" class="loc-value" style="color:var(--blue)">+27 74 227 0872</a></div></div>
+      <div class="loc-row"><span class="loc-icon">🕐</span><div><div class="loc-label">Hours</div><div class="loc-value">Open Daily · Closes 12am<br/>Weekends: Extended hours</div></div></div>
+      <div class="loc-row"><span class="loc-icon">🅿️</span><div><div class="loc-label">Parking</div><div class="loc-value">Free street parking available</div></div></div>
+      <div class="loc-row"><span class="loc-icon">💳</span><div><div class="loc-label">Payments</div><div class="loc-value">Credit & Debit · NFC / Tap to Pay · Cash</div></div></div>
+      <a href="https://wa.me/27742270872" class="btn-blue" target="_blank" rel="noopener">📲 Get Directions via WhatsApp</a>
     </div>
   </div>
 </section>
 
-<!-- ════ FOOTER ════ -->
+<!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <div class="ft-brand-name">Dark or Blue Lounge</div>
-        <p class="ft-brand-desc">The ultimate lifestyle destination in Ntuzuma. Shisanyama, entertainment, hubbly, car wash and nightlife experiences that define the township premium scene.</p>
-        <div class="footer-socials">
-          <button class="soc-btn" onclick="goSocial('ig')" title="Instagram">IG</button>
-          <button class="soc-btn" onclick="goSocial('fb')" title="Facebook">FB</button>
-          <button class="soc-btn" onclick="goSocial('tk')" title="TikTok">TK</button>
-          <a href="https://wa.me/27742270872" target="_blank" rel="noopener" class="soc-btn" title="WhatsApp">WA</a>
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <div class="ft-brand-logo">
+        <img src="logo.jpg" alt="Dark or Blue Lounge"/>
+        <div>
+          <div class="ft-brand-name">Dark <span>or</span> Blue</div>
+          <div class="ft-brand-sub">Lounge · Ntuzuma, KZN</div>
         </div>
       </div>
-      <div class="ft-col">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="#experiences">Experiences</a></li>
-          <li><a href="#artists">Artists</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#bookings">Bookings</a></li>
-          <li><a href="#location">Location</a></li>
-        </ul>
-      </div>
-      <div class="ft-col">
-        <h4>Experiences</h4>
-        <ul>
-          <li><a href="#experiences">Shisanyama</a></li>
-          <li><a href="#experiences">Car Wash</a></li>
-          <li><a href="#experiences">Hubbly Lounge</a></li>
-          <li><a href="#experiences">Beverages</a></li>
-          <li><a href="#experiences">Entertainment</a></li>
-        </ul>
-      </div>
-      <div class="ft-col">
-        <h4>Contact</h4>
-        <div class="ft-contact-item"><div class="ft-contact-lbl">WhatsApp / Call</div><div class="ft-contact-val">+27 74 227 0872</div></div>
-        <div class="ft-contact-item"><div class="ft-contact-lbl">Address</div><div class="ft-contact-val">92 Uxamu Drive<br/>Ntuzuma, Durban 4360</div></div>
-        <div class="ft-contact-item"><div class="ft-contact-lbl">Plus Code</div><div class="ft-contact-val">7W6M+9G Ntuzuma</div></div>
+      <p class="ft-brand-desc">Ntuzuma's premier lifestyle destination. Shisanyama, car wash, hubbly, beverages & elite entertainment since 2020.</p>
+      <div class="ft-socials">
+        <div class="soc-btn" onclick="window.open('https://www.instagram.com/darkorblueloungersa','_blank')" title="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        <div class="soc-btn" onclick="window.open('https://www.facebook.com/darkorbluelounge','_blank')" title="Facebook">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <div class="soc-btn" onclick="window.open('https://vm.tiktok.com/ZS9RyNfoo2hwy-GEmf9/','_blank')" title="TikTok">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.85a8.27 8.27 0 004.84 1.55V6.96a4.84 4.84 0 01-1.07-.27z"/></svg>
+        </div>
+        <div class="soc-btn" onclick="window.open('https://wa.me/27742270872','_blank')" title="WhatsApp">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© <span id="yr"></span> Dark or Blue Lounge · Ntuzuma, Durban · All Rights Reserved</p>
-      <p>Where the Night Comes Alive.</p>
+    <div>
+      <div class="ft-col-title">Quick Links</div>
+      <ul class="ft-links">
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#artists">Artists</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#specials">Menu & Deals</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
     </div>
+    <div>
+      <div class="ft-col-title">Connect</div>
+      <ul class="ft-links">
+        <li><a href="tel:+27742270872">+27 74 227 0872</a></li>
+        <li><a href="https://wa.me/27742270872" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        <li><span>92 Uxamu Dr, Ntuzuma</span></li>
+        <li><span>Durban, KZN 4360</span></li>
+        <li><span>Open Daily</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <div class="ft-copy">© 2024 Dark or Blue Lounge. All rights reserved. Ntuzuma, Durban, KZN.</div>
+    <div class="ft-est">Est. 2020</div>
   </div>
 </footer>
 
 <!-- FLOATING WA -->
-<a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I%20would%20like%20to%20book!" target="_blank" class="float-wa" aria-label="WhatsApp">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<a href="https://wa.me/27742270872?text=Hi%20Dark%20or%20Blue%20Lounge%2C%20I'd%20like%20to%20book%20a%20table." class="wa-float" target="_blank" rel="noopener" title="Book on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
-<!-- SETTINGS BTN -->
-<button class="settings-btn" onclick="openSettings()" title="Owner Settings">
-  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+<!-- STICKY BOOK -->
+<a href="https://wa.me/27742270872" class="sticky-book" id="stickyBook" target="_blank" rel="noopener">📲 Book a Table</a>
+
+<!-- SETTINGS -->
+<button class="set-btn" onclick="openSettings()" title="Admin">
+  <svg viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
 </button>
-
-<!-- SETTINGS MODAL -->
-<div class="modal-wrap" id="settings-modal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeSettings()">✕</button>
-    <div id="pass-gate">
-      <h2>Settings</h2>
-      <div class="modal-sub">Owner Access Only</div>
-      <div class="pass-wrap">
-        <input class="pass-input" type="password" id="pass-input" placeholder="Enter password" onkeydown="if(event.key==='Enter')checkPass()"/>
-        <button class="btn btn-primary" onclick="checkPass()" style="padding:12px 28px">Unlock</button>
-        <span class="pass-err" id="pass-err">Incorrect password. Try again.</span>
-      </div>
-    </div>
-    <div id="settings-panel" style="display:none">
-      <h2>Site Settings</h2>
-      <div class="modal-sub">Manage your venue website</div>
-
-      <div class="s-section">
-        <h3>Venue Information</h3>
-        <div class="s-row">
-          <div class="s-field"><label>Venue Name</label><input id="s-name"/></div>
-          <div class="s-field"><label>Tagline</label><input id="s-tagline"/></div>
-        </div>
-        <div class="s-row">
-          <div class="s-field"><label>Phone / WhatsApp</label><input id="s-phone"/></div>
-          <div class="s-field"><label>Address</label><input id="s-address"/></div>
-        </div>
-        <div class="s-field"><label>Opening Hours</label><textarea id="s-hours" rows="3"></textarea></div>
-      </div>
-
-      <div class="s-section">
-        <h3>Events Manager</h3>
-        <div id="events-admin"></div>
-        <button class="btn-add-s" onclick="addEventAdmin()">+ Add Event</button>
-      </div>
-
-      <div class="s-section">
-        <h3>Menu Manager</h3>
-        <div id="menu-admin"></div>
-        <button class="btn-add-s" onclick="addMenuAdmin()">+ Add Menu Item</button>
-      </div>
-
-      <div class="s-section">
-        <h3>Reviews Manager</h3>
-        <div id="reviews-admin"></div>
-      </div>
-
-      <div class="s-section">
-        <h3>Social Media & Images</h3>
-        <div class="s-row">
-          <div class="s-field"><label>Instagram URL</label><input id="s-ig"/></div>
-          <div class="s-field"><label>Facebook URL</label><input id="s-fb"/></div>
-        </div>
-        <div class="s-row">
-          <div class="s-field"><label>TikTok URL</label><input id="s-tk"/></div>
-          <div class="s-field"><label>Hero Background Image</label><input id="s-hero"/></div>
-        </div>
-      </div>
-
-      <button class="save-all" onclick="saveAll()">Save All Changes</button>
-      <div class="save-ok" id="save-ok">✓ All changes saved successfully</div>
-    </div>
+<div class="set-overlay" id="setOv" onclick="closeSettings()"></div>
+<div class="set-drawer" id="setDrawer">
+  <div class="sd-head">
+    <div class="sd-title">Admin Panel</div>
+    <button class="sd-close" onclick="closeSettings()">✕</button>
+  </div>
+  <div class="sd-lock" id="sdLock">
+    <div class="sd-lock-title">Admin Access</div>
+    <label class="sd-lock-label">Password</label>
+    <input type="password" class="sd-lock-input" id="sdPw" placeholder="Enter password" onkeydown="if(event.key==='Enter')unlockSettings()"/>
+    <div class="sd-lock-err" id="sdErr">Incorrect password.</div>
+    <button class="sd-lock-btn" onclick="unlockSettings()">Unlock</button>
+  </div>
+  <div class="sd-content" id="sdContent">
+    <p style="font-family:var(--FI);font-size:0.7rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--blue)">Admin Mode Active</p>
+    <div class="sd-sec">Hero</div>
+    <div class="sd-field"><label>Tagline</label><input type="text" id="sd-tagline" placeholder="Where the night comes alive."/></div>
+    <div class="sd-sec">Artist Names</div>
+    <div class="sd-field"><label>Artist 1</label><input type="text" id="sd-a1" placeholder="Daliwonga"/></div>
+    <div class="sd-field"><label>Artist 2</label><input type="text" id="sd-a2" placeholder="DJ Tira"/></div>
+    <div class="sd-field"><label>Artist 3</label><input type="text" id="sd-a3" placeholder="Dlala Thukzin"/></div>
+    <div class="sd-field"><label>Artist 4</label><input type="text" id="sd-a4" placeholder="Distruction Boyz"/></div>
+    <div class="sd-field"><label>Artist 5</label><input type="text" id="sd-a5" placeholder="Indaba Kabani"/></div>
+    <div class="sd-sec">Events</div>
+    <div class="sd-field"><label>Event 1</label><input type="text" id="sd-e1" placeholder="Gin & Vodka Sundays"/></div>
+    <div class="sd-field"><label>Event 2</label><input type="text" id="sd-e2" placeholder="Friday Night Takeover"/></div>
+    <div class="sd-field"><label>Event 3</label><input type="text" id="sd-e3" placeholder="Shisanyama Saturday"/></div>
+    <div class="sd-sec">Announcement</div>
+    <div class="sd-field"><label>Banner (empty = hidden)</label><input type="text" id="sd-banner" placeholder="e.g. This Friday: Special Guest"/></div>
+    <button class="sd-save" onclick="applySettings()">Apply Changes</button>
+    <button class="sd-logout" onclick="lockSettings()">Lock & Close</button>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════
-     JAVASCRIPT
-════════════════════════════════════════ -->
+<div id="ann-bar"><span id="ann-text"></span><button id="ann-close" onclick="document.getElementById('ann-bar').style.display='none'">×</button></div>
+<div class="toast" id="toast"></div>
+
 <script>
-/* ── SOCIAL LINKS (URLs hidden in JS only) ── */
-const SOCIALS = {
-  ig: 'https://www.instagram.com/darkorblueloungersa?igsh=azU4ZjYzeW1haGhv',
-  fb: 'https://www.facebook.com/darkorbluelounge',
-  tk: 'https://vm.tiktok.com/ZS9RyNfoo2hwy-GEmf9/'
-};
-function goSocial(k){ window.open((siteData[k]||SOCIALS[k]),'_blank','noopener,noreferrer'); }
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   3D CANVAS SCENE — FLOATING GEOMETRY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+(function() {
+  const canvas = document.getElementById('scene-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, shapes = [], lines = [], stars = [];
+  const BLUE = 'rgba(16,85,212,';
+  const GOLD = 'rgba(201,168,76,';
+  const LIGHT = 'rgba(74,144,226,';
 
-/* ── DATA STORE ── */
-const PASS = 'd4rk';
-const ls = { get:(k,d)=>{ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):d; }catch(e){ return d; } }, set:(k,v)=>{ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} } };
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
 
-let siteData = ls.get('dob_v3_site',{
-  name:'Dark or Blue Lounge', tagline:'Where the Night Comes Alive.',
-  phone:'27742270872', address:'92 Uxamu Drive, Ntuzuma, Durban 4360',
-  hours:'Mon – Sun: 11:00 AM – 12:00 AM',
-  heroImg:'hero-bg.jpg', ...SOCIALS
+  // 3D Floating shapes
+  function initShapes() {
+    shapes = [];
+    for (let i = 0; i < 14; i++) {
+      const type = Math.random() > 0.5 ? 'hex' : 'ring';
+      shapes.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        z: Math.random() * 400 + 100,
+        r: Math.random() * 40 + 15,
+        rot: Math.random() * Math.PI * 2,
+        rotSpeed: (Math.random() - 0.5) * 0.006,
+        vy: (Math.random() - 0.5) * 0.3,
+        vx: (Math.random() - 0.5) * 0.2,
+        pulse: Math.random() * Math.PI * 2,
+        type,
+        color: Math.random() > 0.7 ? GOLD : (Math.random() > 0.5 ? BLUE : LIGHT),
+      });
+    }
+    // Connection lines
+    lines = [];
+    for (let i = 0; i < 8; i++) {
+      lines.push({
+        x1: Math.random() * W, y1: Math.random() * H,
+        x2: Math.random() * W, y2: Math.random() * H,
+        vx1:(Math.random()-0.5)*0.4, vy1:(Math.random()-0.5)*0.4,
+        vx2:(Math.random()-0.5)*0.4, vy2:(Math.random()-0.5)*0.4,
+        alpha: Math.random() * 0.12 + 0.03,
+      });
+    }
+    // Stars / particles
+    stars = [];
+    for (let i = 0; i < 80; i++) {
+      stars.push({
+        x: Math.random() * W, y: Math.random() * H,
+        r: Math.random() * 1.2 + 0.2,
+        phase: Math.random() * Math.PI * 2,
+        speed: Math.random() * 0.012 + 0.004,
+        color: Math.random() > 0.7 ? GOLD : BLUE,
+      });
+    }
+  }
+
+  function drawHex(cx, cy, r, rot, alpha) {
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(rot);
+    ctx.beginPath();
+    for (let i = 0; i < 6; i++) {
+      const a = (Math.PI / 3) * i;
+      i === 0 ? ctx.moveTo(r * Math.cos(a), r * Math.sin(a)) : ctx.lineTo(r * Math.cos(a), r * Math.sin(a));
+    }
+    ctx.closePath();
+    ctx.strokeStyle = `rgba(16,85,212,${alpha})`;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function drawRing(cx, cy, r, rot, alpha, color) {
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(rot);
+    ctx.beginPath();
+    ctx.arc(0, 0, r, 0, Math.PI * 2);
+    ctx.strokeStyle = `${color}${alpha})`;
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+    // inner ring
+    ctx.beginPath();
+    ctx.arc(0, 0, r * 0.6, 0, Math.PI * 2);
+    ctx.strokeStyle = `${color}${alpha * 0.5})`;
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function draw(t) {
+    ctx.clearRect(0, 0, W, H);
+
+    // Connection lines
+    lines.forEach(l => {
+      l.x1 += l.vx1; l.y1 += l.vy1;
+      l.x2 += l.vx2; l.y2 += l.vy2;
+      if (l.x1 < 0 || l.x1 > W) l.vx1 *= -1;
+      if (l.y1 < 0 || l.y1 > H) l.vy1 *= -1;
+      if (l.x2 < 0 || l.x2 > W) l.vx2 *= -1;
+      if (l.y2 < 0 || l.y2 > H) l.vy2 *= -1;
+      ctx.beginPath();
+      ctx.moveTo(l.x1, l.y1);
+      ctx.lineTo(l.x2, l.y2);
+      ctx.strokeStyle = `rgba(16,85,212,${l.alpha})`;
+      ctx.lineWidth = 0.6;
+      ctx.stroke();
+    });
+
+    // Stars
+    stars.forEach(s => {
+      s.phase += s.speed;
+      const a = (Math.sin(s.phase) + 1) / 2 * 0.55;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = `${s.color}${a})`;
+      ctx.fill();
+    });
+
+    // 3D shapes
+    shapes.forEach(s => {
+      s.x += s.vx; s.y += s.vy;
+      s.rot += s.rotSpeed;
+      s.pulse += 0.018;
+      if (s.x < -s.r) s.x = W + s.r;
+      if (s.x > W + s.r) s.x = -s.r;
+      if (s.y < -s.r) s.y = H + s.r;
+      if (s.y > H + s.r) s.y = -s.r;
+      // depth scale
+      const scale = 400 / s.z;
+      const r = s.r * scale;
+      const alpha = (Math.sin(s.pulse) * 0.5 + 0.5) * 0.2 * scale;
+      if (s.type === 'hex') drawHex(s.x, s.y, r, s.rot, alpha);
+      else drawRing(s.x, s.y, r, s.rot, alpha, s.color);
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  resize(); initShapes(); requestAnimationFrame(draw);
+  window.addEventListener('resize', () => { resize(); initShapes(); });
+
+  // Mouse parallax on shapes
+  document.addEventListener('mousemove', e => {
+    const mx = (e.clientX / W - 0.5) * 0.8;
+    const my = (e.clientY / H - 0.5) * 0.8;
+    shapes.forEach((s, i) => {
+      s.x += mx * (i % 3 + 1) * 0.12;
+      s.y += my * (i % 3 + 1) * 0.12;
+    });
+  });
+})();
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   LIGHT PARTICLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+(function() {
+  for (let i = 0; i < 18; i++) {
+    const p = document.createElement('div');
+    p.className = 'light-particle';
+    const sz = Math.random() * 3 + 1;
+    const dur = Math.random() * 22 + 14;
+    const delay = Math.random() * 20;
+    const dx = (Math.random() - 0.5) * 200;
+    const left = Math.random() * 100;
+    const isBlue = Math.random() > 0.5;
+    p.style.cssText = `width:${sz}px;height:${sz}px;left:${left}%;background:${isBlue?'rgba(16,85,212,0.45)':'rgba(201,168,76,0.4)'};--dx:${dx}px;animation-duration:${dur}s;animation-delay:-${delay}s`;
+    document.body.appendChild(p);
+  }
+})();
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   HERO MOUSE PARALLAX
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+document.addEventListener('mousemove', e => {
+  const x = (e.clientX / window.innerWidth - 0.5) * 16;
+  const y = (e.clientY / window.innerHeight - 0.5) * 10;
+  const bg = document.querySelector('.hero-bg');
+  if (bg) bg.style.transform = `scale(1.09) translate(${x}px, ${y}px)`;
+  // parallax on orbs
+  document.querySelectorAll('.orb').forEach((o, i) => {
+    const f = (i + 1) * 0.35;
+    o.style.transform = `translate(${x * f}px, ${y * f}px)`;
+  });
 });
 
-let events = ls.get('dob_v3_events',[
-  {date:'28',day:'MAR',title:'Dark Fridays',artist:'DJ Maphorisa',genre:'Amapiano · Afrobeats',hot:true},
-  {date:'29',day:'MAR',title:'Blue Saturday',artist:'Resident DJ Collective',genre:'Deep House · Gqom',hot:true},
-  {date:'30',day:'MAR',title:'Sundaze Session',artist:'DJ Lag + Special Guests',genre:'Gqom · Electronic',hot:false},
-  {date:'04',day:'APR',title:'Apex Nights',artist:'TBA — Exclusive Drop',genre:'Afro Tech · Deep',hot:false}
-]);
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   3D CARD TILT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+document.querySelectorAll('.sp-card, .exp-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    card.style.transform = `perspective(700px) rotateY(${x * 10}deg) rotateX(${-y * 8}deg) translateZ(8px) translateY(-4px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
 
-let menuItems = ls.get('dob_v3_menu',[
-  {price:'R 150',name:'Platter for Two',desc:'Beef meat, Wors & Jeqe or Pap'},
-  {price:'R 250',name:'Platter for Four',desc:'French Fries · Beef Meat · Wors · Salads'},
-  {price:'R 400',name:'Platter for Six',desc:'Salads · Beef Meat · Pap · Wors · Fries · Chicken Wings · Beef Livers'},
-  {price:'R 600',name:'Platter for Eight',desc:'Beef Meat · Kidneys · Liver · Wors · Fries · Wings · Salads'},
-  {price:'R 30',name:'Beef Curry Plate',desc:'Beef Stew · Rice or Pap · Salads'}
-]);
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   NAV SCROLL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+  document.getElementById('stickyBook').classList.toggle('visible',
+    window.scrollY > 600 && window.scrollY < document.body.scrollHeight - 900
+  );
+});
 
-const seedReviews = [
-  {name:'Khulekani M.',stars:4,text:'Nice music and friendly staff. The owner should consider pricing — it\'s a premium experience.',price:'R 50–100',time:'2 years ago',initials:'KM'},
-  {name:'Collen B.',stars:5,text:'Good vibes! Food and service are on point — definitely coming back.',price:'R 50–100',time:'4 months ago',initials:'CB'},
-  {name:'Sphesihle M.',stars:5,text:'Perfect place to chill with friends. The atmosphere is exactly what you need.',price:'',time:'3 years ago',initials:'SM'},
-  {name:'Remeques G.',stars:5,text:'A Blast! The shisanyama is absolutely fire. Great experience overall.',price:'R 50–100',time:'2 years ago',initials:'RG'},
-  {name:'Gcina G.',stars:5,text:'Good food, great service. Highly recommend to everyone.',price:'',time:'a year ago',initials:'GG'},
-  {name:'Simphiwe K.',stars:4,text:'Solid spot. Food was great, service attentive. Music kept the energy going all night.',price:'R 100–200',time:'11 months ago',initials:'SK'}
+/* HAMBURGER */
+document.getElementById('hamBtn').addEventListener('click', () => document.getElementById('mobMenu').classList.add('open'));
+document.getElementById('mobClose').addEventListener('click', closeMob);
+function closeMob() { document.getElementById('mobMenu').classList.remove('open'); }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SCROLL REVEAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ARTIST IMAGES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+[{id:'a1',src:'artist1.jpg'},{id:'a2',src:'artist2.jpg'},{id:'a3',src:'artist3.jpg'},{id:'a4',src:'artist4.jpg'},{id:'a5',src:'artist5.jpg'}]
+.forEach(({id, src}) => {
+  const img = document.getElementById(id);
+  if (!img) return;
+  const t = new Image();
+  t.onload = () => { img.src = src; img.style.cssText = 'width:100%;height:100%;object-fit:cover'; };
+  t.onerror = () => {
+    img.style.display = 'none';
+    const ph = document.createElement('div');
+    ph.style.cssText = 'width:100%;height:100%;background:linear-gradient(135deg,#e8ecf4,#d0d8ec);display:flex;align-items:center;justify-content:center;font-size:3rem;position:absolute;inset:0';
+    ph.textContent = '🎤';
+    img.parentNode.insertBefore(ph, img.parentNode.firstChild);
+  };
+  t.src = src;
+});
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   REVIEWS TICKER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+let reviews = [
+  {n:'Khulekani M.',s:4,t:'Nice music and friendly staff. Great vibe overall!',ti:'2 years ago',i:'KM'},
+  {n:'Collen B.',s:5,t:'Good food and excellent service. Will definitely be back!',ti:'4 months ago',i:'CB'},
+  {n:'Sphesihle M.',s:5,t:'Nice place to chill with friends. Highly recommend!',ti:'3 years ago',i:'SM'},
+  {n:'Gcina G.',s:5,t:'Good food and great service. One of the best spots in Ntuzuma.',ti:'1 year ago',i:'GG'},
+  {n:'Remeques G.',s:5,t:'A Blast! Amazing atmosphere and great prices.',ti:'2 years ago',i:'RG'},
+  {n:'Honey S.',s:5,t:'Nice place. Great ambiance and friendly people everywhere.',ti:'3 years ago',i:'HS'},
+  {n:'Smiso',s:4,t:'Decent experience. Worth every cent of the entry.',ti:'5 months ago',i:'SM'},
+  {n:'Simphiwe K.',s:4,t:'Food was good, service was great. Will be back!',ti:'11 months ago',i:'SK'},
+  {n:'Ayanda J.',s:5,t:'Food 4/5, Service 5/5. Absolutely loved the energy!',ti:'1 year ago',i:'AJ'},
+  {n:'Nkosiyazi M.',s:5,t:'Great spot! The entertainment was top-notch.',ti:'2 years ago',i:'NM'},
 ];
-
-let reviews = ls.get('dob_v3_reviews', seedReviews);
-let selectedStars = 0;
-
-const experiences = [
-  {icon:'🍖',tag:'SIGNATURE',name:'Shisanyama',desc:'Premium township braai. Slow-grilled meats, bold flavours, fire-kissed perfection.'},
-  {icon:'🚗',tag:'EXCLUSIVE',name:'Car Wash',desc:'Full-service car wash. Arrive clean, leave immaculate.'},
-  {icon:'💨',tag:'PREMIUM',name:'Hubbly',desc:'Premium shisha with an extensive flavour menu. Hand-crafted sessions.'},
-  {icon:'🍹',tag:'CRAFTED',name:'Beverages',desc:'Cocktails, spirits, craft beers and signature blends served ice cold.'},
-  {icon:'🎶',tag:'LIVE',name:'Entertainment',desc:'Live DJs, headline artists and electric performances until dawn.'}
-];
-
-const tickerContent = [
-  '🔥 Dark Fridays Every Week','🎶 Top Artists Perform Live','🍖 Premium Shisanyama',
-  '💨 Hubbly Lounge Open Nightly','🚗 Full-Service Car Wash','🍹 Signature Cocktails',
-  '🎉 Weekend Events — Book Now','📍 Ntuzuma, Durban','⭐ 4.6 Stars on Google',
-  '👑 Hosted by the Best in the Game','🎤 Elite Entertainment Every Night'
-];
-
-/* ── TICKER ── */
-function renderTicker(){
-  const doubled = [...tickerContent,...tickerContent];
-  document.getElementById('ticker-track').innerHTML = doubled.map(i=>
-    `<div class="ticker-item"><span class="ticker-sep">✦</span>${i}</div>`
-  ).join('');
+let selStar = 0;
+const starsStr = n => '★'.repeat(n) + '☆'.repeat(5 - n);
+function buildRvCard(r) {
+  return `<div class="rv-card">
+    <div class="rv-head"><div class="rv-avatar">${r.i}</div><div><div class="rv-name">${r.n}</div><div class="rv-stars">${starsStr(r.s)}</div></div></div>
+    <div class="rv-text">"${r.t}"</div><div class="rv-time">${r.ti}</div>
+  </div>`;
 }
-
-/* ── EXPERIENCES ── */
-function renderExperiences(){
-  document.getElementById('exp-grid').innerHTML = experiences.map((e,i)=>`
-    <div class="exp-card reveal d${i+1}">
-      <div class="exp-icon">${e.icon}</div>
-      <div class="exp-tag-lbl">${e.tag}</div>
-      <div class="exp-name">${e.name}</div>
-      <div class="exp-desc">${e.desc}</div>
-    </div>`).join('');
+function renderTicker() {
+  const t = document.getElementById('rvTicker');
+  t.innerHTML = [...reviews, ...reviews].map(buildRvCard).join('');
 }
-
-/* ── EVENTS ── */
-function renderEvents(){
-  document.getElementById('ev-list').innerHTML = events.map((ev,i)=>`
-    <a class="event-row reveal d${Math.min(i+1,4)}" href="https://wa.me/${siteData.phone||'27742270872'}?text=Hi%2C%20I%20want%20to%20reserve%20for%20${encodeURIComponent(ev.title)}!" target="_blank">
-      <div class="event-date">
-        <span class="e-day">${ev.date}</span>
-        <span class="e-month">${ev.day}</span>
-      </div>
-      <div class="event-sep"></div>
-      <div class="event-info">
-        <div class="event-title">${ev.title}${ev.hot?'<span class="event-hot">🔥 Hot</span>':''}</div>
-        <div class="event-artist">${ev.artist}</div>
-        <div class="event-genre">${ev.genre}</div>
-      </div>
-      <div class="event-cta">Reserve Spot →</div>
-    </a>`).join('');
+renderTicker();
+function toggleRvForm() { document.getElementById('rvForm').classList.toggle('open'); }
+function setStar(n) {
+  selStar = n;
+  document.querySelectorAll('.star-btn').forEach((b, i) => b.classList.toggle('on', i < n));
 }
-
-/* ── MENU ── */
-function renderMenu(){
-  document.getElementById('menu-grid').innerHTML = menuItems.map((m,i)=>`
-    <div class="menu-card reveal d${Math.min(i+1,5)}">
-      <div class="menu-price">${m.price}</div>
-      <div class="menu-name">${m.name}</div>
-      <div class="menu-desc">${m.desc}</div>
-    </div>`).join('');
-}
-
-/* ── REVIEWS ── */
-function esc(t){ const d=document.createElement('div'); d.textContent=t; return d.innerHTML; }
-function stars(n){ return '★'.repeat(n)+'☆'.repeat(5-n); }
-function initials(n){ return n.trim().split(' ').map(w=>w[0]||'').slice(0,2).join('').toUpperCase()||'?'; }
-function timeAgo(ts){ if(!ts) return 'recently'; const s=Math.floor((Date.now()-ts)/1000); if(s<60) return 'just now'; if(s<3600) return Math.floor(s/60)+'m ago'; if(s<86400) return Math.floor(s/3600)+'h ago'; return Math.floor(s/86400)+'d ago'; }
-
-function renderReviews(){
-  document.getElementById('rev-stream').innerHTML = reviews.map((r,i)=>`
-    <div class="review-notif" style="animation-delay:${i*.06}s">
-      <div class="r-avatar">${esc(r.initials||initials(r.name))}</div>
-      <div class="r-body">
-        <div class="r-meta">
-          <span class="r-name">${esc(r.name)}</span>
-          <div style="display:flex;align-items:center;gap:8px">
-            ${r.ts?`<span class="r-new">New</span>`:''}
-            <span class="r-time">${r.ts?timeAgo(r.ts):r.time||'recently'}</span>
-          </div>
-        </div>
-        <div class="r-stars">${stars(r.stars)}</div>
-        ${r.text?`<div class="r-text">${esc(r.text)}</div>`:''}
-        ${r.price?`<div class="r-price">Spent: ${esc(r.price)}/person</div>`:''}
-      </div>
-    </div>`).join('');
-  const avg = (reviews.reduce((s,r)=>s+r.stars,0)/reviews.length).toFixed(1);
-  document.getElementById('avg-score').textContent = avg;
-  document.getElementById('rev-count').textContent = reviews.length+' Reviews';
-}
-
-/* ── STAR PICKER ── */
-function setStar(n){
-  selectedStars = n;
-  document.querySelectorAll('.star-picker button').forEach((b,i)=>b.classList.toggle('active',i<n));
-}
-
-/* ── SUBMIT REVIEW ── */
-function submitReview(){
-  const name = document.getElementById('r-name').value.trim();
-  const text = document.getElementById('r-text').value.trim();
-  const price = document.getElementById('r-price').value;
-  const msg = document.getElementById('rev-msg');
-  if(!name){ showMsg(msg,'err','Please enter your name.'); return; }
-  if(!selectedStars){ showMsg(msg,'err','Please select a rating.'); return; }
-  if(!text){ showMsg(msg,'err','Please write a review.'); return; }
-  reviews.unshift({name,stars:selectedStars,text,price,initials:initials(name),ts:Date.now()});
-  ls.set('dob_v3_reviews',reviews); renderReviews();
-  document.getElementById('r-name').value='';
-  document.getElementById('r-text').value='';
-  document.getElementById('r-price').value='';
+function submitRv() {
+  const name = document.getElementById('rvName').value.trim();
+  const text = document.getElementById('rvText').value.trim();
+  if (!name || !text || !selStar) { showToast('Please fill in all fields and select a rating.'); return; }
+  const initials = name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
+  reviews.unshift({n:name, s:selStar, t:text, ti:'Just now', i:initials});
+  renderTicker();
+  document.getElementById('rvName').value = '';
+  document.getElementById('rvText').value = '';
   setStar(0);
-  showMsg(msg,'ok','Review posted — thank you! 🎉');
-  document.getElementById('rev-stream').scrollTop=0;
+  document.getElementById('rvForm').classList.remove('open');
+  showToast('Thank you for your review! 🙏');
 }
-function showMsg(el,t,txt){ el.textContent=txt; el.className='form-msg '+t; el.style.display='inline-block'; setTimeout(()=>el.style.display='none',4000); }
 
-/* ── NAV ── */
-function toggleMenu(){ document.getElementById('mob').classList.toggle('open'); }
-function closeMenu(){ document.getElementById('mob').classList.remove('open'); }
-
-window.addEventListener('scroll',()=>{
-  const s = window.scrollY;
-  document.getElementById('nav').classList.toggle('scrolled', s>60);
-  document.getElementById('sticky-bar').classList.toggle('show', s>400);
-},{passive:true});
-
-/* ── SETTINGS ── */
-function openSettings(){
-  document.getElementById('settings-modal').classList.add('open');
-  document.getElementById('pass-gate').style.display='';
-  document.getElementById('settings-panel').style.display='none';
-  document.getElementById('pass-input').value='';
-  document.getElementById('pass-err').style.display='none';
-  setTimeout(()=>document.getElementById('pass-input').focus(),200);
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SETTINGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+let unlocked = false;
+const ADMIN_PW = 'd4rk';
+function openSettings() {
+  document.getElementById('setDrawer').classList.add('open');
+  document.getElementById('setOv').classList.add('open');
+  if (!unlocked) setTimeout(() => document.getElementById('sdPw').focus(), 80);
 }
-function closeSettings(){ document.getElementById('settings-modal').classList.remove('open'); }
-
-function checkPass(){
-  if(document.getElementById('pass-input').value===PASS){
-    document.getElementById('pass-gate').style.display='none';
-    document.getElementById('settings-panel').style.display='block';
-    populateSettings();
+function closeSettings() {
+  document.getElementById('setDrawer').classList.remove('open');
+  document.getElementById('setOv').classList.remove('open');
+}
+function unlockSettings() {
+  if (document.getElementById('sdPw').value === ADMIN_PW) {
+    unlocked = true;
+    document.getElementById('sdLock').style.display = 'none';
+    document.getElementById('sdContent').classList.add('on');
+    document.getElementById('sdErr').style.display = 'none';
   } else {
-    const e=document.getElementById('pass-err'); e.style.display='block';
-    document.getElementById('pass-input').value='';
-    document.getElementById('pass-input').focus();
-    setTimeout(()=>e.style.display='none',3000);
+    document.getElementById('sdErr').style.display = 'block';
+    document.getElementById('sdPw').value = '';
+    document.getElementById('sdPw').focus();
   }
 }
-
-function populateSettings(){
-  document.getElementById('s-name').value = siteData.name||'';
-  document.getElementById('s-tagline').value = siteData.tagline||'';
-  document.getElementById('s-phone').value = siteData.phone||'';
-  document.getElementById('s-address').value = siteData.address||'';
-  document.getElementById('s-hours').value = siteData.hours||'';
-  document.getElementById('s-hero').value = siteData.heroImg||'';
-  document.getElementById('s-ig').value = siteData.ig||SOCIALS.ig;
-  document.getElementById('s-fb').value = siteData.fb||SOCIALS.fb;
-  document.getElementById('s-tk').value = siteData.tk||SOCIALS.tk;
-  renderAdminEvents(); renderAdminMenu(); renderAdminReviews();
+function lockSettings() {
+  unlocked = false;
+  document.getElementById('sdLock').style.display = 'flex';
+  document.getElementById('sdContent').classList.remove('on');
+  document.getElementById('sdPw').value = '';
+  closeSettings();
+}
+function applySettings() {
+  const tg = document.getElementById('sd-tagline').value.trim();
+  if (tg) { const el = document.querySelector('.hero-sub'); if (el) el.innerHTML = `<strong>${tg}</strong>`; }
+  ['1','2','3','4','5'].forEach(n => {
+    const v = document.getElementById('sd-a'+n).value.trim();
+    if (v) { const el = document.getElementById('a'+n+'n'); if (el) el.textContent = v; }
+  });
+  const evNames = document.querySelectorAll('.ev-name');
+  ['1','2','3'].forEach((n, i) => {
+    const v = document.getElementById('sd-e'+n).value.trim();
+    if (v && evNames[i]) evNames[i].childNodes[0].textContent = v + ' ';
+  });
+  const banner = document.getElementById('sd-banner').value.trim();
+  const bannerEl = document.getElementById('ann-bar');
+  if (banner) {
+    document.getElementById('ann-text').textContent = banner;
+    bannerEl.style.display = 'block';
+    document.body.style.paddingTop = '36px';
+  } else {
+    bannerEl.style.display = 'none';
+    document.body.style.paddingTop = '';
+  }
+  showToast('Changes applied successfully ✓');
+  closeSettings();
 }
 
-function renderAdminEvents(){
-  document.getElementById('events-admin').innerHTML = events.map((ev,i)=>`
-    <div class="s-item"><span><strong>${ev.date} ${ev.day}</strong> — ${ev.title} | ${ev.artist}</span><button class="s-del" onclick="removeEvent(${i})">Delete</button></div>`
-  ).join('') || '<p style="font-size:.82rem;color:var(--ink-40);padding:8px 0">No events. Add one below.</p>';
-}
-function removeEvent(i){ events.splice(i,1); ls.set('dob_v3_events',events); renderAdminEvents(); }
-function addEventAdmin(){
-  const d=prompt('Date (e.g. 28):',''); if(!d) return;
-  const m=prompt('Month (e.g. APR):',''); if(!m) return;
-  const t=prompt('Event Title:',''); if(!t) return;
-  const a=prompt('Artist / DJ:','TBA');
-  const g=prompt('Genre:','Amapiano');
-  events.push({date:d.trim(),day:m.toUpperCase().trim(),title:t.trim(),artist:a||'TBA',genre:g||'',hot:false});
-  ls.set('dob_v3_events',events); renderAdminEvents();
+/* TOAST */
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3500);
 }
 
-function renderAdminMenu(){
-  document.getElementById('menu-admin').innerHTML = menuItems.map((m,i)=>`
-    <div class="s-item"><span><strong>${m.price}</strong> — ${m.name}</span><button class="s-del" onclick="removeMenu(${i})">Delete</button></div>`
-  ).join('') || '<p style="font-size:.82rem;color:var(--ink-40);padding:8px 0">No menu items.</p>';
-}
-function removeMenu(i){ menuItems.splice(i,1); ls.set('dob_v3_menu',menuItems); renderAdminMenu(); }
-function addMenuAdmin(){
-  const p=prompt('Price (e.g. R 250):',''); if(!p) return;
-  const n=prompt('Item Name:',''); if(!n) return;
-  const d=prompt('Description:','');
-  menuItems.push({price:p.trim(),name:n.trim(),desc:d||''});
-  ls.set('dob_v3_menu',menuItems); renderAdminMenu();
-}
-
-function renderAdminReviews(){
-  document.getElementById('reviews-admin').innerHTML = reviews.map((r,i)=>`
-    <div class="s-item"><span><strong>${esc(r.name)}</strong> (${stars(r.stars)}) — ${esc((r.text||'').slice(0,50))}${(r.text||'').length>50?'...':''}</span><button class="s-del" onclick="deleteReview(${i})">Delete</button></div>`
-  ).join('') || '<p style="font-size:.82rem;color:var(--ink-40);padding:8px 0">No reviews yet.</p>';
-}
-function deleteReview(i){
-  if(confirm('Delete this review?')){ reviews.splice(i,1); ls.set('dob_v3_reviews',reviews); renderAdminReviews(); renderReviews(); }
-}
-
-function saveAll(){
-  siteData.name = document.getElementById('s-name').value.trim();
-  siteData.tagline = document.getElementById('s-tagline').value.trim();
-  siteData.phone = document.getElementById('s-phone').value.replace(/\D/g,'');
-  siteData.address = document.getElementById('s-address').value.trim();
-  siteData.hours = document.getElementById('s-hours').value.trim();
-  siteData.heroImg = document.getElementById('s-hero').value.trim();
-  siteData.ig = document.getElementById('s-ig').value.trim()||SOCIALS.ig;
-  siteData.fb = document.getElementById('s-fb').value.trim()||SOCIALS.fb;
-  siteData.tk = document.getElementById('s-tk').value.trim()||SOCIALS.tk;
-  ls.set('dob_v3_site',siteData); ls.set('dob_v3_events',events); ls.set('dob_v3_menu',menuItems);
-  document.getElementById('hours-display').innerHTML = siteData.hours.replace(/\n/g,'<br>');
-  const heroEl = document.querySelector('.hero-media img');
-  if(heroEl && siteData.heroImg) heroEl.src = siteData.heroImg;
-  renderEvents(); renderMenu();
-  const ok = document.getElementById('save-ok');
-  ok.style.display='block'; setTimeout(()=>ok.style.display='none',3500);
-}
-
-/* ── CLOSE MODAL ON BACKDROP ── */
-document.getElementById('settings-modal').addEventListener('click',function(e){ if(e.target===this) closeSettings(); });
-
-/* ── SCROLL REVEAL ── */
-const ro = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
-},{threshold:0.1});
-function observeAll(){ document.querySelectorAll('.reveal,.reveal-up,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>ro.observe(el)); }
-
-/* ── YEAR ── */
-document.getElementById('yr').textContent = new Date().getFullYear();
-
-/* ── INIT ── */
-document.addEventListener('DOMContentLoaded',()=>{
-  renderTicker(); renderExperiences(); renderEvents(); renderMenu(); renderReviews();
-  document.getElementById('hours-display').innerHTML = siteData.hours.replace(/\n/g,'<br>');
-  setTimeout(observeAll,120);
-});
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   STAGGERED CARD ANIMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+(function() {
+  const cardObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const cards = e.target.querySelectorAll('.sp-card, .exp-card, .ac, .ev-item');
+        cards.forEach((c, i) => {
+          c.style.opacity = '0';
+          c.style.transform = 'translateY(24px)';
+          c.style.transition = `opacity 0.6s cubic-bezier(0.16,1,0.3,1) ${i*0.08}s, transform 0.6s cubic-bezier(0.16,1,0.3,1) ${i*0.08}s`;
+          setTimeout(() => { c.style.opacity = ''; c.style.transform = ''; }, 60);
+        });
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.sp-grid, .exp-grid, .artists-grid, .ev-list').forEach(el => cardObs.observe(el));
+})();
 </script>
 </body>
 </html>
